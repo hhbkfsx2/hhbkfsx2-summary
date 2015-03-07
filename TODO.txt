@@ -1,0 +1,39 @@
+In dieser Datei werden die Aufgaben gelistet, welche in den jeweiligen Kapiteln
+noch zu erledigen sind. Jeder kann hier "Tickets" öffnen.
+Momentan (23.01.2015) handelt es sich dabei um Aufgaben, die jeweiligen Kapitel
+zu ergänzen/ zu erstellen.
+================================================================================
+LF01
+	Wirtschaftskreislauf
+		- Bilder aus den PDFs von Gottwald ausschneiden und einfügen
+		- Grafik zum Thema Marktformen einfügen
+	Gehaltsabrechnung
+		- Beispielrechnung einfügen
+		- Vielleicht die Aufzählungen in Fließtext übersetzen?
+LF02
+LF04-oeni.wieg
+	BIOS vs UEFI
+		- Eigenschaften von GPT im Vergleich zu MBR darstellen
+	Memory Managment
+		- Eventuell übersetzen
+LF04-wieg
+LF04-wiss
+	Übertragen der Notizen in digitaler Form
+LF04-dig.tech
+	Zahlensysteme
+		- Umrechnung
+		- Negative Zahlen
+LF05
+	Memory Managment
+	Operating Systems
+LF06-db
+	MySQL
+		- DDL: Data Definition Language
+		- DML: Data Manipulation Language
+		- DQL: Data Query Language
+		- DCL: Data Control Language
+LF06-prog
+	HTML und PHP
+		- Zusammenfassung einfügen
+
+
