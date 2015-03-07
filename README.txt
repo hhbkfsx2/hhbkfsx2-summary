@@ -1,17 +1,26 @@
-README: Wichtige LaTeX-Befehle -------------------- K. Engelhardt --- 20.01.2015
+README: Hilfen und Anweisungen -------------------- K. Engelhardt --- 20.01.2015
 ================================================================================
-In diesem README werden einige LaTeX-Befehle aufgelistet, die ihr verwenden
-könnt, um eure Beiträge zur Zusammenfassung zu strukturieren.
-Falls ihr noch nicht wisst, worum es sich bei LaTeX handelt, empfehle ich zuerst
-den Wikipedia-Artikel zu lesen.
+In diesem README werden einige Hilfen, wie beispielsweise LaTeX-Befehle aufgelistet, die ihr verwenden könnt, um eure Beiträge zur Zusammenfassung zu strukturieren. Falls ihr noch nicht wisst, worum es sich bei LaTeX handelt, empfehle ich zuerst den Wikipedia-Artikel zu lesen. Des Weiteren finden sich
+hier Arbeitsanweisungen, bespw. bezüglich der Verwendung von Bildern.
 ================================================================================
-Inhaltsverzeichnis	
-	(1) Text-Formatierung
-	(2) Überschriften
-	(3) Tabellen
-	(4) Quell-Code einbinden
+Inhaltsverzeichnis
+	(1) Verwendung von Bildern
+	(2) LaTeX-Befehle
+		(2.1) Text-Formatierung
+		(2.2) Überschriften
+		(2.3) Tabellen
+		(2.4) Quell-Code einbinden
 ================================================================================
-(1) Text-Formatierung
+(1) Verwendung von Bildern:
+
+	Wer der Zusammenfassung Bilder hinzufügen möchte, fügt diese nach dem
+Namensschema "lf0x-bildname.jpg/png/svg..." unter pictures dem jeweiligen
+Lernfeld hinzu. Dabei ist zu beachten, dass die Quelle des Bildes unter pictures
+in der Datei quellen.txt dokumentiert wird!
+================================================================================
+(2) LaTeX-Befehle
+
+(2.1) Text-Formatierung
 	Fett:		\textbf{Dieser Text wird fett dargestellt}
 			{\bf Dieser Text wird fett dargestellt
 
@@ -22,7 +31,7 @@ Inhaltsverzeichnis
 			#emphazise; TeX wählt je nach Umgebung eine Art der
 			Hervorhebung aus.
 ================================================================================
-(2) Überschriften:
+(2.2) Überschriften:
 	1. Ordnung	\section{Überschrift}
 	1.1 Ordnung	\subsection{Überschrift}
 	1.1.1 Ordnng	\subsubsection{Überschrift}
@@ -34,7 +43,7 @@ Inhaltsverzeichnis
 	Um einen Zeilenumbruch nach einem Paragraphen zu erzwingen, muss nach
 	der schließenden Klammer "~\\" geschrieben werden; \paragraph{}~\\.
 ================================================================================
-(3) Tabellen:
+(2.3) Tabellen:
 Der Code ...
 	\begin{tabular}{l|l|l}
 		Test & Test & Test\\
@@ -51,7 +60,7 @@ in der Tabelle bewirken. Werden zwischen den l-s die Pipes (|) weggelassen,
 so gibt es zwischen den Wörtern "Test" keine Trennlinie.
 - "&" bezeichnet einen "Spalten-Sprung"
 ================================================================================
-(4) Quell-Code einbinden
+(2.4) Quell-Code einbinden
 	\begin{lstlisting}
 		Alles, was in diesem Bereich steht, wird von Texmaker nicht
 		interpretiert, sondern genau so ausgegeben, wie es hier
