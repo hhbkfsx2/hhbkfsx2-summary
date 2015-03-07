@@ -1,0 +1,14 @@
+In dieser Datei sind die Quellen der einzelnen Bilder verzeichnet
+================================================================================
+(1) lf01-pic
+	
+lf02-projekt-dreieck
+>URL:		http://de.wikipedia.org/wiki/Datei:PM_Dreieck.png
+>Urheber: 	Konrad Krafft
+>Lizenz: 	GNU Freie Dokumentationslizenz/CC-BY-SA 3.0	
+
+(2) lf02-pic
+(3) lf03-pic
+(4) lf04-pic
+(5) lf05-pic
+(6) lf06-pic
