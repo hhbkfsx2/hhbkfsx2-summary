@@ -1,1 +1,4 @@
+# Backup-Files ignorieren
 *~
+# Div. LaTeX-Files ignorieren
+*.dvi *.log *.out *.aux
