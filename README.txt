@@ -1,6 +1,9 @@
 README: Hilfen und Anweisungen -------------------- K. Engelhardt --- 20.01.2015
 ================================================================================
-In diesem README werden einige Hilfen, wie beispielsweise LaTeX-Befehle aufgelistet, die ihr verwenden könnt, um eure Beiträge zur Zusammenfassung zu strukturieren. Falls ihr noch nicht wisst, worum es sich bei LaTeX handelt, empfehle ich zuerst den Wikipedia-Artikel zu lesen. Des Weiteren finden sich
+In diesem README werden einige Hilfen, wie beispielsweise LaTeX-Befehle
+aufgelistet, die ihr verwenden könnt, um eure Beiträge zur Zusammenfassung zu
+strukturieren. Falls ihr noch nicht wisst, worum es sich bei LaTeX handelt,
+empfehle ich zuerst den Wikipedia-Artikel zu lesen. Des Weiteren finden sich
 hier Arbeitsanweisungen, bespw. bezüglich der Verwendung von Bildern.
 ================================================================================
 Inhaltsverzeichnis
@@ -10,6 +13,7 @@ Inhaltsverzeichnis
 		(2.2) Überschriften
 		(2.3) Tabellen
 		(2.4) Quell-Code einbinden
+	(3) Strukturierung von Sections
 ================================================================================
 (1) Verwendung von Bildern:
 
@@ -76,4 +80,30 @@ Besser: (Beispiel!)
 Es können auch externe Dateien -- hier "beispiel.html" eingebunden werden.
 Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer Quell-Code
 einbinden möchte: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+================================================================================
+(3) Strukturierung von Sections
+	
+	In diesem Abschnitt wird beschrieben, wie die Sections strukturiert
+werden sollen, damit sich jeder in den - durchaus längeren - Sections zurecht
+findet. Vor jeden Abschnitt wird ein Kommentar gesetzt und nach jedem Abschnitt.
+Dadurch soll sichergestellt werden, dass jeder sofort weiß, wo er sich befindet.
+Um nicht unnötig viel zu beschreiben, folgt nun ein schematisches Beispiel:
+
+%%% Anfang: Beispiel
+\section{Beispiel}
+
+%%% Anfang: Beispiel > Subsection1
+\subsection{Subsection1}
+
+%%% Anfang: Beispiel > Subsection2
+\subsection{Subsection2}	
+
+%%% Ende: Beispiel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Vor allem durch die 80* %-Zeichen wird eine optische Trennung der Sections
+erreicht. Weitere Beispiele lassen sich in den Sections finden.
+---
+* 80: "In der Vergangenheit konnten gängige Terminals nur 80 Zeichen pro Zeile
+darstellen." Siehe auch: http://de.wikipedia.org/wiki/Kammquoting
 ================================================================================

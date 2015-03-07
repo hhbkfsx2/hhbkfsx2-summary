@@ -1,9 +1,15 @@
 \section{Lernfeld 4 - Einfache IT-Systeme (Oenings und Wächter)}
 %
+\subsection{tl;dr - Zusammenfassung der Zusammenfassung}
+%%% Ende: tl;dr
 
 \subsection{Software-Klassifikation}
 eCl@ss
 
+%%% Ende: Software-Klassifizierung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Interrupts
 \subsection{Interrupts}
 Beispielsweise einmal pro Sekunde wird nach einem Interrupt geschaut. Es gibt aber auch Algorithmen, die nach jedem Befehl nach einem Interrupt.
 
@@ -57,9 +63,11 @@ Maskierung: Bit-Maske, bspw. Netzwerkmasken (255.255.255.0 oder Präfixe /24)
 
 Unterbrechungskontext
 
-%
-\subsection{Prozessmanagment (Scheduling)}
+%%% Ende: Interrupts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% Anfang: Prozessmanagment
+\subsection{Prozessmanagment (Scheduling)}
 
 Central Processing Units (CPUs) können trotz Hyperthreading und mehreren Kernen trotzdem nur einen Befehl gleichzeitig ausführen. Damit gleichzeitig mehrere Programme laufen können, muss festgelegt werden, welches Programm wann wie viel Prozessor-Zeit beanspruchen darf. Der Teil des Betriebssystem, der diese Zuteilung kontrolliert, wird Schedular genannt. Wie genau der Schedular die Zeit verteilt, legt der sogenannte Scheduling Algorithmus fest. Das eigentliche Einspielen des Prozesses wird vom Dispatcher umgesetzt. 
 
@@ -74,6 +82,9 @@ Alle Daten, die das Betriebssystem über einen Prozess verwalten muss,bezeichnet
 	\item Prozeskontrollinformationen: Priorität des Prozesses, Informationen über den Speicherbereich, geöffnete Dateien des Prozesses \dots
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Prozessmanagment > Scheduling-Algorithmen
 \subsubsection{Scheduling-Algorithmen: Varianten}
 
 Prinzipiell gibt es zwei Arten: (1) \textbf{Nicht preemptives Scheduling} und (2) \textbf{preemtives Scheduling}. Ersteres ist nicht interaktiv und wird bei Stapelverarbeitungssystemen benutzt. Befindet sich ein Prozess im Zustand \ql running\qr, so wird seine Ausführung solange fortgesetzt, bis er terminiert oder durch Warten auf Ressourcen blockiert. Letzter lassen die Unterbrechung von Prozessen zu, sodass eine Interaktion möglich wird. Dadurch geht der Prozess in den Zustand \ql ready\qr\ über.
@@ -86,7 +97,10 @@ Zu den Anforderungen an alle Algorithmen gehören die Faktoren \textbf{Fairness}
  \item Interaktive Systeme: Antwortzeit sollte minimal sein, Verhältnismäßigkeit der Antwortzeiten, Anzahl der Interaktionen sollte maximal sein können
  \item Echtzeitsysteme: Sollzeitpunkt, Vorhersagbarkeit
 \end{itemize}
+%%% Ende: Prozessmanagment > Scheduling-Algorithmen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% Anfang: Prozessmanagment > Nicht-preemtive Scheduling-Algorithmen
 \subsubsection{Nicht-preemptive Scheduling-Algorithmen: Stapelverarbeitungssysteme}
 
 Stapelverarbeitungssysteme sind etwa alte Lochkarten-Maschinen. Dabei ist im Gegensatz zu interaktiven Systemen nach dem Starten des Prozess kein Eingreifen durch den Nutzer vorgesehen.
@@ -96,7 +110,10 @@ Stapelverarbeitungssysteme sind etwa alte Lochkarten-Maschinen. Dabei ist im Geg
 Der Algorithmus \textbf{Shortest-Job-First} (SJF) geht davon aus, dass die Laufzeit der Prozesse vorher bekannt ist. SJF wählt immer den Prozess zuerst, der am kürzesten ist.
 
 \textbf{Shortest Remaining Time Next} (STRN) wählt, wie der Name bereits zeigt, den Prozess, der die niedrigste verbleibende Laufzeit besitzt.
+%%% Ende: Prozessmanagment > Nicht-preemtive Scheduling-Algorithmen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% Anfang: Prozessmanagment > Preemptive Scheduling-Algorithmen
 \subsubsection{Preemptive Scheduling-Algorithmen: interaktive Systeme}
 
 \textbf{Round-Robin Scheduling} (RRS) ist der älteste und einfachste Algorithmus für interaktive Systeme. Dabei erhält jeder Prozess abwechselnd einen gleich großen Zeitabschnitt (sog. Quantum). Das Verfahren wird auch Zeitscheibenverfahren oder Time-Sharing genannt.
@@ -107,8 +124,13 @@ Damit ein Prozess mit niedriger Priorität nicht immer wieder aufgeschoben wird,
 
 \textbf{Multilevel Feedback Queueing} (MLFQ): Das besondere dieses Algorithmus ist - im Gegensatz zu SPN und SRPT - dass man keine Kenntnisse über die voraussichtliche Abarbeitungszeit braucht und trotzdem kurze Aufträge bevorzugen kann. Das Scheduling wird nun unterbrechend ausgeführt; Prioritäten werden dabei dynamisch vergeben.
 
+%%% Ende: Prozessmanagment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% Anfang: Lizenzen
 \subsection{Lizenzen}
+
+%%% Anfang: Lizenzen > Open Source
 \subsubsection{Open Source}
 
 Open Source nennt man Software, deren Lizenzbestimmungen in Bezug auf die Weitergabe der Software besagen, dass der Quelltext {\it öffentlich} zugänglich sein muss. Abhängig von der jeweiligen Lizenz kann diese unter Umständen auch beinhalten, dass die Software frei kopiert, modifiziert und verändert wie unverändert weiterverbreitet werden darf.
@@ -124,13 +146,19 @@ Ein frühes und bekanntes Beispiel für OSS ist Mozillas Firefox. Dieser entstan
 
 Zu beachten ist, dass Open Source Software im frei im Sinne von Freiheit ({\it free speech, not free beer}) ist und nicht im Sinne von kostenlos. Um Missverständnissen vorzubeugen wird sie daher {\it open} statt {\it free} genannt. Aber auch diese Regelung ist nicht unproblematisch. Beispielsweise kritisiert die Free Software Foundation (FSF) vor allem die Tatsache, dass der Begriff Open Source die Einsicht in den Quellcode einer Software hervorhebt, nicht aber die Freiheit, diesen Quellcode auch beliebig weiterzugeben oder zu verändern. Die PGP Corporation bezeichnet zwar PGP als Open Source, weil der Quellcode gegen eine Gebühr einsehbar ist, jedoch darf er weder verändert oder weitergegeben werden.
 
+%%% Anfang: Lizenzen > Freeware
 \subsubsection{Freeware}
 
 Freeware bezeichnet im allgemeinen Sprachgebrauch Software, die vom Urheber zur kostenlosen Nutzung zur Verfügung gestellt wird. Freeware ist meistens proprietär und steht damit laut der Free Software Foundation im Gegensatz zu Freier Software, die weitläufigere Freiheiten, wie Veränderungen an der Software, gewährt.
 
+%%% Anfang: Lizenzen > Commercial Software
 \subsubsection{Commercial Software}
 Commercial Software, oder auch Payware, ist Software, die für den Verkauf bestimmt ist. Kommerzielle Software kann sowohl properitär als auch unter free/open source Software sein.
-%
+
+%%% Ende:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Boot-Prozess
 \subsection{Boot-Prozess}
 Beim Bootstrapping (Bootstrap-Prozess) wird der Bootloader (bspw. GRUB) aus dem Master Boot Record (MBR) gelesen und in den RAM geschrieben. Der MBR liegt im ersten Sektor der Festplatte/SSD. Der Bootloader lädt dann den Kernel in den RAM (s. Memory Mangament).
 
@@ -186,7 +214,11 @@ Ein erster Schritt bei der Beschleunigung des Bootvorgangs ist die Einstellung d
 
 \subsubsection{Änderungen in Windows 8}
 In Windows 8 setzt Microsoft ein neues Bootverfahren namens Hybrid Boot ein, welches ca. $\frac{1}{3}$ Zeitersparnis im Bootvorgang mitbringt. Dieses Verfahren mischt das normale Booten, das normale Herunterfahren sowie die Ruhestandsfunktionen der bisherigen Windows Versionen. Ist diese Funktion aktiviert und das System wird heruntergefahren, wird anderes als beim Ruhezustand der Benutzer abgelmeldet und alle offenen Programme geschlossen. Der Windows Kernel und alle Dienste werden jedoch genauso wie beim Ruhezustand nur \ql schlafen gelegt\qr\ und die Daten werden in die Hiberfile.sys geschrieben. Beim Starten müssen der Kernel und die Dienste nur wieder aufgeweckt werden.
-%
+
+%%% Ende: Boot-Prozess
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Memory Managment
 \subsection{Memory Managment}
 
 CPUs process data. This data is stored on Hard Disc Drives (HDD) or Solid State Discs (SSD). When this data is needed, it will be placed into the Random Access Memory (RAM). This process is called \textbf{memory allocation}.
@@ -224,8 +256,16 @@ This method of choosing pages for replacement is even better in choosing less im
 
 \paragraph{Second Chance}~\\
 The second chance strategy keeps data in a FIFO-layout. It runs through pages and resets the reference bits until it finds a page that has none. Then this page will be swapped. Considering, that more active pages will not be as likely to have no reference bit set once the algorithm reaches it again, the outcome will be very similar to the LRU strategy.
-		
+
+%%% Ende: Memory Managment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+%%% Anfang: Windows	
 \subsection{OS: Windows}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Windows > Registry
 \subsubsection{Registry}
 Seit Win95 ist die Registry der wichtigste Teil des Betriebssystems. Darin werden alle Einstellungen von Windows und der installierten Programme gespeichert.
 Änderungen an der Registry sind riskant, da ohne Wissen über die Bedeutung der verschiedenen Werte das Betriebssystem beschädigt werden kann.
@@ -239,6 +279,23 @@ Die Schlüssel in der Registry kann man mit dem Programm RegEdit.exe bearbeiten.
 	\item HKEY_USERS (HKU): enthält den Stamm aller Benutzerprofile auf dem Computer, hier werden Einstellungen und Informationen für den jeweiligen Windows-Benutzer gespeichert
 \end{itemize}
 
+%%% Ende: Windows
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Unix/Linux
 %\subsection{OS: Unix/Linux}
+
+%%% Ende: Hilfe beim Kunden
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%Anfang:
 %\subsection{Hilfe beim Kunden}
+
+%%% Ende: Hilfe beim Kunden
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%Anfang: Dokumentation
 %\subsection{Dokumentation}
+
+%%% Ende: Dokumentation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

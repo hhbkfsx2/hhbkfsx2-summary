@@ -2,26 +2,47 @@
 
 Im Lernfeld 6 werden neben Themen wie HTML, PHP und C# auch Datenbanken behandelt. Im Bereich der Datenbanken werden drei Begriffe unterschieden: (1) Datenbanken (DB), (2) Datenbankensystem (DBS) und (3) Datenbankmanagmentsystem (DBMS). Die folgende Grafik veranschaulicht den Zusammenhang.
 
-\includegraphics[scale=0.4]{pictures/lf06-pic/lf06-begriffszusammenhang.png}
+\includegraphics[scale=0.4]{pictures/lf06db-pic/lf06db-begriffszusammenhang.png}
 
 Als DBS wird die Verbindung aus DBMS und der dazugehörigen Datenbank bezeichnet. Das DBMS regelt den Zugriff auf die Datenbank, sodass die Daten -- im besten Fall -- immer konsistent sind. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Anfang: tl;dr
+\subsubsection{tl;dr - Zusammenfassung der Zusammenfassung}
+
+%%% Ende: tl;dr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Datenbankenmodelle
 \subsection{Datenbankenmodelle}
 
+%%% Anfang: Datenbankenmodelle > Hierarchisches
 \subsubsection{Hierarchisches Datenbankmodell}
+
+%%% Anfang: Datenbankenmodelle > Relationales
 \subsubsection{Relationales Datenbankmodell}
+
+%%% Anfang: Datenbankenmodelle > Netzwerkdatenbankmodell
 \subsubsection{Netzwerkdatenbankmodell}
+
+%%% Anfang: Datenbankenmodelle > Objektorientiertes
 \subsubsection{Objektorientiertes Datenbankmodell}
+
+%%% Anfang: Datenbankenmodelle > Objektrationales
 \subsubsection{Objektrationales Datenbankmodell}
 
 
-%%% MySQL
+%%% Ende: Datenbankenmodelle 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: MySQL
 \subsection{MySQL}
 
 Bei SQL handelt es sich um einen Standard zur Abfrage von Datenbanken. SQL wird unterteilt in vier Gebiete: (1) Data Definition Language, (2) Data Manipulation Language, (3) Data Query Language und (4) Data Conrol Language. In den folgenden Abschnitten werden die einzelnen Gebiete und deren Befehle anhand von Beispielen erklärt.
 
 Umfassende Informationen zu den verschiedenen Befehlen lassen sich im Manual unter \url{http://dev.mysql.com/doc/refman/5.6/en/index.html} nachlesen.
 
+%%% Anfang: MySQL > DDL
 \subsubsection{DDL -- Data Definition Language}
 Beispiele für DDL-Befehle:
 
@@ -32,6 +53,7 @@ Beispiele für DDL-Befehle:
 		\item create
 	\end{itemize}
 
+%%% Anfang: MySQL > DML
 \subsubsection{DML -- Data Manipulation Language}
 	
 	\begin{itemize}
@@ -39,10 +61,12 @@ Beispiele für DDL-Befehle:
 		\item insert 
 		\item update
 	\end{itemize}
-	
+
+%%% Anfang: MySQL > DQL
 \subsubsection{DQL -- Data Query Language}
 Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet, dass für ihn die eigene Kategorie \ql DQL\qr\ vorgesehen ist.
 
+%%% Anfang: MySQL > DCL
 \subsubsection{DCL -- Data Conrol Language}
 	
 	\begin{itemize}
@@ -50,6 +74,7 @@ Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet
 		\item revoke
 	\end{itemize}
 	
+%%% Anfang: MySQL > Wildcards
 \subsubsection{Wildcards}
 
 \begin{itemize}
@@ -76,6 +101,7 @@ Unterschied zwischen \ql like\qr\ und \ql =\qr\ :
 - \ql =\qr\ kennt keine Wildcards, sondern interpretiert die Eingabe als String
 - (- IS hat damit nichts zu tun; mit IS kann man keine Werte abfragen)
 
+%%% Anfang: MySQL > Weitere Befehle
 \subsubsection{Weitere Befehle}
 \begin{itemize}
 	\item show databases;
@@ -107,3 +133,9 @@ mysql> show tables;
 	\item 
 	\item 
 \end{itemize}
+
+%%% Anfang: MySQL > MariaDB
+\subsubsection{Alternative zu MySQL: MariaDB}
+
+%%% Ende: MySQL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
