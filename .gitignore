@@ -1,11 +1,9 @@
 # Backup-Files ignorieren
 *~
 # Div. LaTeX-Files ignorieren
-*dvi
-*log
-*out
+!*tex
+1_zusammenfassung*
 *aux
-*toc
-*synctex*
+*log
 # geo.sql ignorieren
 *geo.sql

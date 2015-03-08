@@ -12,7 +12,8 @@ Inhaltsverzeichnis
 		(2.1) Text-Formatierung
 		(2.2) Überschriften
 		(2.3) Tabellen
-		(2.4) Quell-Code einbinden
+		(2.4) Quellcode einbinden
+		(2.5) Tabs verwenden
 	(3) Strukturierung von Sections
 ================================================================================
 (1) Verwendung von Bildern:
@@ -64,7 +65,7 @@ in der Tabelle bewirken. Werden zwischen den l-s die Pipes (|) weggelassen,
 so gibt es zwischen den Wörtern "Test" keine Trennlinie.
 - "&" bezeichnet einen "Spalten-Sprung"
 ================================================================================
-(2.4) Quell-Code einbinden
+(2.4) Quellcode einbinden
 	\begin{lstlisting}
 		Alles, was in diesem Bereich steht, wird von Texmaker nicht
 		interpretiert, sondern genau so ausgegeben, wie es hier
@@ -80,6 +81,22 @@ Besser: (Beispiel!)
 Es können auch externe Dateien -- hier "beispiel.html" eingebunden werden.
 Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer Quell-Code
 einbinden möchte: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+
+Möglichkeit, Quellcode inline einzubinden: Manchmal möchte man kurze Befehle
+direkt in einer Zeile einbinden. Dafür gibt es eine einfache Möglichkeit.
+Bsp.:	Der \verb+\LaTeX+--Befehl erzeugt das {\LaTeX}--Logo
+Nach dem Befehl \verb wird ein Zeichen angegeben, welches den Anfang und das
+Ende des Quellcodes definiert. Statt + kann nahezu jeder beliebige Zeichen
+verwendet werden. Alles zwischen diesen Zeichen wird nicht interpretiert.
+================================================================================
+(2.5) Tabs verwenden
+
+Mit der Umgbung tabular lassen sich auch Tabs verweden:
+
+\begin{tabular}{lll}		Output:	
+1 & 2 & 3\\			1	2	3
+4 & 5 & 6			4	5	6
+\end{tabular}
 ================================================================================
 (3) Strukturierung von Sections
 	
