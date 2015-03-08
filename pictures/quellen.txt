@@ -1,11 +1,57 @@
 In dieser Datei sind die Quellen der einzelnen Bilder verzeichnet
 ================================================================================
 (1) lf01-pic
+
+lf02-adressaten
+>URL:		---
+>Urheber:	HHBK FS12	
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-adressaten2
+>URL:		---
+>Urheber:	HHBK FS12	
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-einliniensystem
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-maslow
+>URL:		http://commons.wikimedia.org/wiki/File:Einfache_Bed%C3% \
+		BCrfnishierarchie_nach_Maslow.svg
+>Urheber:	Philipp Guttmann
+>Lizenz: 	public domain
+
+lf02-matrixorprojektganisation
+>URL:		http://de.wikipedia.org/wiki/Datei:Matrixprojektorg..gif
+>Urheber:	Verena*	(Wiki-Benutzername)
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-mehrliniensystem
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
 	
 lf02-projekt-dreieck
 >URL:		http://de.wikipedia.org/wiki/Datei:PM_Dreieck.png
 >Urheber: 	Konrad Krafft
->Lizenz: 	GNU Freie Dokumentationslizenz/CC-BY-SA 3.0	
+>Lizenz: 	GNU Freie Dokumentationslizenz/CC-BY-SA 3.0
+
+lf02-projektkoordination
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-reine.projektorganisation
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+lf02-stabliniensystem
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0	
 
 ================================================================================
 (2) lf02-pic

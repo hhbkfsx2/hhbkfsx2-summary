@@ -87,7 +87,7 @@ direkt in einer Zeile einbinden. Dafür gibt es eine einfache Möglichkeit.
 Bsp.:	Der \verb+\LaTeX+--Befehl erzeugt das {\LaTeX}--Logo
 Nach dem Befehl \verb wird ein Zeichen angegeben, welches den Anfang und das
 Ende des Quellcodes definiert. Statt + kann nahezu jeder beliebige Zeichen
-verwendet werden. Alles zwischen diesen Zeichen wird nicht interpretiert.
+verwendet werden. Alles zwischen diesen Zeichen wird nicht interpretiert.	
 ================================================================================
 (2.5) Tabs verwenden
 
