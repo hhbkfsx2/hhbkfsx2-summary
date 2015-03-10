@@ -68,13 +68,43 @@ lf02-stabliniensystem
 ================================================================================
 (6) lf06db-pic
 
-================================================================================
-(7) lf06prog-pic
-
 lf06db-begriffszusammenhang
 >URL:		http://de.wikipedia.org/wiki/Datei:Datenbanksystem.svg
 >Urheber:	Frank Roeing
 >Lizenz:	gemeinfrei
+
+================================================================================
+(7) lf06prog-pic
+
+lf06prog-for-pap
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
+
+lf06prog-for-struct
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
+
+lf06prog-while-fuss-pap
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
+
+lf06prog-while-fuss-struct
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
+
+lf06prog-while-kopf-pap
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
+
+lf06prog-while-kopf-struct
+>URL:		---
+>Urheber:	Kilian Engelhardt
+>Lizenz:	CC-BY-SA 3.0
 
 ================================================================================
 (8) dko

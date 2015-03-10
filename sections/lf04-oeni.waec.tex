@@ -268,7 +268,7 @@ The second chance strategy keeps data in a FIFO-layout. It runs through pages an
 %%% Anfang: Windows > Registry
 \subsubsection{Registry}
 Seit Win95 ist die Registry der wichtigste Teil des Betriebssystems. Darin werden alle Einstellungen von Windows und der installierten Programme gespeichert.
-Änderungen an der Registry sind riskant, da ohne Wissen über die Bedeutung der verschiedenen Werte das Betriebssystem beschädigt werden kann.
+Änderungen an der Registry sind riskant, da ohne Wissen über die Bedeutung der verschiedenen Werte das Betriebssystem beschädigt werden kann. Die Registry ist als Datenbank vergleichbar mit einer zentralen Sammelstelle für Konfigurationsdateien wie sie aus Linux-Distributionen bekannt sind.
 
 Die Schlüssel in der Registry kann man mit dem Programm RegEdit.exe bearbeiten. Es gibt fünf Grundschlüssel:
 \begin{itemize}
@@ -279,11 +279,36 @@ Die Schlüssel in der Registry kann man mit dem Programm RegEdit.exe bearbeiten.
 	\item HKEY\_USERS (HKU): enthält den Stamm aller Benutzerprofile auf dem Computer, hier werden Einstellungen und Informationen für den jeweiligen Windows-Benutzer gespeichert
 \end{itemize}
 
+Die Registry ist hierarchisch aufgebaut. Der Zugriff mit PowerShell erfolgt durch "cd HKLM:". Durch Art der Speicherung ist die Registry schneller als Text-Konfigurationsdateien. Die zentrale Registry ist ein Single Point of Failure. Keys, die NUL-Zeichen enthalten, sind nur durch RegDelNul zu löschen.
+
 %%% Ende: Windows
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Anfang: Unix/Linux
-%\subsection{OS: Unix/Linux}
+\subsection{OS: Unix/Linux}
+
+%%% Anfang: Unix/Linux > Grundlagen
+\subsubsection{Grundlagen}
+
+\paragraph{Was ist Unix/Linux?}
+
+\paragraph{Systemstart}
+
+\paragraph{Der Kernel}
+
+\subparagraph{Aufgaben des Kernels}
+
+\paragraph{Dateien und Verzeichnisse}
+
+\paragraph{Dateisystem}
+
+\paragraph{Prozesse}
+
+\paragraph{Benutzerverwaltung}
+
+\paragraph{X-Window System}
+
+\paragraph{Hilfe zur Selbsthilfe}
 
 %%% Ende: Hilfe beim Kunden
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

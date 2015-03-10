@@ -14,6 +14,7 @@ Inhaltsverzeichnis
 		(2.3) Tabellen
 		(2.4) Quellcode einbinden
 		(2.5) Tabs verwenden
+		(2.6) Anführungszeichen
 	(3) Strukturierung von Sections
 ================================================================================
 (1) Verwendung von Bildern:
@@ -97,6 +98,16 @@ Mit der Umgbung tabular lassen sich auch Tabs verweden:
 1 & 2 & 3\\			1	2	3
 4 & 5 & 6			4	5	6
 \end{tabular}
+================================================================================
+(2.6) Anführungszeichen
+
+Anführungszeichen unten links: \ql
+Anführungszeichen oben rechts: \qr
+
+Bsp.: \ql Anführungszeichen\qr
+
+Wenn nach dem rechten Anführungszeichen ein Leezeichen folgen soll, dann muss
+dieses durch einen Backslash erzwungen werden: \ql Anführungszeichen\qr\ 
 ================================================================================
 (3) Strukturierung von Sections
 	
