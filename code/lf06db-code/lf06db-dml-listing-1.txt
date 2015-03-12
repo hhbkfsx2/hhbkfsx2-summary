@@ -1,0 +1,27 @@
+#Aufgaben zum Thema DML:
+
+# a)	Aktualisieren der Einwohnerzahl fuer Aegypten
+#	heute : 80.471.869 Einwohner
+update land set einwohner=80.47 where lnr="ET";
+
+# b)	Korrektur der Daten von Zaire in den betroffenen Tabellen:
+#	heute : Staatsname Kongo, Einwohnerzahl 71.712.867, 
+#	Flaeche 2.345.000 qkm
+update land set name="Kongo", einwohner=71.71, flaeche=234500 \
+	where lnr="ZRE";
+
+# c)	Entfernen aller Daten von Vatikanstadt, da wegen zu kleiner 
+#		Werte zu ungenau
+delete from land where name like "SCV";
+
+# d)	Korrektur von Umlauten: in ae, oe und ue in den Tabellen 
+#	Kontinent, Land, Fluss
+update land set name=REPLACE(name,'<umlaut>*','ae');
+...
+
+# e)	Aendern der Flusslaenge von NULL zu:
+#	Baro 306km, Han 498km, Weisser Nil 3800km
+update fluss set laenge=306 where FNR="BAR";
+...
+
+*die listing-Umgebung mag keine Umlaut, daher hier ein "ae" einsetzen

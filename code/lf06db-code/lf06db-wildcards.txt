@@ -1,0 +1,8 @@
+#Beispielausgabe
+mysql> SELECT * FROM fluss WHERE name LIKE "M\_k\%";
++-----+---------+-----------------------+--------+
+| FNR | Name    | Meer                  | Laenge |
++-----+---------+-----------------------+--------+
+| MEK | Mekong  | Suedchinesisches Meer | 4500   |
+| MSC | Mokscha | NULL                  | 656    |
++-----+---------+-----------------------+--------+

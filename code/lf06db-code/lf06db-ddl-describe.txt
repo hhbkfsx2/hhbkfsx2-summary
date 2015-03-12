@@ -1,0 +1,11 @@
+mysql> describe land;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| LNR       | varchar(4)   | NO   | PRI | NULL    |       |
+| Name      | varchar(50)  | YES  |     | NULL    |       |
+| KNR       | varchar(3)   | YES  |     | NULL    |       |
+| Einwohner | double(20,2) | YES  |     | NULL    |       |
+| Flaeche   | double(53,0) | YES  |     | NULL    |       |
+| HauptONR  | varchar(6)   | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+

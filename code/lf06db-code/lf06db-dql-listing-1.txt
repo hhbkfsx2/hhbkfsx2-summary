@@ -1,0 +1,21 @@
+# Alle Kontinente
+mysql> SELECT * FROM kontinent;
+	
+# Die Anzahl der Fluesse, Ueberschrift der Anzeige : "Anz. Fluesse"
+mysql> SELECT COUNT(name) AS "Anz. Fluesse" FROM fluss;
+
+# Die durchschnittliche Flusslaenge fuer Fluesse zum Atlantischen Ozean
+mysql> SELECT AVG(laenge) FROM fluss WHERE meer LIKE 'atlantischer ozean';
+mysql> SELECT AVG(laenge) FROM fluss WHERE meer='atlantischer ozean';
+	
+# Eine Liste aller Meere (Liste heisst keine Mehrfachnennungen)
+mysql> SELECT meer AS "Keine Mehrfachnennung" FROM fluss WHERE meer \
+	IS NOT null GROUP BY meer;
+mysql> SELECT DISTINCT(meer) AS "Keine Mehrfachnennung" FROM fluss \
+	WHERE meer IS NOT null;
+
+# Anzahl aller Einnwohner in Afrika
+mysql> SELECT SUM(einwohner) FROM land WHERE knr LIKE 'AF';
+	
+# Der 6te bis 15te Ort in Grossbritanien nach Ortsnamen sortiert
+mysql> SELECT * FROM ort WHERE lnr LIKE 'GB' ORDER BY name LIMIT 5,10;

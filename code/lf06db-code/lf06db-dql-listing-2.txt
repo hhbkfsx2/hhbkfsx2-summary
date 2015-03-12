@@ -1,0 +1,19 @@
+# Zeige alle Orte die mehr als Durchschnitt der Einwohner haben
+# und ueber dem 50.ten Breitengrad liegen
+select name from ort where einwohner > (select avg(einwohner) \
+	from ort) and laenge > 50;
+
+# Alle Staedte die mit 'a' beginnen, deren Laengengrad negativ ist.
+select name from ort where name like "a%" and laenge < 0;
+
+# Alle Landesteile mit hoechster Einwohnerzahl, die mit 'n' beginnen.
+select name from land where einwohner = (select max(einwohner) \
+	from land) and name like "n%";
+
+# Die 3 kleinsten laender der EU.
+select * from land where knr like "eu" order by flaeche limit 0,3;
+
+# Zeige alle Fluesse, die 'a' nicht am Anfang o. Ende haben und unter
+# der Durchschnittslaenge liegen.
+select name from fluss where not (name like "a%") and not \
+	(name like "%a) and laenge < (select avg(laenge) from fluss);

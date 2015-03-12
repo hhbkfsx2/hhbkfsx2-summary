@@ -1,0 +1,20 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| geo                |
+| mysql              |
+| performance_schema |
++--------------------+
+
+mysql> show tables;
++---------------+
+| Tables_in_geo |
++---------------+	
+| fluss         |
+| kontinent     |
+| land          |
+| ort           |
+| stadtfluss    |
++---------------+

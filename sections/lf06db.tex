@@ -8,7 +8,7 @@ Als DBS wird die Verbindung aus DBMS und der dazugehörigen Datenbank bezeichnet
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Anfang: tl;dr
-\subsubsection{tl;dr - Zusammenfassung der Zusammenfassung}
+\subsection{tl;dr - Zusammenfassung der Zusammenfassung}
 
 %%% Ende: tl;dr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,16 +31,33 @@ Als DBS wird die Verbindung aus DBMS und der dazugehörigen Datenbank bezeichnet
 %%% Anfang: Datenbankenmodelle > Objektrationales
 \subsubsection{Objektrationales Datenbankmodell}
 
-
 %%% Ende: Datenbankenmodelle 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Anfang: MySQL
 \subsection{MySQL}
 
-Bei SQL handelt es sich um einen Standard zur Abfrage von Datenbanken. SQL wird unterteilt in vier Gebiete: (1) Data Definition Language, (2) Data Manipulation Language, (3) Data Query Language und (4) Data Conrol Language. In den folgenden Abschnitten werden die einzelnen Gebiete und deren Befehle anhand von Beispielen erklärt.
+Bei SQL handelt es sich um einen Standard zur Abfrage von Datenbanken. SQL wird klassisch in vier Gebiete unterteilt: (1) Data Definition Language, (2) Data Manipulation Language, (3) Data Query Language und (4) Data Conrol Language. In den folgenden Abschnitten werden die einzelnen Gebiete und deren Befehle anhand von Beispielen erklärt.
 
-Umfassende Informationen zu den verschiedenen Befehlen lassen sich im Manual unter \url{http://dev.mysql.com/doc/refman/5.6/en/index.html} nachlesen.
+Einige Befehle, wie etwa \texttt{show} werde nach dem Handbuch nicht unter eines der vier Gebiete gefasst. Das Handbuch verwendet eine andere Klassifizierung der Befehle. Um nicht willkürlich eine eigene Klassifizierung vorzunehmen, wird neben den vier genannten Gebieten versucht, der offiziellen Klassifizierung Rechnung zu tragen.
+
+Wenn man mal die Syntax vergisst oder nicht weiß, was ein bestimmter Befehl macht, kann man sich dies unter MySQL mit dem Kommando \texttt{help <command>} anzeigen lassen.
+
+Weitere Informationen zu den verschiedenen Befehlen lassen sich auch im Handbuch unter \url{http://dev.mysql.com/doc/refman/5.6/en/index.html} nachlesen.
+
+%%% Anfang: MySQL > DAS
+\subsubsection{DAS -- Database Administration Statements}
+
+Wie schon erwähnt, wird im Handbuch eine feinere Klassifizierung verwendet, als die klassische Unterteilung in vier Gebiete. Beispielsweise ist die Befehle der Data Control Language unter den Bereich Database Administration Statements (DAS) gefasst. Weil zu den Database Administration Statements auch der Befehl \texttt{show} fällt, beginnt diese Kapitel mit einem Abschnitt über DAS.\footnote{Beachte, dass laut Herr Abu Shebika sowohl \texttt{show} als auch \texttt{use} und \texttt{describe} unter DDL fallen.}
+
+Wenn man sich mit einem MySQL-Server verbunden hat, möchte man in der Regel wissen, welche Datenbanken auf diesem zur Verfügung stehen. Einen Überblick darüber lässt sich mit dem Befehl \texttt{show databases;} bekommen. Dasselbe gilt für Tabellen einer Datenbank. Mit dem Befehl \texttt{show tables;} zeigt einem MySQL an, welche Tabelle in einer Datenbank enthalten sind.
+
+\lstinputlisting
+	[caption={DDL: show-Befehl}
+	\label{lst:ddl-show},captionpos=b]
+	{code/lf06db-code/lf06db-ddl-listing.txt}
+
+In diesem Fall benutzen wir die Datenbank, welche uns durch das Skript geo.sql zur Verfügung gestellt wird. Um die Datenbank in MySQL einzuspielen nutzen wir den Befehl \texttt{source geo.sql;} und wechseln mit \texttt{use geo;} in die Datenbank.
 
 %%% Anfang: MySQL > DDL
 \subsubsection{DDL -- Data Definition Language}
@@ -53,29 +70,33 @@ Beispiele für DDL-Befehle:
 		\item create
 	\end{itemize}
 
-%%% Anfang: MySQL > DML
-\subsubsection{DML -- Data Manipulation Language}
-	
-	\begin{itemize}
-		\item delete 
-		\item insert 
-		\item update
-	\end{itemize}
-
 %%% Anfang: MySQL > DQL
 \subsubsection{DQL -- Data Query Language}
-Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet, dass für ihn die eigene Kategorie \ql DQL\qr\ vorgesehen ist.
+Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet, dass für ihn die eigene Kategorie \ql DQL\qr\ vorgesehen ist. Es können nicht nur einzelne Spalten oder alle Spalten ausgelesen werden, sondern auch Funktionen auf die Spalten angewendet werden.
 
-%%% Anfang: MySQL > DCL
-\subsubsection{DCL -- Data Conrol Language}
-	
-	\begin{itemize}
-		\item grant
-		\item revoke
-	\end{itemize}
-	
+\begin{itemize}
+	\item count()
+	\item avg()
+	\item sum()
+	\item distinct()
+\end{itemize}
+
+\lstinputlisting
+	[caption={DQL: select-Befehle}
+	\label{lst:dql-select},captionpos=b]
+	{code/lf06db-code/lf06db-dql-listing-1.txt}
+
+Darüber hinaus lassen sich mit Hilfe von Subselects Abfragen miteinander verbinden. Die folgenden Befehle zeigen Beispiele für die Verwendung von Subselects:
+
+\lstinputlisting
+	[caption={DQL: subselect-Befehle}
+	\label{lst:dql-subselect},captionpos=b]
+	{code/lf06db-code/lf06db-dql-listing-2.txt}
+
 %%% Anfang: MySQL > Wildcards
 \subsubsection{Wildcards}
+
+Abfragen unter MySQL können auch mit Hilfe von Wildcards formuliert werden. Wildcards sind Platzhalter für ein beliebiges Zeichen und beliebig viele beliebige Zeichen. Die folgende Auflistung gibt einen Überblick der Wildcards in MySQL. Die Beispielausgabe zeigt anschließend, wie sich Wildcards verwenden lassen, um Einträge mit einem bestimmten Muster abzufragen.
 
 \begin{itemize}
 	\item [\%]: beliebige Zeichen
@@ -84,58 +105,51 @@ Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet
 	\item [!a-c]\%: Zeichenkette, die \emph{nicht} a,b oder c beginnt
 \end{itemize}
 
-select * from fluss where name like "M\_k\%";
-\begin{lstlisting}
-#Beispielausgabe
-+-----+---------+-----------------------+--------+
-| FNR | Name    | Meer                  | Laenge |
-+-----+---------+-----------------------+--------+
-| MEK | Mekong  | Suedchinesisches Meer | 4500   |
-| MSC | Mokscha | NULL                  | 656    |
-+-----+---------+-----------------------+--------+
-\end{lstlisting}
+\lstinputlisting
+	[caption={Wildcards}
+	\label{lst:wildcards},captionpos=b]
+	{code/lf06db-code/lf06db-wildcards.txt}
 
-Wildcards beziehen sich nur auf Tabelleninhalte und nicht auf ihre Struktur
-Unterschied zwischen \ql like\qr\ und \ql =\qr\ :
-- \ql like\qr\ beherrscht Wildcards
-- \ql =\qr\ kennt keine Wildcards, sondern interpretiert die Eingabe als String
-- (- IS hat damit nichts zu tun; mit IS kann man keine Werte abfragen)
+Wildcards beziehen sich nur auf Tabelleninhalte und nicht auf ihre Struktur. Unterschied bestehen auch zwischen den Operatoren \texttt{like} und $=$. Nur der Operator \texttt{like} beherrscht Wildcards, wohingegen $=$ die Eingabe als String interpretiert, d.h. in der Tabelle bspw. nach dem Eintrag \ql M\_k\%\qr\ sucht und ihn -- in unserem Fall -- nicht findet.
 
-%%% Anfang: MySQL > Weitere Befehle
-\subsubsection{Weitere Befehle}
-\begin{itemize}
-	\item show databases;
-	\begin{lstlisting}
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| geo                |
-| mysql              |
-| performance_schema |
-+--------------------+
-	\end{lstlisting}
-	\item show tables;
-	\begin{lstlisting}
-mysql> show tables;
-+---------------+
-| Tables_in_geo |
-+---------------+
-| fluss         |
-| kontinent     |
-| land          |
-| ort           |
-| stadtfluss    |
-+---------------+
-	\end{lstlisting}
-	\item 
-	\item 
-	\item 
-\end{itemize}
+%%% Anfang: MySQL > DML
+\subsubsection{DML -- Data Manipulation Language}
+
+Wichtig ist an dieser Stelle, dass statt mit Namen mit den Primary Keys gearbeitet wird. Denn im Gegensatz zu Namen müssen die Primary Keys eindeutig sein. Mit dem Befehl \texttt{describe <tabelle>;} lässt sich herauszufinden, welche Spalte den Primary Key darstellt in der Tabelle <tabelle> darstellt.
+
+\lstinputlisting
+	[caption={DDL: Primary Key ermitteln}
+	\label{lst:ddl-describe},captionpos=b]
+	{code/lf06db-code/lf06db-ddl-describe.txt}
+
+Wir sehen anhand des Outputs, dass das Feld LNR der Primary Key der Tabelle land ist. Daher werden wir für die folgenden Befehle auf das Feld LNR zurückgreifen. Es gilt: was weg ist, ist im Zweifelsfall weg. Es sollte also im Betrieb vorsichtig mit den Datenbeständen umgegangen werden. Um den Wert von LNR für bspw. Ägypten herauszufinden, lässt sich der Befehl \verb+SELECT lnr FROM land WHERE bane LIKE "%gypt%"+ nutzen.	
+
+\lstinputlisting
+	[caption={DML: Beispiele}
+	\label{lst:dml-listing-1},captionpos=b]
+	{code/lf06db-code/lf06db-dml-listing-1.txt}
+
+%%% Anfang: MySQL > DCL
+\subsubsection{DCL -- Data Conrol Language}
+Weil Excel keinerlei Rechtemanagment implementiert, handelt es sich dabei auch nicht um eine Datenbank. Das Rechtemanagment, welches eine Datenbank ausmacht und mit dem einzelnen Usern feingranular Zugriffe auf bestimmte Teile gewährt werden kann, wird als Data Control Language bezeichnet.
+
+Unter MySQL fallen vor allem die Kommandos \texttt{grant} und \texttt{revoke} darunter. Mit \texttt{grant} lassen sich Rechte zuweisen und mit \texttt{revoke} entziehen.
+
+	\begin{itemize}
+		\item grant
+		\item revoke
+	\end{itemize}
 
 %%% Anfang: MySQL > MariaDB
 \subsubsection{Alternative zu MySQL: MariaDB}
+
+Bei SQL handelt es sich um einen Standard zur Abfrage von Datenbanken. Wie die Datenbank darunter aussieht, ist von SQL unabhängig. Das bedeutet, dass dieselben Befehle, die wir oben gelernt haben, auch auf dieselbe Weise unter MariaDB verwendet werden können.
+
+Was ist MariaDB? Und worin bestehen die Unterschiede zu MySQL? MariaDB ist in erster Linie ein Fork von MySQL, der 2009 initiiert wurde nachdem MySQL von Oracle übernommen wurde. Dadurch kann sichergestellt werden, dass MariaDB auch in Zukunft frei unter der GPL(2) verwendet werden kann.
+
+Bis zur Version 5.5 bestehen vom Funktionsumfang her keine Unterschiede zwischen MySQL und MariaDB. Nach dem Release von Version 5.5 wurde eine Version 10.0 von MariaDB angekündigt. Die Nummerierung soll verdeutlichen, dass die nächste Version von MariaDB nicht mehr alle Features von MySQL 5.6 abdecken wird.
+
+Im \href{http://en.wikipedia.org/wiki/MariaDB}{Wikipedia-Artikel} zu MariaDB werden einige prominente Nutzer aufgelistet. Darunter befinden sich zwischen bekannten Distributionen wie RHEL, Gentoo und ArchLinux auch Größen wie Google, Mozilla und die Wikipedia Foundation.
 
 %%% Ende: MySQL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
