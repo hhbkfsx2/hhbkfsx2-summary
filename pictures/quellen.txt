@@ -2,6 +2,15 @@ In dieser Datei sind die Quellen der einzelnen Bilder verzeichnet
 ================================================================================
 (1) lf01-pic
 
+lf01-marktformen
+>URL:		http://wirtschaftslexikon.gabler.de/Archiv/54450/marktformen \
+		-v4.html
+>Urheber:	Dirk Piekenbrock
+>Lizenz:	---
+
+================================================================================
+(2) lf02-pic
+
 lf02-adressaten
 >URL:		---
 >Urheber:	HHBK FS12	
@@ -51,10 +60,7 @@ lf02-reine.projektorganisation
 lf02-stabliniensystem
 >URL:		---
 >Urheber:	Tobias Krenz	
->Lizenz:	CC-BY-SA 3.0	
-
-================================================================================
-(2) lf02-pic
+>Lizenz:	CC-BY-SA 3.0
 
 ================================================================================
 (3) lf03-pic

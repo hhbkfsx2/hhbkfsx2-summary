@@ -3,34 +3,152 @@
 
 %%% Anfang: tl;dr
 \subsection{tl;dr - Zusammenfassung der Zusammenfassung}
+
+%%% Anfang: tl;dr > Definitionen
+\subsubsection{Definitionen}
+
+%%% Anfang: tl;dr > Formeln
+\subsubsection{Formeln}
+
 %%% Ende: tl;dr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Elektrische Grundgrößen}
 	\subsubsection{Elektrische Ladung, Spannung und Potential}
 		\paragraph{Elementarladung}~\\
+		
+\begin{tabular}{llll}
+Proton:		& positive Elementarladung &	$e^+$ & \\
+Elektron:	& negative Elementarladung &	$e^-$ & \\
+& &	& $e = 1.6 \times 10^{-19} As$ \\
+\end{tabular}
+
 		\paragraph{Elektrische Ladung}~\\
-		\paragraph{Entstehen einer elektrischen Ladung}~\\
+		
+\noindent Eine Menge von Elementarladungen nennt man elektrische Ladung.\\\\
+\begin{tabular}{lllll}
+Formelzeichen	& $=$ & $Q$ & & \\
+Einheit			& $=$ & $C$ & $=$ & $6.24 \times 10^{19} \times e$
+\end{tabular}	
+		
+		\paragraph{Entstehung von Spannung}~\\
+		
+\noindent Elektrische Spannung entsteht, wenn durch Arbeitsaufwand Ladungen getrennt werden. Es bedarf einer Kraft, um $U$ zu überwinden.
+		
 		\paragraph{Definition: elektrische Spannung}~\\
+
+\noindent Die elektrische Spannung ist das Ausgleichsstreben getrennter elektrischer Ladung.
+
+\begin{tabular}{lllll}
+Formelzeichen	& $=$ & $U$ & & \\
+Einheit			& $=$ & $V$ & $=$ & $1\frac{Nm}{C}$ \\
+\end{tabular}	
+		
 		\paragraph{Spannungsmessung}~\\
 		\paragraph{Elektrisches Potential}~\\
+		
+\noindent Ein elektrisches Potential ist eine Spannungsangabe gegenüber einem Bezugspunkt\\(meistens: Masse [GND]).
+
+\begin{tabular}{lll}
+Formelzeichen	& $=$ & $\phi$ \\
+Einheit			& $=$ & $V$ \\
+\end{tabular}	
+		
 	\subsubsection{Spannungsarten}
 		\paragraph{Gleichspannung}~\\
 		\paragraph{Wechselspannung}~\\
 		\paragraph{Mischspannung}~\\
 		\paragraph{Kenngrößen der Netzwechselspannung}~\\
+		
+\begin{tabular}{lllll}
+{\bf Kenngröße}	& {\bf Formelzeichen}	& {\bf Einheit} & {\bf Zahlwert} & {\bf Bemerkung}\\ 
+Augenblickswert	& $U$ 					& $1V$	& & $u(t)=\hat{u}\times sin(2\pi f t)$\\
+Scheitelwert		& $\widehat{U}$			& $1V$	& $325V$		& größter Wert der Spannung\\
+Spitze-Spitze	& $U_{ss}$				& $1V$	& $650V$		& \\
+Effektivwert		& $U_{eff}$				& $1V$	& $230V$		& $U_{eff}=\frac{\hat{u}}{\sqrt{2}}$\\
+Periodendauer	& $r$					& $1s$	& $0.02s$	& \\
+Frequenz			& $f$					& $1$	& $50 Hz$	& $T = \frac{1}{f}$ \\
+\end{tabular}		
+		
 	\subsubsection{Elektrischer Strom und Stromdichte}
 		\paragraph{Modellvorstellung}~\\
+
+\noindent Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern (im Leiter = Elektronen).
+
 		\paragraph{Elektrischer Stromkreis}~\\
+		
+\noindent Elektronen fließen vom $-$Pol zum $+$Pol. Die technische Stromrichtung ist allerdings umgekehrt: $+ \to -$.		
+		
 		\paragraph{Stromgeschwindigkeit}~\\
+		
+\noindent Die Geschwindigkeit von Elektronen beträgt etwa $0.001mm$ bis $10mm$ pro Sekunde. Bei $1A$ beträgt die Elektronengeschwindigkeit etwa $1\frac{mm}{s}$. Im Gegensatz dazu beträgt die Signalausbreitungsgeschwindigkeit typischerweise etwas mehr als die halbe Lichtgeschwindigkeit ($0.6\times c$).
+	
 		\paragraph{Elektrische Stromstärke}~\\
+		
+\noindent Die elektrische Stromstärke ist die Ladungsmenge, die pro Sekunde durch den Leitungsquerschnitt fließt.
+
+\begin{tabular}{llll}
+Formelzeichen	& $=$ & $I$ &\\
+Einheit			& $=$ & $A$ &\\
+& & & $I = \frac{Q}{t}$\\
+\end{tabular}	
+		
 		\paragraph{Messung der Stromstärke}~\\
 		\paragraph{Stromwirkung}~\\
+		
+\noindent Lichtwirkung, Wärmewirkung, magnetische Wirkung, chemische Wirkung, physiologische Wirkung\dots		
+		
 		\paragraph{Elektrische Stromdichte}~\\
+		
+\noindent Die Stromdichte gibt den Strom pro Flächeneinheit an ermöglicht die Beurteilung von beispielsweise die Erwärmung des Leiters.	
+
+\begin{tabular}{llll}
+Formelzeichen	& $=$ & $J$ &\\
+Einheit			& $=$ & $1\frac{A}{mm^2}$ &\\
+\end{tabular}\newline
+
+\begin{tabular}{llll}
+Beispiel: & Lampe & $55W$ bei $12V$ $\widehat{=}\ 4.5A$ &\\
+& & $A_{LTG} = 1.5mm^2$ & $= 3\frac{A}{mm^2}$\\
+& & $A_{Lampe} = 0.006mm^2$ & $= 750\frac{A}{mm^2}$\\
+\end{tabular}
+		
 	\subsubsection{Elektrischer Widerstand und Leitwert}
-	\subsubsection{Ohmsches Gesetz}
-	\subsubsection{Elektrischer Widerstand von Leitern}
-	\subsubsection{Spannungsabfall auf Leitern}
+		\paragraph{Definition}~\\
+
+\noindent Elektrischer Widerstand ist die Eigenschaft eines Leiters die Fortbewegung elektrischer Ladungsträger zu behindern.
+
+		\paragraph{Ohmsches Gesetz}~\\
+		
+\noindent Bei einem elektrischen Widerstand ist die Stromstärke proportional zu der Spannung ($I \sim U$) und umgekehrt proportional zum Widerstand ($I \sim \frac{1}{R}$).
+
+		\paragraph{Elektrischer Widerstand von Leitern}~\\
+		
+\noindent Der Widerstand ist proportional zur Länge des Leiters ($R \sim l$), umgekehrt proportional zum Querschnitt ($R \sim \frac{1}{A}$) und abhängig vom Material. Mit dem Faktor $\varrho$ wird die Materialabhängigkeit berücksichtigt. $\varrho$ ist der spezifische Widerstand. Leitfähigkeit bezeichnet den Kehrwert des spezifischen Widerstandes ($\gamma$ oder $\kappa$).\\
+
+\begin{tabular}{llll}
+Formelzeichen	& $=$ & $\varrho$ &\\
+Einheit			& $=$ & $1\frac{\Omega mm^2}{m	}$ &\\
+\end{tabular}\newline
+
+\begin{tabular}{lll}
+$R$			& $=$ & $\varrho\times\frac{l}{A}$\\
+$\varrho$	& $=$ & $\frac{AR}{l}$\\
+$l$			& $=$ & $\frac{AR}{\varrho}$\\
+$A$			& $=$ & $\varrho\times\frac{l}{R}$\\
+$\gamma$		& $=$ & $\frac{1}{\varrho} = 1\frac{m}{\Omega mm^2} = 1\frac{10^6}{\Omega} = \frac{1\times 10^6\times S}{m} = 1\frac{MS}{m}$
+\end{tabular}
+
+		\paragraph{Spannungsabfall auf Leitern}~\\
+		
+\noindent Ein Motor soll über eine $100m$ lange Leitung angeschlossen werden. Dabei fließt ein Strom von $I = 16A$ bei einer Speisespannung von $U = 230V$. Der Querschnitt der Leitung beträgt $A_{LTG} = 1.5mm^2$ (Kuper). Gesucht ist die Spannung, die am Motor ankommt ($U_{Motor}$).\\
+
+\begin{tabular}{lllllll}
+$R_{LTG}$ & $=$ & $\frac{l}{A\times\gamma}$ & $=$ & $\frac{100m}{1.5mm^2\times 58\frac{m}{mm^2\times\Omega}}$ & $=$ & $1.15\Omega$\\
+$U_{LTG}$ & $=$ & $R_{LTG}\times I$ & $=$ & $230V \times 16A$ & $=$ & $18.4V$\\
+$U_{Motor}$ & $=$ & $U - 2\times U_{LTG}$ & $=$ & $230V - 2\times 18.4V$ & $=$ & $193.2V$ \\
+\end{tabular}
+
 	\subsubsection{Elektrische Leistung}
 		\paragraph{Definition}~\\
 		\paragraph{Nennleistung}~\\
