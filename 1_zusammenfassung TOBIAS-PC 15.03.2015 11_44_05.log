@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.19)  15 MAR 2015 13:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.19)  15 MAR 2015 11:44
 entering extended mode
 **1_zusammenfassung.tex
 
@@ -644,32 +644,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 50.
 
 ("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\1_zusammen
 fassung.aux"
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01a.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01b.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f02.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-oeni.waec.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wieg.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wiss.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-dig.tech.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f05.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06prog.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06db.aux")
 ("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/d
-ko.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/p
-k.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\credits.au
-x"))
+ko.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
@@ -784,492 +760,91 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
+)
+\tf@toc=\write4
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3])
-\tf@toc=\write4
- [4]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01a.tex"
-<pictures/lf01-pic/lf01-gleichgewichtspreis.png, id=854, 461.725pt x 431.6125pt
->
-File: pictures/lf01-pic/lf01-gleichgewichtspreis.png Graphic file (type png)
- <use pictures/lf01-pic/lf01-gleichgewichtspreis.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-gleichgewichtspreis.png used on
- input line 29.
-(pdftex.def)             Requested size: 127.46779pt x 119.15152pt.
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/d
+ko.tex" <pictures/dko-pic/dko-gehirnaufbau.png, id=47, 501.875pt x 389.455pt>
+File: pictures/dko-pic/dko-gehirnaufbau.png Graphic file (type png)
+
+<use pictures/dko-pic/dko-gehirnaufbau.png>
+Package pdftex.def Info: pictures/dko-pic/dko-gehirnaufbau.png used on input li
+ne 17.
+(pdftex.def)             Requested size: 351.31009pt x 272.61664pt.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 25.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--32
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 F
-      Ã¼r beworbene Waren gilt eine Vorratsfrist von zwei Tagen. In Ausnahme...
-[1
+l.32 \paragraph
+               {Das Nervensystem}~\\ [1
 
- <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictures/l
-f01-pic/lf01-gleichgewichtspreis.png>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 75.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 			\end{enumerate}
-                        [2]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+ <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictures/d
+ko-pic/dko-gehirnaufbau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 118.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 118.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 118.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 118.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 118.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 119.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 119.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 119.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 128.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 131.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 147.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 147.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 147.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 150.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 150.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 150.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 155.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 158.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--165
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.165 
-       [3]pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.166 $
-       LiquiditÃ¤t 1. Grades = \frac{FlÃ¼ssige Mittel * 100}{Kurzfristige Ve...
-[4]
-
-LaTeX Warning: Command \" invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 167.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 167.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 168.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 168.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--169
-
- []
-
-
-<pictures/lf01-pic/lf01-wirtschaftskreislauf.jpg, id=885, 369.0588pt x 416.757p
-t>
-File: pictures/lf01-pic/lf01-wirtschaftskreislauf.jpg Graphic file (type jpg)
- <use pictures/lf01-pic/lf01-wirtschaftskreislauf.jpg>
-Package pdftex.def Info: pictures/lf01-pic/lf01-wirtschaftskreislauf.jpg used o
-n input line 179.
-(pdftex.def)             Requested size: 369.05789pt x 416.75598pt.
-
-<pictures/lf01-pic/lf01-marktformen.png, id=886, 729.72626pt x 208.78pt>
-File: pictures/lf01-pic/lf01-marktformen.png Graphic file (type png)
-
-<use pictures/lf01-pic/lf01-marktformen.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-marktformen.png used on input l
-ine 188.
-(pdftex.def)             Requested size: 437.83914pt x 125.26895pt.
- [5 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/picture
-s/lf01-pic/lf01-wirtschaftskreislauf.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 195
-.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 195.
-
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 195.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-File: pictures/lf01-pic/lf01-gleichgewichtspreis.png Graphic file (type png)
-<use pictures/lf01-pic/lf01-gleichgewichtspreis.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-gleichgewichtspreis.png used on
- input line 225.
-(pdftex.def)             Requested size: 323.20529pt x 302.12668pt.
-
-<pictures/lf01-pic/lf01-nachfrageverschiebung.png, id=891, 335.75438pt x 385.44
-pt>
-File: pictures/lf01-pic/lf01-nachfrageverschiebung.png Graphic file (type png)
- <use pictures/lf01-pic/lf01-nachfrageverschiebung.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-nachfrageverschiebung.png used 
-on input line 226.
-(pdftex.def)             Requested size: 335.75356pt x 385.43906pt.
- [6 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/picture
-s/lf01-pic/lf01-marktformen.png (PNG copy)>] [7 <C:/Users/Tobias/Documents/SMS 
-Siemag/Berufsschule/hhbkfsx2-summary/pictures/lf01-pic/lf01-nachfrageverschiebu
-ng.png>] [8] [9]
-LaTeX Font Info:    Font shape `U/eurosym/m/it' in size <10.95> not available
-(Font)              Font shape `U/eurosym/m/sl' tried instead on input line 368
-.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 369.
-
-
-<pictures/lf01-pic/lf01-beispielentgeldabrechung.png, id=911, 185.94469pt x 127
-.22531pt>
-File: pictures/lf01-pic/lf01-beispielentgeldabrechung.png Graphic file (type pn
-g)
- <use pictures/lf01-pic/lf01-beispielentgeldabrechung.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-beispielentgeldabrechung.png us
-ed on input line 374.
-(pdftex.def)             Requested size: 185.94421pt x 127.22499pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--375
-
- []
-
-
-Overfull \hbox (13.34776pt too wide) in paragraph at lines 365--375
-$\OML/lmm/m/it/10.95 Pflegeversicherung \OT1/lmr/m/n/10.95 = [] + \OML/lmm/m/it
-/10.95 Bruttolohn \OMS/lmsy/m/n/10.95  \OML/lmm/m/it/10.95 Zusatzbeitrag \OT1/
-lmr/m/n/10.95 = [] +$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
-
- []
-
-[10 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/picture
-s/lf01-pic/lf01-beispielentgeldabrechung.png>]
-<pictures/lf01-pic/lf01-rechtsgeschaefte.png, id=921, 399.74344pt x 328.97906pt
->
-File: pictures/lf01-pic/lf01-rechtsgeschaefte.png Graphic file (type png)
- <use pictures/lf01-pic/lf01-rechtsgeschaefte.png>
-Package pdftex.def Info: pictures/lf01-pic/lf01-rechtsgeschaefte.png used on in
-put line 452.
-(pdftex.def)             Requested size: 519.6664pt x 427.67273pt.
-
-Overfull \hbox (64.42229pt too wide) in paragraph at lines 452--453
-[] 
- []
-
-[11]) [12 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/p
-ictures/lf01-pic/lf01-rechtsgeschaefte.png>]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01b.tex") [13
-
-
-]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f02.tex"
-<pictures/lf02-pic/lf02-projekt-dreieck.png, id=935, 577.15625pt x 414.54875pt>
-File: pictures/lf02-pic/lf02-projekt-dreieck.png Graphic file (type png)
-<use pictures/lf02-pic/lf02-projekt-dreieck.png>
-Package pdftex.def Info: pictures/lf02-pic/lf02-projekt-dreieck.png used on inp
-ut line 36.
-(pdftex.def)             Requested size: 230.8584pt x 165.81656pt.
- [14
-
-
- <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictures/l
-f02-pic/lf02-projekt-dreieck.png>]
-Overfull \hbox (10.55887pt too wide) in paragraph at lines 51--52
-[]\T1/lmss/m/n/10.95 Arbeitspakete wer-den in ei-nem Pro-jekt-struk-tur-plan da
-r-ge-stellt, die Arbeitspaket-Definitionen
- []
-
-
-Overfull \hbox (91.3163pt too wide) in paragraph at lines 57--58
-\T1/lmss/m/n/10.95 den, bzw. was ist zu-nächst \T1/lmss/m/sl/10.95 nicht \T1/lm
-ss/m/n/10.95 mach-bar? Hilfs-mit-tel sind z.B. Machbarkeits-/Durchführbarkeitsa
-nalysen,
- []
-
-
-Overfull \hbox (2.7066pt too wide) in paragraph at lines 61--62
-[]\T1/lmss/bx/n/10.95 Womit \T1/lmss/m/n/10.95 bzw. \T1/lmss/bx/n/10.95 wo-durc
-h \T1/lmss/m/n/10.95 soll die Rea-li-sie-rung er-fol-gen (Ein-satz von Material
--Ressourcen,
- []
-
-[15]
-Underfull \hbox (badness 1708) in paragraph at lines 103--103
-[]\T1/lmss/m/n/10.95 Beschreibt die un-mit-tel-ba-ren An-for-de-run-gen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-[16] [17]
-<pictures/lf02-pic/lf02-reine-projektorganisation.jpg, id=970, 1009.52156pt x 4
-90.83376pt>
-File: pictures/lf02-pic/lf02-reine-projektorganisation.jpg Graphic file (type j
-pg)
- <use pictures/lf02-pic/lf02-reine-projektorganisation.jpg>
-Package pdftex.def Info: pictures/lf02-pic/lf02-reine-projektorganisation.jpg u
-sed on input line 192.
-(pdftex.def)             Requested size: 302.85881pt x 147.25125pt.
-
-<pictures/lf02-pic/lf02-projektkoordination.jpg, id=971, 849.1725pt x 319.94531
-pt>
-File: pictures/lf02-pic/lf02-projektkoordination.jpg Graphic file (type jpg)
- <use pictures/lf02-pic/lf02-projektkoordination.jpg>
-Package pdftex.def Info: pictures/lf02-pic/lf02-projektkoordination.jpg used on
- input line 205.
-(pdftex.def)             Requested size: 254.75371pt x 95.98433pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-[18 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/picture
-s/lf02-pic/lf02-reine-projektorganisation.jpg> <C:/Users/Tobias/Documents/SMS S
-iemag/Berufsschule/hhbkfsx2-summary/pictures/lf02-pic/lf02-projektkoordination.
-jpg>]
-<pictures/lf02-pic/lf02-einliniensystem.jpg, id=977, 746.79pt x 572.1375pt>
-File: pictures/lf02-pic/lf02-einliniensystem.jpg Graphic file (type jpg)
-
-<use pictures/lf02-pic/lf02-einliniensystem.jpg>
-Package pdftex.def Info: pictures/lf02-pic/lf02-einliniensystem.jpg used on inp
-ut line 235.
-(pdftex.def)             Requested size: 224.03873pt x 171.64256pt.
-
-<pictures/lf02-pic/lf02-mehrliniensystem.jpg, id=978, 766.36313pt x 486.31688pt
->
-File: pictures/lf02-pic/lf02-mehrliniensystem.jpg Graphic file (type jpg)
- <use pictures/lf02-pic/lf02-mehrliniensystem.jpg>
-Package pdftex.def Info: pictures/lf02-pic/lf02-mehrliniensystem.jpg used on in
-put line 239.
-(pdftex.def)             Requested size: 229.9107pt x 145.89618pt.
-
-<pictures/lf02-pic/lf02-stabliniensystem.jpg, id=979, 988.44281pt x 572.1375pt>
-File: pictures/lf02-pic/lf02-stabliniensystem.jpg Graphic file (type jpg)
-<use pictures/lf02-pic/lf02-stabliniensystem.jpg>
-Package pdftex.def Info: pictures/lf02-pic/lf02-stabliniensystem.jpg used on in
-put line 243.
-(pdftex.def)             Requested size: 296.53513pt x 171.64256pt.
- [19 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictur
-es/lf02-pic/lf02-einliniensystem.jpg> <C:/Users/Tobias/Documents/SMS Siemag/Ber
-ufsschule/hhbkfsx2-summary/pictures/lf02-pic/lf02-mehrliniensystem.jpg>]
-Underfull \hbox (badness 4072) in paragraph at lines 263--264
-\T1/lmss/m/n/10.95 on-Investment-Analyse, Break-Even-Analyse, Make-or-
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 264--265
-[]\T1/lmss/m/n/10.95 kooperativer Füh-rungs-stil, funk-tio-nie-ren-de Un-ter-ne
-h-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-\T1/lmss/m/n/10.95 Ver-ant-wor-tungs-be-rei-chen, Soft-wa-re-aus-stat-tung, die
-
- []
-
-
-Underfull \hbox (badness 6380) in paragraph at lines 264--265
-\T1/lmss/m/n/10.95 schnel-le Er-he-bung von Un-ter-neh-mens-da-ten fle-xi-bel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--267
-
- []
-
-
-Overfull \hbox (16.99998pt too wide) in paragraph at lines 268--281
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--281
-
- []
-
-[20 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/picture
-s/lf02-pic/lf02-stabliniensystem.jpg>] [21] [22] [23]
-<pictures/lf02-pic/lf02-maslow.png, id=1004, 694.595pt x 601.24625pt>
-File: pictures/lf02-pic/lf02-maslow.png Graphic file (type png)
-
-<use pictures/lf02-pic/lf02-maslow.png>
-Package pdftex.def Info: pictures/lf02-pic/lf02-maslow.png used on input line 3
-73.
-(pdftex.def)             Requested size: 208.38011pt x 180.37526pt.
- [24 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictur
-es/lf02-pic/lf02-maslow.png>]) [25]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-oeni.waec.tex" [26
-
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 94.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 94.
- [27] [28] [29] [30] [31] [32] [33]) [34]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wieg.tex") [35
-
-
-]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wiss.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
@@ -1278,10 +853,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
+[2]
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 49.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+LaTeX Font Info:    No file OMSlmss.fd. on input line 49.
 
- []
+
+LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 49.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
@@ -1294,515 +874,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-[36
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--109
-
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-) [38] [39]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-dig.tech.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-) [40
-
-
-]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f05.tex") [41
-
-
-]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06prog.tex"
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 17.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--33
-
- []
-
-
-Overfull \hbox (20.12982pt too wide) in paragraph at lines 34--35
-\T1/lmss/m/n/10.95 wird und bei \T1/lmtt/m/n/10.95 <ol> \T1/lmss/m/n/10.95 die 
-Lis-ten-ele-men-te durch-num-me-riert wer-den. Sie-he da-zu auch \T1/lmtt/m/n/1
-0.95 lf06prog-listen.html
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-[42
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 50--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-LaTeX Warning: File `pictures/lf06prog-pic/lf06prog-for-pap.png' not found on i
-nput line 103.
-
-
-! Package pdftex.def Error: File `pictures/lf06prog-pic/lf06prog-for-pap.png' n
-ot found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 ...ctures/lf06prog-pic/lf06prog-for-pap.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-<pictures/lf06prog-pic/lf06prog-for-struct.png, id=1149, 425.59pt x 302.12875pt
->
-File: pictures/lf06prog-pic/lf06prog-for-struct.png Graphic file (type png)
- <use pictures/lf06prog-pic/lf06prog-for-struct.png>
-Package pdftex.def Info: pictures/lf06prog-pic/lf06prog-for-struct.png used on 
-input line 104.
-(pdftex.def)             Requested size: 170.23297pt x 120.84935pt.
-
-
-LaTeX Warning: File `pictures/lf06prog-pic/lf06prog-while-fuss.png' not found o
-n input line 109.
-
-
-! Package pdftex.def Error: File `pictures/lf06prog-pic/lf06prog-while-fuss.png
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 ...res/lf06prog-pic/lf06prog-while-fuss.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-<pictures/lf06prog-pic/lf06prog-while-fuss-struct.png, id=1150, 319.1925pt x 35
-4.32375pt>
-File: pictures/lf06prog-pic/lf06prog-while-fuss-struct.png Graphic file (type p
-ng)
- <use pictures/lf06prog-pic/lf06prog-while-fuss-struct.png>
-Package pdftex.def Info: pictures/lf06prog-pic/lf06prog-while-fuss-struct.png u
-sed on input line 110.
-(pdftex.def)             Requested size: 127.67473pt x 141.72697pt.
- [43 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictur
-es/lf06prog-pic/lf06prog-for-struct.png>]
-
-LaTeX Warning: File `pictures/lf06prog-pic/lf06prog-while-kopf.png' not found o
-n input line 113.
-
-
-! Package pdftex.def Error: File `pictures/lf06prog-pic/lf06prog-while-kopf.png
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 ...res/lf06prog-pic/lf06prog-while-kopf.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-<pictures/lf06prog-pic/lf06prog-while-kopf-struct.png, id=1158, 319.1925pt x 35
-4.32375pt>
-File: pictures/lf06prog-pic/lf06prog-while-kopf-struct.png Graphic file (type p
-ng)
- <use pictures/lf06prog-pic/lf06prog-while-kopf-struct.png>
-Package pdftex.def Info: pictures/lf06prog-pic/lf06prog-while-kopf-struct.png u
-sed on input line 114.
-(pdftex.def)             Requested size: 127.67473pt x 141.72697pt.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
-File: lstlang2.sty 2014/09/06 1.5e listings language file
-)
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06p
-rog-code/lf06prog-switch.case.php")
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-) [44 <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictu
-res/lf06prog-pic/lf06prog-while-fuss-struct.png> <C:/Users/Tobias/Documents/SMS
- Siemag/Berufsschule/hhbkfsx2-summary/pictures/lf06prog-pic/lf06prog-while-kopf
--struct.png>]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06db.tex"
-<pictures/lf06db-pic/lf06db-begriffszusammenhang.png, id=1179, 501.875pt x 439.
-6425pt>
-File: pictures/lf06db-pic/lf06db-begriffszusammenhang.png Graphic file (type pn
-g)
- <use pictures/lf06db-pic/lf06db-begriffszusammenhang.png>
-Package pdftex.def Info: pictures/lf06db-pic/lf06db-begriffszusammenhang.png us
-ed on input line 5.
-(pdftex.def)             Requested size: 200.74643pt x 175.85388pt.
- [45
-
-
- <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictures/l
-f06db-pic/lf06db-begriffszusammenhang.png>]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-ddl-listing.txt") [46]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-dql-listing-1.txt"
-Overfull \hbox (11.22966pt too wide) in paragraph at lines 7--8
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (30.93982pt too wide) in paragraph at lines 8--9
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)
-Overfull \hbox (4.6596pt too wide) in paragraph at lines 21--87
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-dql-listing-2.txt") [47]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-wildcards.txt")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-ddl-describe.txt")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\code/lf06d
-b-code/lf06db-dml-listing-1.txt" [48]) [49]) [50]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/d
-ko.tex"
-<pictures/dko-pic/dko-gehirnaufbau.png, id=1324, 501.875pt x 389.455pt>
-File: pictures/dko-pic/dko-gehirnaufbau.png Graphic file (type png)
-
-<use pictures/dko-pic/dko-gehirnaufbau.png>
-Package pdftex.def Info: pictures/dko-pic/dko-gehirnaufbau.png used on input li
-ne 17.
-(pdftex.def)             Requested size: 351.31009pt x 272.61664pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
-
- []
-
-[51
-
-
- <C:/Users/Tobias/Documents/SMS Siemag/Berufsschule/hhbkfsx2-summary/pictures/d
-ko-pic/dko-gehirnaufbau.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--44
-
- []
-
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-) [54]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/p
-k.tex") [55
-
-
-]
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\credits.te
-x") [56
-
-
-]
+) [3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
 
 ("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\1_zusammen
 fassung.aux"
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01a.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f01b.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f02.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-oeni.waec.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wieg.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-wiss.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f04-dig.tech.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f05.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06prog.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/l
-f06db.aux")
 ("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/d
-ko.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\sections/p
-k.aux")
-("C:\Users\Tobias\Documents\SMS Siemag\Berufsschule\hhbkfsx2-summary\credits.au
-x"))
+ko.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `1_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: D137C83D12C93798F1C2B58510367B56;13613.
+(rerunfilecheck)             Checksum: ED92AF6B64F235B67996489F7A42E982;582.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1810,40 +897,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 12419 strings out of 493921
- 192499 string characters out of 3144873
- 524059 words of memory out of 3000000
- 14932 multiletter control sequences out of 15000+200000
- 66436 words of font info for 58 fonts, out of 3000000 for 9000
+ 9116 strings out of 493921
+ 132165 string characters out of 3144873
+ 227692 words of memory out of 3000000
+ 12236 multiletter control sequences out of 15000+200000
+ 38329 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,12n,45p,1097b,2924s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathex.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/f
-eybr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feymo1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/lm/lmss9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
-sso10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/lm/lmtt9.pfb>
-Output written on 1_zusammenfassung.pdf (60 pages, 2385925 bytes).
+ 33i,11n,43p,1159b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/lm/lmsso10.pfb>
+Output written on 1_zusammenfassung.pdf (4 pages, 178111 bytes).
 PDF statistics:
- 1558 PDF objects out of 1728 (max. 8388607)
- 470 named destinations out of 1000 (max. 500000)
- 1419 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 

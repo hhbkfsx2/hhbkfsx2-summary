@@ -115,5 +115,10 @@ lf06prog-while-kopf-struct
 ================================================================================
 (8) dko
 
+dko-gehirnaufbau
+>URL:		http://commons.wikimedia.org/wiki/File:Gehirn,_lateral_-_Lobi_%2B_Stammhirn_%2B_Cerebellum_deu.svg
+>Urheber:	NEUROtiker (Wiki-Benutzername)
+>Lizenz:	CC-BY-SA 3.0
+
 ================================================================================
 (9) pk
