@@ -8,7 +8,7 @@
 %%% Anfang: HTML / PHP
 \subsection{Einführung in HTML und PHP}
 
-HTML ist, wie der Name -- HyperText Markup Language -- schon sagt, eine Beschreibungsssprache. Im Gegensatz zu Word sieht das interpretierte Ergebnis eines HTML-Dokuments nicht so aus, wie sie geschrieben wurde. HTML ist also eher mit \LaTeX zu vergleich.
+HTML ist, wie der Name -- HyperText Markup Language -- schon sagt, eine Beschreibungsssprache. Der aktuelle Standard lautet HTML 5 und basiert auf XHTML. Im Gegensatz zu Word sieht das interpretierte Ergebnis eines HTML-Dokuments nicht so aus, wie sie geschrieben wurde. HTML ist also eher mit \LaTeX zu vergleich. Das heißt, HTML ist keine Programmiersprache.
 
 In den folgenden Abschnitten werden zunächst die wichtigsten Tags beschrieben, um HTML-Dokumente zu strukturieren. Anschließend werden die Möglichkeiten von HTML anhand von Aufgaben und deren Lösungen dargestellt.
 
@@ -71,12 +71,75 @@ title & Titel des Bildes\\
 
 {\bf Kommentare}. . .\ \ lassen sich in HTML-Dokumenten einfügen, indem sie zwischen \verb+<!-- -->+ geschrieben werden.
 
-%%% Anfang: HTML / PHP > Aufgaben
-\subsubsection{Aufgaben: HTML und PHP}
+%%% Ende: HTML-Kurzreferenz
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: PHP
+\subsection{PHP}
+
+PHP ist eine Skriptsprache und basiert auf der C-Syntax.
+
+%%% Anfang: PHP > Vergleichsoperator
+\subsubsection{Vergleichsoperatoren und Verknüpfungen}
+PHP unterstützt ein Reihe von Vergleichsoperatoren. $=$ ist kein Vergleichsoperator, sondern eine Zuweisung.
+
+\begin{tabular}{lll}
+{\bf Operator} & {\bf Bedeutung} & {\bf Beispiel}\\
+$==$ & Vergleich auf Gleichheit & \$zahl $== 5$\\
+$===$ & Vergleich auf Gleicheit inkl. Typenprüfung & \$zahl $=== 5$\\
+$!=$ & ungleich & \$zahl $!= 5$\\
+$<$ & kleiner & & \$zahl $< 5$\\
+$<=$ & kleiner oder gleich & \$zahl $<= 5$\\
+$>$ & größer & & \$zahl $> 5$\\
+$>=$ & größer oder gleich & \$zahl $>= 5$\\
+\end{tabular}
+
+\begin{tabular}{lll}
+\&\& & logisches Und & \$zahl $<= 1$ \&\& \$zahl $> 4$\\
+\|\| & logisches Oder & \$zahl $== 0$ \|\| \$zahl $< 0$\\
+$!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
+\end{tabular}
 
 
 
-%%% Ende: HTML / PHP
+%%% Ende: PHP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Formulardaten}
+
+\subsubsection{Formulardaten: HTML}
+
+Im Listing [Nr] steht \texttt{action="\ script.php"}. Dies bezieht sich auf den Namen des Skriptes, an welches die Formulardaten beim Drücken auf den Submit-Button weitergereicht werden sollen.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
+	\label{lst:html-formulardaten},captionpos=b,language=HTML]
+	{code/lf06prog-code/lf06prog-formulardaten.html}
+
+Als \texttt{method} lässt sich \texttt{POST} oder \texttt{GET} wählen. Der Unterschied zwischen \texttt{POST} und \texttt{GET} besteht darin, dass die Formulardaten von \texttt{GET} in der URL auftauchen. Dadurch werden die geforderten Daten sichtbar und durch brute force angreifbar. Ein weiterer Nachteil von \texttt{GET} besteht darin, dass die übergebenen Daten nicht größer als 2KB sein dürfen. Diese Nachteile und Beschränkungen gelten nicht für \texttt{POST}. Daher ist \texttt{POST} zu bevorzugen.
+
+Der wichtigste Teil, um Formulardaten abzufragen, sind die Felder, in denen sie eingetragen werden können. Die Felder lassen sich wie im Listing gezeigt mit \texttt{<input .../>} einfügen. Beispielsweise kann mit dem type \texttt{text} ein String in der Variable \texttt{txt\_variablenname} an das oben genannte Skript übergeben werden.
+\begin{itemize}
+	\item \texttt{text}: der type \texttt{text} nimmt noch weitere Attribute, wie bspw. \texttt{size} und \texttt{maxlength}. Ersteres gibt die sichtbare Länge des Feldes an und letzteres die maximale Länge des Inputs.
+	\item \texttt{radio}: auch hier gilt, dass mit dem \texttt{name} der Variablenname definiert wird. Darüber hinaus beschreibt \texttt{value} den Wert, den die Variable annimmt, wenn der Radiobutton angeklickt wird.
+	\item \texttt{submit}: im Gegensatz zum type \texttt{radio} beschreibt \texttt{value} hier die Beschriftung des Submit-Buttons.
+\end{itemize} 
+
+\subsubsection{Formulardaten: PHP}
+
+Das nächste Listing zeigt, wie die Formulardaten in PHP verarbeitet werden können. Zu Anfang des Listings findet sich der Bereich \ql Variablen setzen\qr. Diese Aufteilung ist nicht notwendig, sondern vereinfacht nur die Les- und Wartbarkeit des Codes. Sollten sich die Variablennamen später einmal ändern, muss nur die eine Zuweisung angepasst werden und nicht jedes Vorkommen der Variable.
+
+
+\lstinputlisting
+	[basicstyle=\small,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
+	\label{lst:html-formulardaten},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-formulardaten.php}
+
+%%% Anfang: Strukt. Programmierung
+\subsection{Strukturierte Programmierung}
+Strukturierte ist ein programmiersprachenübergreifendes Programmierparadigma. Es beinhaltet zum einen die baumartige Zerlegung eines Programms in Teilprogramme und enthält somit das Paradigma der prozeduralen Programmierung. Zum anderen verlangt die strukturierte Programmierung auf der untersten Ebene die Beschränkung auf drei Kontrollstrukturen: (1) Sequenzen, (2) Verzweigung und (3) Schleifen.
+
+%%% Ende: Strukt. Programmierung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Anfang: Struktogramm
@@ -106,11 +169,11 @@ title & Titel des Bildes\\
 \subsubsection{WHILE}
 
 % While: Fuss
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss.png}
+\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-struct.png}
 
 % While: Kopf
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf.png}
+\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-struct.png}
 
 %%% Anfang: Verzweigung > Switch
@@ -131,3 +194,6 @@ title & Titel des Bildes\\
 
 %%% Ende: Verzweigung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Aufgaben
+\subsubsection{Aufgaben und Beispiele}
