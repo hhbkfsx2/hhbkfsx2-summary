@@ -75,10 +75,13 @@ so gibt es zwischen den Wörtern "Test" keine Trennlinie.
 	\end{lstlisting}
 Besser: (Beispiel!)
 	\lstinputlisting
-		[caption={Ein rudimentäres HTML-Beispiel}
-		\label{lst:HTML-Beispiel},
-		captionpos=t,language=HTML]
-		{beispiel.html}
+		[basicstyle=\small,				#Schriftgröße
+		showstringspaces=false,				#!Whitespaces
+		caption={Indexadressierte Arrays in PHP},	
+		\label{lst:beispiel},				
+		captionpos=b,					#Zentriert
+		language=PHP]					#Programmierspr
+		{path/to/beispiel.php}				#Pfad
 Es können auch externe Dateien -- hier "beispiel.html" eingebunden werden.
 Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer Quell-Code
 einbinden möchte: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings

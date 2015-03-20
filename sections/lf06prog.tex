@@ -85,8 +85,8 @@ PHP ist eine Skriptsprache und basiert auf der C-Syntax.
 PHP unterscheidet wie die Bash zwischen schwacher und starker Quotation. Schwache Quotation bedeutet, dass Funktionen innerhalb der Anführungszeichen \" interpretiert werden. Das bedeutet, dass Variablennamen aufgelöst werden und statt ihrer der entsprechende Werte ausgegeben wird. Starke Quotation lässt sich mit einfachen Anführungszeichen \' umsetzen. Innerhalb der einfachen Anführungszeichen werden die Funktionen nicht interepretiert, sodass statt des Wertes der Variablenname ausgegeben wird. Im Listing [Nr] befindet sich ein Beispiel für schwache und starke Quotation in PHP.
 
 \lstinputlisting
-	[basicstyle=\small,caption={Indexadressierte Arrays in PHP}
-	\label{lst:quotation},captionpos=b,language=PHP]
+	[basicstyle=\small,showstringspaces=false,caption={Indexadressierte Arrays in PHP}
+	\label{lst:array-index},captionpos=b,language=PHP]
 	{code/lf06prog-code/lf06prog-array-index.php}
 	
 Möchte man sowohl den Variablennamen als auch den Wert ausgeben, lässt sich die Quotation auch unterbrechen. Dies ist im dritten \texttt{echo}-Befehl des Listings zu sehen. Die Punkte vor und nach dem Variablennamen bedeuten, dass der Inhalt der Variable der Ausgabe angehängt wird.
@@ -146,12 +146,19 @@ Programmierparadigmas.
 {\bf Elemente:}\\
 \begin{itemize}
 	\item Oval: Start/Stopp\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-start-stopp.png}
 	\item Pfeil/Linie: Verbindung zum nächstfolgenden Element\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-pfeil.png}
 	\item Rechteckt: Operationen\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-operation.png}	
 	\item Rechteck mit doppelten, vertikalen Linien: Unterprogrammaufruf\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-unterprogramm.png}	
 	\item Raute: Verzweigung\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-verzweigung.png}	
 	\item Parallelogramm: Ein- und Ausgabe (nicht nach DIN 66001 1983!)\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-ein-ausgabe.png}	
 	\item Ergänzung: Schleife\\
+		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-schleife.png}
 \end{itemize}
 
 {\bf Struktogramm}~\\
@@ -175,24 +182,20 @@ PHP unterstützt ein Reihe von Vergleichsoperatoren. $=$ ist kein Vergleichsoper
 \begin{tabular}{lll}
 {\bf Operator} & {\bf Bedeutung} & {\bf Beispiel}\\
 $==$ & Vergleich auf Gleichheit & \$zahl $== 5$\\
-$===$ & Vergleich auf Gleicheit inkl. Typenprüfung & \$zahl $=== 5$\\
+$===$ & Vergleich auf Typengleichheit & \$zahl $=== 5$\\
 $!=$ & ungleich & \$zahl $!= 5$\\
-$<$ & kleiner & & \$zahl $< 5$\\
+$<$ & kleiner & \$zahl $< 5$\\
 $<=$ & kleiner oder gleich & \$zahl $<= 5$\\
-$>$ & größer & & \$zahl $> 5$\\
+$>$ & größer & \$zahl $> 5$\\
 $>=$ & größer oder gleich & \$zahl $>= 5$\\
-\end{tabular}
 
-\begin{tabular}{lll}
 \&\& & logisches Und & \$zahl $<= 1$ \&\& \$zahl $> 4$\\
-\|\| & logisches Oder & \$zahl $== 0$ \|\| \$zahl $< 0$\\
+|| & logisches Oder & \$zahl $== 0$ || \$zahl $< 0$\\
 $!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
-\end{tabular}
 
-\begin{tabular}{ll}
-\texttt{is_numeric( \$var )} & prüft, ob eine Variable eine Zahl oder einen numerischen String enthält\\
-\texttt{isset( \$var )} & prüft, ob eine Variable existiert\\
-\texttt{empty( \$var )} & prüft, ob ein Variableninhalt leer ist\\
+\texttt{is\_numeric( \$var )} & Variable Zahl? &\\
+\texttt{isset( \$var )} & Existiert Variable? &\\
+\texttt{empty( \$var )} & Variable leer? &\\
 \end{tabular}
 
 %%% Anfang: Verzweigung > IF
