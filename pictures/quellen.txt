@@ -8,6 +8,46 @@ lf01-marktformen
 >Urheber:	Dirk Piekenbrock
 >Lizenz:	---
 
+lf01-Maengelarten
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+lf01-Pflichten_Kaufvertrag
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+lf01-Rechte_mangelhafte_Leistung
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+
+lf01-existenzgruendung
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+
+lf01-uebersicht_unternehmen_01
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+
+lf01-uebersicht_unternehmen_02
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+
+lf01-Unternehmensueberblick
+>URL:		---
+>Urheber:	Tobias Krenz	
+>Lizenz:	CC-BY-SA 3.0
+
+
 ================================================================================
 (2) lf02-pic
 
