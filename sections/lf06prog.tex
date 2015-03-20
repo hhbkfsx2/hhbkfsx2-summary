@@ -79,8 +79,97 @@ title & Titel des Bildes\\
 
 PHP ist eine Skriptsprache und basiert auf der C-Syntax.
 
-%%% Anfang: PHP > Vergleichsoperator
-\subsubsection{Vergleichsoperatoren und Verknüpfungen}
+%%% Anfang: PHP > Quotation
+\subsubsection{Quotation unter PHP}
+
+PHP unterscheidet wie die Bash zwischen schwacher und starker Quotation. Schwache Quotation bedeutet, dass Funktionen innerhalb der Anführungszeichen \" interpretiert werden. Das bedeutet, dass Variablennamen aufgelöst werden und statt ihrer der entsprechende Werte ausgegeben wird. Starke Quotation lässt sich mit einfachen Anführungszeichen \' umsetzen. Innerhalb der einfachen Anführungszeichen werden die Funktionen nicht interepretiert, sodass statt des Wertes der Variablenname ausgegeben wird. Im Listing [Nr] befindet sich ein Beispiel für schwache und starke Quotation in PHP.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Indexadressierte Arrays in PHP}
+	\label{lst:quotation},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-array-index.php}
+	
+Möchte man sowohl den Variablennamen als auch den Wert ausgeben, lässt sich die Quotation auch unterbrechen. Dies ist im dritten \texttt{echo}-Befehl des Listings zu sehen. Die Punkte vor und nach dem Variablennamen bedeuten, dass der Inhalt der Variable der Ausgabe angehängt wird.
+
+%%% Ende: PHP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Formulardaten
+\subsection{Formulardaten}
+
+%%% Anfang: Formulardaten > HTML
+\subsubsection{Formulardaten: HTML}
+
+Im Listing [Nr] steht \texttt{action="\ script.php"}. Dies bezieht sich auf den Namen des Skriptes, an welches die Formulardaten beim Drücken auf den Submit-Button weitergereicht werden sollen.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
+	\label{lst:html-formulardaten},captionpos=b,language=HTML]
+	{code/lf06prog-code/lf06prog-formulardaten.html}
+
+Als \texttt{method} lässt sich \texttt{POST} oder \texttt{GET} wählen. Der Unterschied zwischen \texttt{POST} und \texttt{GET} besteht darin, dass die Formulardaten von \texttt{GET} in der URL auftauchen. Dadurch werden die geforderten Daten sichtbar und durch brute force angreifbar. Ein weiterer Nachteil von \texttt{GET} besteht darin, dass die übergebenen Daten nicht größer als 2KB sein dürfen. Diese Nachteile und Beschränkungen gelten nicht für \texttt{POST}. Daher ist \texttt{POST} zu bevorzugen.
+
+Der wichtigste Teil, um Formulardaten abzufragen, sind die Felder, in denen sie eingetragen werden können. Die Felder lassen sich wie im Listing gezeigt mit \texttt{<input .../>} einfügen. Beispielsweise kann mit dem type \texttt{text} ein String in der Variable \texttt{txt\_variablenname} an das oben genannte Skript übergeben werden.
+\begin{itemize}
+	\item \texttt{text}: der type \texttt{text} nimmt noch weitere Attribute, wie bspw. \texttt{size} und \texttt{maxlength}. Ersteres gibt die sichtbare Länge des Feldes an und letzteres die maximale Länge des Inputs.
+	\item \texttt{radio}: auch hier gilt, dass mit dem \texttt{name} der Variablenname definiert wird. Darüber hinaus beschreibt \texttt{value} den Wert, den die Variable annimmt, wenn der Radiobutton angeklickt wird.
+	\item \texttt{submit}: im Gegensatz zum type \texttt{radio} beschreibt \texttt{value} hier die Beschriftung des Submit-Buttons.
+\end{itemize} 
+
+%%% Anfang: Formulardaten > PHP
+\subsubsection{Formulardaten: PHP}
+
+Das nächste Listing zeigt, wie die Formulardaten in PHP verarbeitet werden können. Zu Anfang des Listings findet sich der Bereich \ql Variablen setzen\qr. Diese Aufteilung ist nicht notwendig, sondern vereinfacht nur die Les- und Wartbarkeit des Codes. Sollten sich die Variablennamen später einmal ändern, muss nur die eine Zuweisung angepasst werden und nicht jedes Vorkommen der Variable.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
+	\label{lst:html-formulardaten},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-formulardaten.php}
+
+%%% Anfang: Strukt. Programmierung
+\subsection{Strukturierte Programmierung}
+Strukturierte ist ein programmiersprachenübergreifendes Programmierparadigma. Es beinhaltet zum einen die baumartige Zerlegung eines Programms in Teilprogramme und enthält somit das Paradigma der prozeduralen Programmierung. Zum anderen verlangt die strukturierte Programmierung auf der untersten Ebene die Beschränkung auf drei Kontrollstrukturen: (1) Sequenzen, (2) Verzweigung und (3) Schleifen.
+
+%%% Ende: Strukt. Programmierung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Struktogramm
+\subsection{Programmablaufplan und Struktogramm}
+
+{\bf Programmablaufplan (PAP)}~\\
+
+Ein Programmablaufplan (PAP) (auch Flussdiagramm, engl. {\it flowchart}) ist eine graphische Darstellung von Algorithmen in einem Programmen und beschreibt die Operationen zur Lösung einer Aufgabe. Die Symbole für Programmablaufpläne sind in der DIN 66001 genormt. Dort werden auch Symbole für Datenflusspläne definiert. Im Bereich der Softwareerstellung werden sie nur noch selten verwendet: Programmcode moderner Programmiersprachen bietet ähnlichen Abstraktionsgrad, ist jedoch einfacher zu erstellen und in der Regel sehr viel einfacher zu verändern als ein Ablaufdiagramm.
+
+Das Konzept der Programmablaufpläne stammt, ebenso wie das etwas jüngere Nassi-Shneiderman-Diagramm (Struktogramm), aus der Zeit des imperativen
+Programmierparadigmas.
+
+{\bf Elemente:}\\
+\begin{itemize}
+	\item Oval: Start/Stopp\\
+	\item Pfeil/Linie: Verbindung zum nächstfolgenden Element\\
+	\item Rechteckt: Operationen\\
+	\item Rechteck mit doppelten, vertikalen Linien: Unterprogrammaufruf\\
+	\item Raute: Verzweigung\\
+	\item Parallelogramm: Ein- und Ausgabe (nicht nach DIN 66001 1983!)\\
+	\item Ergänzung: Schleife\\
+\end{itemize}
+
+{\bf Struktogramm}~\\
+
+Nassi-Shneiderman-Diagramme, auch Strukogramme genannt, 
+
+
+%%% Ende: Struktogramm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Anfang: Verzweigung
+\subsection{Verzweigungen und Schleifen}
+
+In den folgenden Abschnitten werden wir uns mit IF-Verzweigungen sowie FOR- und WHILE-Schleifen in PHP beschäftigen. 
+
+%%% Anfang: Verzweigung > Operatoren
+\subsubsection{Vergleichsoperatoren, Verknüpfungen und Überprüfung von Eingabewerten}
+
 PHP unterstützt ein Reihe von Vergleichsoperatoren. $=$ ist kein Vergleichsoperator, sondern eine Zuweisung.
 
 \begin{tabular}{lll}
@@ -100,73 +189,28 @@ $>=$ & größer oder gleich & \$zahl $>= 5$\\
 $!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
 \end{tabular}
 
+\begin{tabular}{ll}
+\texttt{is_numeric( \$var )} & prüft, ob eine Variable eine Zahl oder einen numerischen String enthält\\
+\texttt{isset( \$var )} & prüft, ob eine Variable existiert\\
+\texttt{empty( \$var )} & prüft, ob ein Variableninhalt leer ist\\
+\end{tabular}
 
-
-%%% Ende: PHP
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Formulardaten}
-
-\subsubsection{Formulardaten: HTML}
-
-Im Listing [Nr] steht \texttt{action="\ script.php"}. Dies bezieht sich auf den Namen des Skriptes, an welches die Formulardaten beim Drücken auf den Submit-Button weitergereicht werden sollen.
-
-\lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
-	\label{lst:html-formulardaten},captionpos=b,language=HTML]
-	{code/lf06prog-code/lf06prog-formulardaten.html}
-
-Als \texttt{method} lässt sich \texttt{POST} oder \texttt{GET} wählen. Der Unterschied zwischen \texttt{POST} und \texttt{GET} besteht darin, dass die Formulardaten von \texttt{GET} in der URL auftauchen. Dadurch werden die geforderten Daten sichtbar und durch brute force angreifbar. Ein weiterer Nachteil von \texttt{GET} besteht darin, dass die übergebenen Daten nicht größer als 2KB sein dürfen. Diese Nachteile und Beschränkungen gelten nicht für \texttt{POST}. Daher ist \texttt{POST} zu bevorzugen.
-
-Der wichtigste Teil, um Formulardaten abzufragen, sind die Felder, in denen sie eingetragen werden können. Die Felder lassen sich wie im Listing gezeigt mit \texttt{<input .../>} einfügen. Beispielsweise kann mit dem type \texttt{text} ein String in der Variable \texttt{txt\_variablenname} an das oben genannte Skript übergeben werden.
-\begin{itemize}
-	\item \texttt{text}: der type \texttt{text} nimmt noch weitere Attribute, wie bspw. \texttt{size} und \texttt{maxlength}. Ersteres gibt die sichtbare Länge des Feldes an und letzteres die maximale Länge des Inputs.
-	\item \texttt{radio}: auch hier gilt, dass mit dem \texttt{name} der Variablenname definiert wird. Darüber hinaus beschreibt \texttt{value} den Wert, den die Variable annimmt, wenn der Radiobutton angeklickt wird.
-	\item \texttt{submit}: im Gegensatz zum type \texttt{radio} beschreibt \texttt{value} hier die Beschriftung des Submit-Buttons.
-\end{itemize} 
-
-\subsubsection{Formulardaten: PHP}
-
-Das nächste Listing zeigt, wie die Formulardaten in PHP verarbeitet werden können. Zu Anfang des Listings findet sich der Bereich \ql Variablen setzen\qr. Diese Aufteilung ist nicht notwendig, sondern vereinfacht nur die Les- und Wartbarkeit des Codes. Sollten sich die Variablennamen später einmal ändern, muss nur die eine Zuweisung angepasst werden und nicht jedes Vorkommen der Variable.
-
-
-\lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
-	\label{lst:html-formulardaten},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-formulardaten.php}
-
-%%% Anfang: Strukt. Programmierung
-\subsection{Strukturierte Programmierung}
-Strukturierte ist ein programmiersprachenübergreifendes Programmierparadigma. Es beinhaltet zum einen die baumartige Zerlegung eines Programms in Teilprogramme und enthält somit das Paradigma der prozeduralen Programmierung. Zum anderen verlangt die strukturierte Programmierung auf der untersten Ebene die Beschränkung auf drei Kontrollstrukturen: (1) Sequenzen, (2) Verzweigung und (3) Schleifen.
-
-%%% Ende: Strukt. Programmierung
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% Anfang: Struktogramm
-\subsection{Struktogramm und Ablaufplan}
-
-
-%%% Ende: Struktogramm
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% Anfang: Verzweigung
-\subsection{Einführung in Verzweigungen}
+%%% Anfang: Verzweigung > IF
+\subsubsection{IF}
 
 %%% Anfang: Verzweigung > Schleifen
 \subsubsection{Schleifen}
 
-\paragraph{Kopfgesteuerte Schleife}~\\
+In Programmiersprachen stellt eine Schleife ein Kontrollstruktur dar. Sie wiederholt einen Anweisungsblock, den sogenannten Schleifenkörper, solange, wie eine Bedingung gültig ist oder bis eine Abbruchbedingung eintritt. Es werden vorprüfende und nachprüfende Schleifen unterschieden. Zu den vorprüfenden Schleifen gehören die kopfgesteuerte WHILE-Schleife, die FOR-Schleife und die Mengenschleife (FOREACH). Die fußgesteuerte WHILE-Schleife fällt zusammen mit der REPEAT-Schleife unter die nachprüfenden Schleifen.
 
-\paragraph{Fußgesteuerte Schleife}~\\
-
-\subsubsection{IF}
-
-\subsubsection{FOR - Zählschleife}
+\paragraph{FOR - Zählschleife}~\\
 
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-struct.png}
 
-\subsubsection{WHILE}
+\paragraph{WHILE}~\\
+
+Die kopfgesteuerten WHILE-Schleifen unterscheiden sich von den fußgesteuerten dadruch, dass die Bedingung der Schleife bei letzterer erst nach dem einmaligen Durchlaufen der Schleife geprüft wird. Das bedeutet, dass fußgesteuerte Schleifen wie REPEAT immer mindestens einmal ausgeführt werden. Überspitzt lässt sich sagen, dass REPEAT erst schießt und dann fragt.
 
 % While: Fuss
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-pap.png}
@@ -182,14 +226,27 @@ Strukturierte ist ein programmiersprachenübergreifendes Programmierparadigma. E
 
 \end{tabular}
 \lstinputlisting
-	[caption={Ein Beispiel für Switch-Case-Anweisungen}
+	[basicstyle=\small,caption={Ein Beispiel für Switch-Case-Anweisungen}
 	\label{lst:Switch-Case},captionpos=b,language=PHP]
 	{code/lf06prog-code/lf06prog-switch.case.php}
 
+
+%%% Anfang: Verzweigung > Arrays
 \subsubsection{Arrays}
 
-\paragraph{Indexorientierte Arrays}~\\
+Der Datentyp Array kann beliebig viele, gleichartige Werte speichern. Im Gegensatz dazu können Variablen nur je einen Wert speichern. 
 
+%%% Anfang: Verzweigung > Arrays > Index
+\paragraph{Indexadressierte Arrays}~\\
+
+Indexadressierte Arrays arbeiten mit Indizes, um auf die gespeicherten Werte zu verweisen. Im Listing [Nr] ist die Zuordnung und Ausgabe von indexadressierten Arrays am Beispiel von PHP gezeigt. Darin zeigt sich der Charakter eines Indizes: um einen Wert auszugeben, muss der entsprechende Index referenziert werden. Bevor eine Variable als Array verwendet werden kann, muss sie als solches definiert werden. Dies geschieht mit der Funktion \texttt{array()}. Eine Eigenheit von PHP besteht darin, dass es automatisch erkennt, dass eine Variable als Array benutzt werden soll. D.h., der Code aus dem Listing wäre auch ohne die Definition der Variablen als Arrays fehlerfrei. Im Listing zeigt sich auch die Eigenschaft von PHP, Arrays ohne explizite Indizes einen Index beginnend bei $0$ zu zuordnen. In anderen Programmiersprachen muss der Index immer explizit angegeben werden.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Indexadressierte Arrays in PHP}
+	\label{lst:Switch-Case},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-array-index.php}
+
+%%% Anfang: Verzweigung > Arrays > Assozativ
 \paragraph{Assoziative Arrays}~\\
 
 %%% Ende: Verzweigung

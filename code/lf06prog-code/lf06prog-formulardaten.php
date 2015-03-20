@@ -7,5 +7,5 @@
  #Zuweisung einer GET-Variablen:
  #$get_var = $_GET["variablenname"];
  
- echo "Inhalt der Variable" $textvar:" $textvar";
+ echo 'Inhalt der Variable $textvar: '.$textvar.'.';
 ?>
