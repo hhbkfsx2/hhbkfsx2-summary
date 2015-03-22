@@ -79,6 +79,8 @@ title & Titel des Bildes\\
 
 PHP ist eine Skriptsprache und basiert auf der C-Syntax.
 
+Zur Erleichterung der Lesbarkeit von PHP-Code sollte die Formatierung der hier verwendete Beispiele verwendet werden.
+
 %%% Anfang: PHP > Quotation
 \subsubsection{Quotation unter PHP}
 
@@ -103,7 +105,7 @@ Möchte man sowohl den Variablennamen als auch den Wert ausgeben, lässt sich di
 Im Listing [Nr] steht \texttt{action="\ script.php"}. Dies bezieht sich auf den Namen des Skriptes, an welches die Formulardaten beim Drücken auf den Submit-Button weitergereicht werden sollen.
 
 \lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
+	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
 	\label{lst:html-formulardaten},captionpos=b,language=HTML]
 	{code/lf06prog-code/lf06prog-formulardaten.html}
 
@@ -122,7 +124,7 @@ Der wichtigste Teil, um Formulardaten abzufragen, sind die Felder, in denen sie 
 Das nächste Listing zeigt, wie die Formulardaten in PHP verarbeitet werden können. Zu Anfang des Listings findet sich der Bereich \ql Variablen setzen\qr. Diese Aufteilung ist nicht notwendig, sondern vereinfacht nur die Les- und Wartbarkeit des Codes. Sollten sich die Variablennamen später einmal ändern, muss nur die eine Zuweisung angepasst werden und nicht jedes Vorkommen der Variable.
 
 \lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
+	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
 	\label{lst:html-formulardaten},captionpos=b,language=PHP]
 	{code/lf06prog-code/lf06prog-formulardaten.php}
 
@@ -163,7 +165,21 @@ Programmierparadigmas.
 
 {\bf Struktogramm}~\\
 
-Nassi-Shneiderman-Diagramme, auch Strukogramme genannt, 
+Ein Nassi-Shneiderman-Diagramm, auch Strukogramm genannt, ist ein Diagrammtyp zur Darstellung von Programmentwürfen im Rahmen der strukturierten Programmierung. Struktogramme sind durch die DIN 66261 genormt.
+
+Das Vorgehen zur Erstellung von Struktogrammen entspricht der Top-Down-Programmierung. Dabei wird zunächst ein Gesamtkonzept entwickelt und diese dann in Teilprobleme zerlegt bis nur noch elementare Grundstrukturen wie Sequenzen und Kontrollstrukturen übrig bleiben. Diese können dann als Strukogramm oder Programmablaufplan visualisiert werden.
+
+\begin{itemize}
+	\item Sequenz: Jede Anweisung wird in einen rechteckigen Strukturblock geschrieben. Die Strukturblöcke werden sequentiell durchlaufen.\\
+	\item Einfache Verzweigung (Auswahl): Nur wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen.\\
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-einfache-auswahl-struct.png}
+	\item Zweifache Auswahl: Wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen. Trifft die Bedingung nicht zu (falsch), wird der Anweisungsblock 2 durchlaufen. Ein Anweisungsblock kann aus einer oder mehreren Anweisungen bestehen. Austritt unten nach Abarbeitung des jeweiligen Anweisungsblocks.\\
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-zweifache-auswahl-struct.png}
+	\item Verschachtelte Auswahl: Es folgt eine weitere Bedingung. Die Verschachtelung ist ebenso im Nein-Fall (noch) möglich.\\
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-verschachtelte-auswahl-struct.png}
+	\item Fallauswahl (Switch-Case): Besonders bei mehr als drei abzuprüfenden Bedingungen geeignet. Der Wert der Variable kann auf verschiedene Inhalte geprüft werden. Es wir dann der zugehörigen Anweisungsblock ausgeführt (switch, select). Eine Fallauswahl kann stets in eine verschachtelte Auswahl umgewandelt werden -- etwa wenn die später eingesetzte Programmiersprache Fallauswahl nicht beherrscht.\\
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-switch-case-struct.png}
+\end{itemize}
 
 
 %%% Ende: Struktogramm
@@ -201,7 +217,10 @@ $!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
 %%% Anfang: Verzweigung > IF
 \subsubsection{IF}
 
-Durch die Verwendung von IF lässt sich zwischen zwei Möglichkeiten auswählen, derjenigen, die ausgeführt wird, wenn die Bedingung zutrifft und derjenigen, für den Fall, dass die Bedingung nicht zutrifft. Generell kann die Bedingung einer IF-Konstruktion \texttt{true} oder \texttt{false} zurückgegeben. 
+Durch die Verwendung von IF lässt sich zwischen zwei Möglichkeiten auswählen, derjenigen, die ausgeführt wird, wenn die Bedingung zutrifft und derjenigen, für den Fall, dass die Bedingung nicht zutrifft. Generell kann die Bedingung einer IF-Konstruktion \texttt{true} oder \texttt{false} zurückgegeben.
+
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-if-einseitig-pap.png}
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-if-zweiseitig-pap.png}
 
 %%% Anfang: Verzweigung > Switch
 \subsubsection{Switch-Case}
@@ -213,7 +232,7 @@ Die Variable, deren Wert geprüft wird, wird {\it Selektor} genannt. Der {\it Se
 Im folgenden Listing ist eine Beispiel für Switch-Case-Konstrukte unter PHP gezeigt. Der Wert hinter \texttt{case} ist jeweils der Wert der Variable. Alle anderen Werte der Variable werden mit \texttt{default} abgefragt. Für das Beispiel bedeutet das, dass für alle Werte, die nicht $1$ oder $2$ sind, \ql ERR: not acceptable!\qr\ ausgegeben wird.
 
 \lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für Switch-Case-Anweisungen}
+	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für Switch-Case-Anweisungen}
 	\label{lst:Switch-Case},captionpos=b,language=PHP]
 	{code/lf06prog-code/lf06prog-switch.case.php}
 	
@@ -229,6 +248,11 @@ In Programmiersprachen stellt eine Schleife ein Kontrollstruktur dar. Sie wieder
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-struct.png}
 
+\lstinputlisting
+	[basicstyle=\small,caption={Zählschleife, FOR}
+	\label{lst:while-fuss},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-for.php}
+
 \paragraph{WHILE}~\\
 
 Die kopfgesteuerten WHILE-Schleifen unterscheiden sich von den fußgesteuerten dadruch, dass die Bedingung der Schleife bei letzterer erst nach dem einmaligen Durchlaufen der Schleife geprüft wird. Das bedeutet, dass fußgesteuerte Schleifen wie REPEAT immer mindestens einmal ausgeführt werden. Überspitzt lässt sich sagen, dass REPEAT erst schießt und dann fragt.
@@ -237,9 +261,19 @@ Die kopfgesteuerten WHILE-Schleifen unterscheiden sich von den fußgesteuerten d
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-struct.png}
 
+\lstinputlisting
+	[basicstyle=\small,caption={Fussgesteuerte WHILE-Schleife}
+	\label{lst:while-fuss},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-while-fuss.php}
+
 % While: Kopf
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-struct.png}
+
+\lstinputlisting
+	[basicstyle=\small,showstringspaces=false,caption={Kopfgesteuerte WHILE-Schleife}
+	\label{lst:while-kopf},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-while-kopf.php}
 
 %%% Anfang: Verzweigung > Arrays
 \subsubsection{Arrays}
@@ -252,8 +286,8 @@ Der Datentyp Array kann beliebig viele, gleichartige Werte speichern. Im Gegensa
 Indexadressierte Arrays arbeiten mit Indizes, um auf die gespeicherten Werte zu verweisen. Im Listing [Nr] ist die Zuordnung und Ausgabe von indexadressierten Arrays am Beispiel von PHP gezeigt. Darin zeigt sich der Charakter eines Indizes: um einen Wert auszugeben, muss der entsprechende Index referenziert werden. Bevor eine Variable als Array verwendet werden kann, muss sie als solches definiert werden. Dies geschieht mit der Funktion \texttt{array()}. Eine Eigenheit von PHP besteht darin, dass es automatisch erkennt, dass eine Variable als Array benutzt werden soll. D.h., der Code aus dem Listing wäre auch ohne die Definition der Variablen als Arrays fehlerfrei. Im Listing zeigt sich auch die Eigenschaft von PHP, Arrays ohne explizite Indizes einen Index beginnend bei $0$ zu zuordnen. In anderen Programmiersprachen muss der Index immer explizit angegeben werden.
 
 \lstinputlisting
-	[basicstyle=\small,caption={Indexadressierte Arrays in PHP}
-	\label{lst:Switch-Case},captionpos=b,language=PHP]
+	[basicstyle=\small,showstringspaces=false,caption={Indexadressierte Arrays in PHP}
+	\label{lst:array-index},captionpos=b,language=PHP]
 	{code/lf06prog-code/lf06prog-array-index.php}
 
 %%% Anfang: Verzweigung > Arrays > Assozativ
