@@ -7,6 +7,7 @@ empfehle ich zuerst den Wikipedia-Artikel zu lesen. Des Weiteren finden sich
 hier Arbeitsanweisungen, bespw. bezüglich der Verwendung von Bildern.
 ================================================================================
 Inhaltsverzeichnis
+
 	(1) Verwendung von Bildern
 	(2) LaTeX-Befehle
 		(2.1) Text-Formatierung
@@ -21,8 +22,8 @@ Inhaltsverzeichnis
 
 	Wer der Zusammenfassung Bilder hinzufügen möchte, fügt diese nach dem
 Namensschema "lf0x-bildname.jpg/png/svg..." unter pictures dem jeweiligen
-Lernfeld hinzu. Dabei ist zu beachten, dass die Quelle des Bildes unter pictures
-in der Datei quellen.txt dokumentiert wird!
+Lernfeld hinzu (Kleinschreibung beachten). Dabei ist zu beachten, dass die
+Quelle des Bildes unter pictures in der Datei quellen.txt dokumentiert wird!
 ================================================================================
 (2) LaTeX-Befehle
 
@@ -38,6 +39,7 @@ in der Datei quellen.txt dokumentiert wird!
 			Hervorhebung aus.
 ================================================================================
 (2.2) Überschriften:
+
 	1. Ordnung	\section{Überschrift}
 	1.1 Ordnung	\subsection{Überschrift}
 	1.1.1 Ordnng	\subsubsection{Überschrift}
@@ -50,6 +52,7 @@ in der Datei quellen.txt dokumentiert wird!
 	der schließenden Klammer "~\\" geschrieben werden; \paragraph{}~\\.
 ================================================================================
 (2.3) Tabellen:
+
 Der Code ...
 	\begin{tabular}{l|l|l}
 		Test & Test & Test\\
@@ -67,6 +70,7 @@ so gibt es zwischen den Wörtern "Test" keine Trennlinie.
 - "&" bezeichnet einen "Spalten-Sprung"
 ================================================================================
 (2.4) Quellcode einbinden
+
 	\begin{lstlisting}
 		Alles, was in diesem Bereich steht, wird von Texmaker nicht
 		interpretiert, sondern genau so ausgegeben, wie es hier

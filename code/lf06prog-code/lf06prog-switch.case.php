@@ -1,11 +1,15 @@
 <?php
- switch ($i)
+ $note = $_POST["txt_note"];
+ 
+ switch ($note)
  {
-  case 1:
-   echo "1";
-   break;
-  case 2:
-   echo "2";
-   break;
+  case 1:  { echo "Sehr gut";
+             break;
+           }
+  case 2:  { echo "Gut";
+             break;
+           }
+  default: { echo "ERR: not acceptable!";
+	       }
  }
 ?>

@@ -193,13 +193,31 @@ $>=$ & größer oder gleich & \$zahl $>= 5$\\
 || & logisches Oder & \$zahl $== 0$ || \$zahl $< 0$\\
 $!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
 
-\texttt{is\_numeric( \$var )} & Variable Zahl? &\\
+\texttt{is\_numeric( \$var )} & Variable Zahl-? &\\
 \texttt{isset( \$var )} & Existiert Variable? &\\
 \texttt{empty( \$var )} & Variable leer? &\\
 \end{tabular}
 
 %%% Anfang: Verzweigung > IF
 \subsubsection{IF}
+
+Durch die Verwendung von IF lässt sich zwischen zwei Möglichkeiten auswählen, derjenigen, die ausgeführt wird, wenn die Bedingung zutrifft und derjenigen, für den Fall, dass die Bedingung nicht zutrifft. Generell kann die Bedingung einer IF-Konstruktion \texttt{true} oder \texttt{false} zurückgegeben. 
+
+%%% Anfang: Verzweigung > Switch
+\subsubsection{Switch-Case}
+
+Mit dem Konstrukt Switch-Case lässt sich eine Mehrfachauswahl (mehrseitige Auswahl) realisieren. Damit ist es im Gegensatz zu IF-Konstrukten möglich, zwischen beliebigen Werten statt zwischen \texttt{true} und \texttt{false} zu unterscheiden.
+
+Die Variable, deren Wert geprüft wird, wird {\it Selektor} genannt. Der {\it Selektor} muss dafür vom Dateityp int oder char sein (in PHP auch string).
+
+Im folgenden Listing ist eine Beispiel für Switch-Case-Konstrukte unter PHP gezeigt. Der Wert hinter \texttt{case} ist jeweils der Wert der Variable. Alle anderen Werte der Variable werden mit \texttt{default} abgefragt. Für das Beispiel bedeutet das, dass für alle Werte, die nicht $1$ oder $2$ sind, \ql ERR: not acceptable!\qr\ ausgegeben wird.
+
+\lstinputlisting
+	[basicstyle=\small,caption={Ein Beispiel für Switch-Case-Anweisungen}
+	\label{lst:Switch-Case},captionpos=b,language=PHP]
+	{code/lf06prog-code/lf06prog-switch.case.php}
+	
+\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06-switch-case-pap.png}
 
 %%% Anfang: Verzweigung > Schleifen
 \subsubsection{Schleifen}
@@ -222,17 +240,6 @@ Die kopfgesteuerten WHILE-Schleifen unterscheiden sich von den fußgesteuerten d
 % While: Kopf
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-pap.png}
 \includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-struct.png}
-
-%%% Anfang: Verzweigung > Switch
-\subsubsection{Switch-Case}
-\begin{tabular}{l|l|l}
-
-\end{tabular}
-\lstinputlisting
-	[basicstyle=\small,caption={Ein Beispiel für Switch-Case-Anweisungen}
-	\label{lst:Switch-Case},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-switch.case.php}
-
 
 %%% Anfang: Verzweigung > Arrays
 \subsubsection{Arrays}

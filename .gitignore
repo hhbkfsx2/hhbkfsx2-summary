@@ -7,3 +7,6 @@
 *log
 # geo.sql ignorieren
 *geo.sql
+# lf06prog-data ignorieren
+*graphml
+*.nsd
