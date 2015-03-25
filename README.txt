@@ -16,6 +16,7 @@ Inhaltsverzeichnis
 		(2.4) Quellcode einbinden
 		(2.5) Tabs verwenden
 		(2.6) Anführungszeichen
+		(2.7) Abstände in Itemize
 	(3) Strukturierung von Sections
 ================================================================================
 (1) Verwendung von Bildern:
@@ -114,7 +115,21 @@ Anführungszeichen oben rechts: \qr
 Bsp.: \ql Anführungszeichen\qr
 
 Wenn nach dem rechten Anführungszeichen ein Leezeichen folgen soll, dann muss
-dieses durch einen Backslash erzwungen werden: \ql Anführungszeichen\qr\ 
+dieses durch einen Backslash erzwungen werden: \ql Anführungszeichen\qr\
+
+================================================================================
+(2.7) Abstände in Itemize
+
+Durch den Befehl \setlength\itemsep{0em} lässt sich der Abstand zwischen den
+Bulletpoints innerhalb von Itemize regulieren. Mit dem Wert 0em wird ein
+einfacher Zeilenabstand genutzt.
+
+\begin{itemize}
+\setlength\itemsep{0em}
+	\item Beispiel 1
+	\item Beispiel 2
+\end{itemize}
+
 ================================================================================
 (3) Strukturierung von Sections
 	
