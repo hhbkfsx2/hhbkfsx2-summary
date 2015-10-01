@@ -3,8 +3,7 @@ In dieser Datei sind die Quellen der einzelnen Bilder verzeichnet
 (1) lf01-pic
 
 lf01-marktformen
->URL:		http://wirtschaftslexikon.gabler.de/Archiv/54450/marktformen \
-		-v4.html
+>URL:		http://wirtschaftslexikon.gabler.de/Archiv/54450/marktformen-v4.html
 >Urheber:	Dirk Piekenbrock
 >Lizenz:	---
 
@@ -67,8 +66,7 @@ lf02-einliniensystem
 >Lizenz:	CC-BY-SA 3.0
 
 lf02-maslow
->URL:		http://commons.wikimedia.org/wiki/File:Einfache_Bed%C3% \
-		BCrfnishierarchie_nach_Maslow.svg
+>URL:		http://commons.wikimedia.org/wiki/File:Einfache_Bed%C3%BCrfnishierarchie_nach_Maslow.svg
 >Urheber:	Philipp Guttmann
 >Lizenz: 	public domain
 
@@ -107,6 +105,27 @@ lf02-stabliniensystem
 
 ================================================================================
 (4) lf04-pic
+
+lf04-7bit-ascii-hex
+>URL:		https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange
+>Urheber:	
+>Lizenz:
+>Kommentare:	Screenshot
+
+lf04-linux-fhs
+>URL:
+>Urheber:
+>Lizenz:
+
+lf04-linux-kernel
+>URL:
+>Urheber:
+>Lizenz:
+
+lf04-wirkungsgrad
+>URL:		https://commons.wikimedia.org/wiki/File:Wirkungsgrad_gluehlampe.svg
+>Urheber:	Svebert
+>Lizenz:	public domain
 
 ================================================================================
 (5) lf05-pic

@@ -292,23 +292,41 @@ Die Registry ist hierarchisch aufgebaut. Der Zugriff mit PowerShell erfolgt durc
 
 \paragraph{Was ist Unix/Linux?}
 
+
 \paragraph{Systemstart}
+
+Der Bootprozess unter Linux läuft prinzipiell wie folgt ab: BIOS $\to$ POST $\to$ MBR/GPT $\to$ GRUB $\to$ Kernel. Nach dem Start sucht das BIOS im Master Boot Record bzw. im GUID Partition Table nach einer bootbaren Systempartition. Unter Linux ist dies in der Regel die Partition, auf der $/boot$ liegt. Danach übernimmt GRUB die Kontrolle und startet den in der Konfiguration hinterlegten Kernel.
+
+Runlevel, /etc/rc, /etc/inittab
 
 \paragraph{Der Kernel}
 
+Linux ist kein Betriebssystem, sondern der Name für den Kernel. Der Kernel enthält Treiber und Module, um mit der Hardware zu kommunizieren.
+
+Linux ist ein modularer Kernel. Das bedeutet, dass Module zur Laufzeit geladen werden können. Dadurch ist es möglich, bspw. später ein Dateisystem zu nutzen, ohne es vorher in den Kernel kompiliert zu haben.
+
 \subparagraph{Aufgaben des Kernels}
 
+Zu den Aufgaben des Kernel gehört beispielsweise das Memory Managment und die Verwaltung des Netzwerkstacks
+
 \paragraph{Dateien und Verzeichnisse}
+Filesystem Hierarchy Standard
 
 \paragraph{Dateisystem}
+Aktuell (2015) ist das Standard-Filesystem ext3 bzw. ext4. In Zukunft wird sich btrfs als Standard-Filesystem durchsetzen.
 
 \paragraph{Prozesse}
+Prozesskommunikation, /proc-Verzeichnis, init, Kommandosyntax
 
 \paragraph{Benutzerverwaltung}
+passwd, shadow, group
 
 \paragraph{X-Window System}
+x11
 
 \paragraph{Hilfe zur Selbsthilfe}
+
+Manpages, $--help$
 
 \subsubsection{Filesystem Hierarchy Standard (FHS)}
 
@@ -324,7 +342,7 @@ Der Filesystem Hierarchy Standard (FHS) stellt eine Richtlinie dar, die die Verz
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%Anfang: Dokumentation
-%\subsection{Dokumentation}
+\subsection{Dokumentation}
 
 %%% Ende: Dokumentation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
