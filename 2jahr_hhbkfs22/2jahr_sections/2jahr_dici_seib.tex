@@ -1,0 +1,24 @@
+\section{Differenzierungskurs: Cisco}
+
+CCNA Routing and Switching
+
+\subsection{Grundlagen}
+
+\subsection{Lab 2.1.4.7 - Establishing a Console Session}
+
+\subsubsection{Connect to Cisco switch using rollover console cable}
+Bei Cisco werden die DB9-RJ45-Kabel zur Verbindung mit einem seriellen Interface als 'rollover console cable' bezeichnet. Da kaum ein Notebook noch einen DB9-Anschluss besitzt, sollte ein DB9-zu-USB-Adapter verwendet werden. Die Verbindung wird dadurch erleichtert, beispielsweise muss unter Linux die Baud-Rate nicht händisch angepasst werden, da dies der Adapter erledigt. Ohne den Adapter müsste auch eingestellt werden, ob 8- oder 7-Bit verwendet werden.
+
+Cisco Defaults:
+\begin{itemize}
+	\item baud rate	9600
+	\item data		8 bit
+	\item parity		none
+	\item stop		1 bit
+	\item flow control	none
+\end{itemize}
+
+Tera Term ist ein Terminal Emulator für Windows. Im Prinzip macht das Programm das, was unter Linux mit einem Terminal und dem Programm 'screen' gemacht werden kann. Ich verwende 'screen' unter Linux und werde nicht auf die Verwendung von Tera Term eingehen; kurz gesagt funktioniert Tera Term so: \ql Tera Term starten, Defaults korrekt?, Ok klicken, ..., Profit.\qr
+
+	> sudo screen /dev/ttyUSB0
+\subsubsection{Display and Configure Basic Device Settings}
