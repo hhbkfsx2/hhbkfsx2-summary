@@ -7,18 +7,174 @@ CCNA Routing and Switching
 \subsection{Lab 2.1.4.7 - Establishing a Console Session}
 
 \subsubsection{Connect to Cisco switch using rollover console cable}
-Bei Cisco werden die DB9-RJ45-Kabel zur Verbindung mit einem seriellen Interface als 'rollover console cable' bezeichnet. Da kaum ein Notebook noch einen DB9-Anschluss besitzt, sollte ein DB9-zu-USB-Adapter verwendet werden. Die Verbindung wird dadurch erleichtert, beispielsweise muss unter Linux die Baud-Rate nicht händisch angepasst werden, da dies der Adapter erledigt. Ohne den Adapter müsste auch eingestellt werden, ob 8- oder 7-Bit verwendet werden.
+Bei Cisco werden die DB9-RJ45-Kabel zur Verbindung mit einem seriellen Interface als {\it rollover console cable} bezeichnet. Da kaum ein Notebook noch einen DB9-Anschluss besitzt, sollte ein DB9-zu-USB-Adapter verwendet werden. Die Verbindung wird dadurch erleichtert, beispielsweise muss unter Linux die Baud-Rate nicht händisch angepasst werden, da dies der Adapter erledigt. Ohne den Adapter müsste auch eingestellt werden, ob 8- oder 7-Bit verwendet werden.
 
-Cisco Defaults:
-\begin{itemize}
-	\item baud rate	9600
-	\item data		8 bit
-	\item parity		none
-	\item stop		1 bit
-	\item flow control	none
-\end{itemize}
+\noindent Cisco Defaults:
+\begin{tabular}{p{3cm}p{3cm}}
+baud rate:		& 9600	\\
+data: 			& 8 bit	\\
+parity: 			& none	\\
+stop: 			& 1 bit	\\
+flow control:	& none	\\
+\end{tabular}
 
-Tera Term ist ein Terminal Emulator für Windows. Im Prinzip macht das Programm das, was unter Linux mit einem Terminal und dem Programm 'screen' gemacht werden kann. Ich verwende 'screen' unter Linux und werde nicht auf die Verwendung von Tera Term eingehen; kurz gesagt funktioniert Tera Term so: \ql Tera Term starten, Defaults korrekt?, Ok klicken, ..., Profit.\qr
+\noindent Tera Term ist ein Terminal Emulator für Windows. Im Prinzip macht das Programm das, was unter Linux mit einem Terminal und dem Programm 'screen' gemacht werden kann. Ich verwende {\it screen} unter Linux und werde nicht auf die Verwendung von Tera Term eingehen; kurz gesagt funktioniert Tera Term so: \ql Tera Term starten, Defaults korrekt?, Ok klicken, ..., Profit.\qr
+Verbindung unter Linux per \dots\\
+\indent	\verb+> sudo screen /dev/ttyUSB0+
 
-	> sudo screen /dev/ttyUSB0
 \subsubsection{Display and Configure Basic Device Settings}
+Nach dem Start des Switches wird gefragt, ob die initiale Konfigurationsdialog gestartet werden soll. Dies verneint man an dieser Stelle. Um die Uhrzeit anzupassen, muss man quasi root werden. Dazu wird unter IOS der Befehl {\it enable} verwendet.
+
+\begin{lstlisting}
+	# clock set ?
+	hh:mm:ss Current Time
+	# clock set 17:00:00 ?
+	<1-31>	Day of the month
+	MONTH	Month of the year
+	# clock set 17:00:00 Oct 26 ?
+	<1993-2035>	year
+	# clock set 17:00:00 Oct 26 2012
+	# show clock
+	17:00:03.205 UTC Fri Oct 26 2012
+\end{lstlisting}
+
+\noindent An dieser Stelle fällt auf, dass die Hilfestellung, die durch {\it ?} angezeigt wird, sich immer auf die jeweilige Option an der Stelle des Fragezeichens bezieht und nicht wie unter Linux die Option {\it --help} die gesamte Syntax anzeigt.
+
+\subsection{Lab 2.3.3.3 - Building a Simple Network}
+
+Netzwerke bestehen in der Regel aus drei Komponenten: Hosts, Switchen und Routern. In diesem Lab werden zwei Switche und zwei Host so konfiguriert, dass sie sich zu einem einfachen Netzwerk verbinden.
+
+\subsubsection{Set Up the Network Topology (Ethernet only)}
+
+Dieser Abschnitt des Labs beschreibt, wie die Verkabelung geschehen soll und welche Reaktionen die Switche zeigen sollen. Im Grunde soll dabei die folgende Verbindung hergestellt werden:
+
+\indent	\verb+host1 <---> switch1 <---> switch2 <---> host2+\\
+
+\noindent Die LEDs des Switches am jeweiligen Port, wo die Hosts eingesteckt sind, sollte grün leuchten.
+
+\subsubsection{Configure PC Hosts}
+
+In diesem Abschnitt wird beschrieben, wie unter Windows eine statische IP vergeben wird. Unter Linux wird eine statisch IP wie folgt vergeben:
+
+\indent	Beispiel:
+\indent	\verb+# ip address add 192.168.1.123/24 dev eth0+\\
+
+\noindent Der Befehl lässt sich noch auf {\it ip a a ...} reduzieren. Unter Windows wäre es notwendig sich durch die Systemsteuerung und die Netzwerk-Optionen hin zu den Interfaces zu klicken, wo dann über die Eigenschaften von IPv4 die IP und Subnetzmaske (255.255.255.0 = /24) eingestellt werden muss. Unter Windows könnte man nun in {\it cmd} per {\it ipconfig} die Einstellung von eth0 prüfen. Mit Linux funktioniert es sehr ähnlich:
+
+\indent \verb+> ip r+ oder\\
+\indent	\verb+> ifconfig+\\
+
+\noindent Anschließend sollte versucht werden, den gegenüberliegenden Host zu pingen:
+
+\indent	\verb+> ping <ip.host>+\\
+
+\noindent Warum mussten wir an dieser Stelle die Switche nicht verbinden? Das passiert bei Cisco automagisch.
+
+\subsubsection{Configure and Verify Basic Switch Settings}
+
+Als erstes muss sich wie in Lab 2.1.4.7 beschrieben per Konsole mit dem Switch verbunden werden und der root-Modus per {\it enable} aktiviert werden.
+
+\begin{lstlisting}
+	# configure terminal
+	(config) # hostname switch1
+	(config) # no ip domain-lookup
+	(config) # enable secret <some.password>
+	(config) # line con 0
+	(config-line) # password <another.password>
+	(config-line) # login
+	(config-line) # exit
+\end{lstlisting}
+
+\noindent Als kleines Gimmick lässt sich ein Banner sezten, der angezeigt wird, wenn man sich per Telnet mit dem Switch verbindet. <EOF-char> kann an dieser Stelle jedes Symbol sein, welches nicht im Banner vorkommt; meist {\it \#}.
+
+\begin{lstlisting}
+	(config) # banner motd <EOF-char>
+	$BANNER_MESSAGE <EOF-char>
+	(config) # exit
+	# copy running-config startup-config
+	# show running-config
+	# show version
+\end{lstlisting}
+
+\noindent Bei einem Switch ist es wichtig, den Zustand der Interfaces zu kennen. Mit dem Befehl {\it show ip interface brief} (beachte: {\it interface} und {\bf nicht} {\it interfaces}!) lassen sich einige Informationen über die Interfaces ermitteln. Zu diesen Informationen gehören: Geschwindigkeit des Interfaces, IP-Adresse und Status. Um den Switch wieder in den Ausgangszustand zu versetzen, müssen die Änderungen rückgängig gemacht werden:
+
+\begin{lstlisting}
+	# show flash
+	# delete vlan.dat
+	# erase startup-config
+	# reload
+\end{lstlisting}
+
+\subsection{Lab 2.3.3.4 - Configuring a Switch Management Address}
+
+Cisco Switche besitzen ein spezielles Interface, das sogenannte switch virtual interface (SVI). Diesem kann eine IP zugewiesen werden und anschließend kann man sich per 'telnet' auf das Interface verbinden.
+
+\subsubsection{Configure a Basic Network Device}
+
+Als erstes muss sich wie in Lab 2.1.4.7 beschrieben per Konsole mit dem Switch verbunden werden und der root-Modus per {\it enable} aktiviert werden. Anschleißend werden wie in Lab 2.3.3.3 Abschnitt 3 (Configure and Verify Basic Switch Settings) beschrieben Passwörter gesetzt. Danach wird ein VLan und die IP des SCIs gesetzt.
+
+\begin{lstlisting}
+	> enable
+	Can I haz password?: <some.password>
+	# config t
+	(config) # interface vlan 1
+	(config-if) # ip address <svi.ip> <subnet>
+	(config-if) # no shut
+	(config-if) # exit
+	(config) # line con 0
+	(config-line) # password <another.password>
+	(config-line) # login
+	(config-line) # exit
+	(config) # line vty 0 4
+	(config-line) # password <another.password>
+	(config-line) # login
+	(config-line) # end
+\end{lstlisting}
+
+\subsubsection{Verify and Test Network Connectivity}
+Auf dem Switch sollte die Konfiguration überprüft werden:
+
+\begin{lstlisting}
+	> enable
+	Can I haz password?: <some.password>
+	# show run
+	# show ip interface brief
+\end{lstlisting}
+
+\noindent Vom PC aus sollte zunächst gecheckt werden, ob sich die IP des SVIs anpingen lässt. Anschließend kann man sich per {\it telnet} mit dem Switch verbinden.
+
+\indent	\verb+> ping <svi.ip>+\\
+\indent	\verb+> telnet <svi.ip> 23+\\
+\indent	\verb+Can I haz password?: <another.password>+\\
+	
+\noindent Auf dem Switch lässt sich dann wie in Lab 2.3.3.3 die Konfiguration mit {\it copy} speichern.
+
+\newpage
+\subsection{Gesammelte Befehle}
+Nicht alle Befehle lassen sich in jedem Modus verwenden. Welche Befehle zu welchem Modus gehören, wird in diesem Abschnitt nicht behandelt. An dieser Stellen werden lediglich die Befehle aufgelistet. Für Informationen zu den jeweiligen Modi sollen die obigen Abschnitte zu Rate gezogen werden.
+
+\begin{lstlisting}
+banner motd <EOF-char>
+clock set ?			# ? ~ --help
+clock set hh:mm:ss month year
+configure terminal		# enters global config-mode
+config t			# t = terminal
+copy running-config <filename>	# speichert die config nach filename
+delete <vlan>			# bsp: vlan.dat
+enable				# enter root-mode
+enable secret <password>	# set password
+erase <config>			# bsp: statup-config	
+hostname $HOSTNAME
+line con 0			# wechselt in console-config-mode
+line vty 0 4			# config vty; 0-4: 5 sessions moegl	
+login				# aktiviert passwort-abfrage
+interface vlan 1		# config vlan 1
+ip address <ip> <subnet>	# set ip and subnet
+no ip domain-lookup		# disable dns
+show clock
+show flash
+show ip interface brief
+show version
+show running-config		# zeigt aktuelle config
+show run			# run = running-config
+\end{lstlisting}

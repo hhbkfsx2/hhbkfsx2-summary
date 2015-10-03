@@ -89,7 +89,7 @@ PHP unterscheidet wie die Bash zwischen schwacher und starker Quotation. Schwach
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Indexadressierte Arrays in PHP}
 	\label{lst:array-index},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-array-index.php}
+	{1jahr_code/lf06prog-code/lf06prog-array-index.php}
 	
 Möchte man sowohl den Variablennamen als auch den Wert ausgeben, lässt sich die Quotation auch unterbrechen. Dies ist im dritten \texttt{echo}-Befehl des Listings zu sehen. Die Punkte vor und nach dem Variablennamen bedeuten, dass der Inhalt der Variable der Ausgabe angehängt wird.
 
@@ -107,7 +107,7 @@ Im Listing [Nr] steht \texttt{action="\ script.php"}. Dies bezieht sich auf den 
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für den HTML-Teil von Formulardaten}
 	\label{lst:html-formulardaten},captionpos=b,language=HTML]
-	{code/lf06prog-code/lf06prog-formulardaten.html}
+	{1jahr_code/lf06prog-code/lf06prog-formulardaten.html}
 
 Als \texttt{method} lässt sich \texttt{POST} oder \texttt{GET} wählen. Der Unterschied zwischen \texttt{POST} und \texttt{GET} besteht darin, dass die Formulardaten von \texttt{GET} in der URL auftauchen. Dadurch werden die geforderten Daten sichtbar und durch brute force angreifbar. Ein weiterer Nachteil von \texttt{GET} besteht darin, dass die übergebenen Daten nicht größer als 2KB sein dürfen. Diese Nachteile und Beschränkungen gelten nicht für \texttt{POST}. Daher ist \texttt{POST} zu bevorzugen.
 
@@ -126,7 +126,7 @@ Das nächste Listing zeigt, wie die Formulardaten in PHP verarbeitet werden kön
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für den PHP-Teil von Formulardaten}
 	\label{lst:html-formulardaten},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-formulardaten.php}
+	{1jahr_code/lf06prog-code/lf06prog-formulardaten.php}
 
 %%% Anfang: Strukt. Programmierung
 \subsection{Strukturierte Programmierung}
@@ -148,19 +148,19 @@ Programmierparadigmas.
 {\bf Elemente:}\\
 \begin{itemize}
 	\item Oval: Start/Stopp\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-start-stopp.png}
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-start-stopp.png}
 	\item Pfeil/Linie: Verbindung zum nächstfolgenden Element\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-pfeil.png}
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-pfeil.png}
 	\item Rechteckt: Operationen\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-operation.png}	
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-operation.png}	
 	\item Rechteck mit doppelten, vertikalen Linien: Unterprogrammaufruf\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-unterprogramm.png}	
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-unterprogramm.png}	
 	\item Raute: Verzweigung\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-verzweigung.png}	
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-verzweigung.png}	
 	\item Parallelogramm: Ein- und Ausgabe (nicht nach DIN 66001 1983!)\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-ein-ausgabe.png}	
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-ein-ausgabe.png}	
 	\item Ergänzung: Schleife\\
-		\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-pap-schleife.png}
+		\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-pap-schleife.png}
 \end{itemize}
 
 {\bf Struktogramm}~\\
@@ -172,13 +172,13 @@ Das Vorgehen zur Erstellung von Struktogrammen entspricht der Top-Down-Programmi
 \begin{itemize}
 	\item Sequenz: Jede Anweisung wird in einen rechteckigen Strukturblock geschrieben. Die Strukturblöcke werden sequentiell durchlaufen.\\
 	\item Einfache Verzweigung (Auswahl): Nur wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen.\\
-\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-einfache-auswahl-struct.png}
+\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-einfache-auswahl-struct.png}
 	\item Zweifache Auswahl: Wenn die Bedingung zutreffend (wahr) ist, wird der Anweisungsblock 1 durchlaufen. Trifft die Bedingung nicht zu (falsch), wird der Anweisungsblock 2 durchlaufen. Ein Anweisungsblock kann aus einer oder mehreren Anweisungen bestehen. Austritt unten nach Abarbeitung des jeweiligen Anweisungsblocks.\\
-\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-zweifache-auswahl-struct.png}
+\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-zweifache-auswahl-struct.png}
 	\item Verschachtelte Auswahl: Es folgt eine weitere Bedingung. Die Verschachtelung ist ebenso im Nein-Fall (noch) möglich.\\
-\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-verschachtelte-auswahl-struct.png}
+\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-verschachtelte-auswahl-struct.png}
 	\item Fallauswahl (Switch-Case): Besonders bei mehr als drei abzuprüfenden Bedingungen geeignet. Der Wert der Variable kann auf verschiedene Inhalte geprüft werden. Es wir dann der zugehörigen Anweisungsblock ausgeführt (switch, select). Eine Fallauswahl kann stets in eine verschachtelte Auswahl umgewandelt werden -- etwa wenn die später eingesetzte Programmiersprache Fallauswahl nicht beherrscht.\\
-\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-switch-case-struct.png}
+\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-switch-case-struct.png}
 \end{itemize}
 
 
@@ -219,8 +219,8 @@ $!$ & logische Negation & $!$(\$zahl $<= 1$ \&\& \$zahl $> 4$)\\
 
 Durch die Verwendung von IF lässt sich zwischen zwei Möglichkeiten auswählen, derjenigen, die ausgeführt wird, wenn die Bedingung zutrifft und derjenigen, für den Fall, dass die Bedingung nicht zutrifft. Generell kann die Bedingung einer IF-Konstruktion \texttt{true} oder \texttt{false} zurückgegeben.
 
-\includegraphics[scale=0.3]{pictures/lf06prog-pic/lf06prog-if-einseitig-pap.png}\\
-\includegraphics[scale=0.3]{pictures/lf06prog-pic/lf06prog-if-zweiseitig-pap.png}
+\includegraphics[scale=0.3]{1jahr_pictures/lf06prog-pic/lf06prog-if-einseitig-pap.png}\\
+\includegraphics[scale=0.3]{1jahr_pictures/lf06prog-pic/lf06prog-if-zweiseitig-pap.png}
 
 %%% Anfang: Verzweigung > Switch
 \subsubsection{Switch-Case}
@@ -234,9 +234,9 @@ Im folgenden Listing ist eine Beispiel für Switch-Case-Konstrukte unter PHP gez
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Ein Beispiel für Switch-Case-Anweisungen}
 	\label{lst:Switch-Case},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-switch.case.php}
+	{1jahr_code/lf06prog-code/lf06prog-switch.case.php}
 	
-\includegraphics[scale=0.5]{pictures/lf06prog-pic/lf06prog-switch-case-pap.png}
+\includegraphics[scale=0.5]{1jahr_pictures/lf06prog-pic/lf06prog-switch-case-pap.png}
 
 %%% Anfang: Verzweigung > Schleifen
 \subsubsection{Schleifen}
@@ -245,35 +245,35 @@ In Programmiersprachen stellt eine Schleife ein Kontrollstruktur dar. Sie wieder
 
 \paragraph{FOR - Zählschleife}~\\
 
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-pap.png}
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-for-struct.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-for-pap.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-for-struct.png}
 
 \lstinputlisting
 	[basicstyle=\small,caption={Zählschleife, FOR}
 	\label{lst:while-fuss},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-for.php}
+	{1jahr_code/lf06prog-code/lf06prog-for.php}
 
 \paragraph{WHILE}~\\
 
 Die kopfgesteuerten WHILE-Schleifen unterscheiden sich von den fußgesteuerten dadruch, dass die Bedingung der Schleife bei letzterer erst nach dem einmaligen Durchlaufen der Schleife geprüft wird. Das bedeutet, dass fußgesteuerte Schleifen wie REPEAT immer mindestens einmal ausgeführt werden. Überspitzt lässt sich sagen, dass REPEAT erst schießt und dann fragt.
 
 % While: Fuss
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-pap.png}
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-fuss-struct.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-while-fuss-pap.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-while-fuss-struct.png}
 
 \lstinputlisting
 	[basicstyle=\small,caption={Fussgesteuerte WHILE-Schleife}
 	\label{lst:while-fuss},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-while-fuss.php}
+	{1jahr_code/lf06prog-code/lf06prog-while-fuss.php}
 
 % While: Kopf
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-pap.png}
-\includegraphics[scale=0.4]{pictures/lf06prog-pic/lf06prog-while-kopf-struct.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-while-kopf-pap.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06prog-pic/lf06prog-while-kopf-struct.png}
 
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Kopfgesteuerte WHILE-Schleife}
 	\label{lst:while-kopf},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-while-kopf.php}
+	{1jahr_code/lf06prog-code/lf06prog-while-kopf.php}
 
 %%% Anfang: Verzweigung > Arrays
 \subsubsection{Arrays}
@@ -288,7 +288,7 @@ Indexadressierte Arrays arbeiten mit Indizes, um auf die gespeicherten Werte zu 
 \lstinputlisting
 	[basicstyle=\small,showstringspaces=false,caption={Indexadressierte Arrays in PHP}
 	\label{lst:array-index},captionpos=b,language=PHP]
-	{code/lf06prog-code/lf06prog-array-index.php}
+	{1jahr_code/lf06prog-code/lf06prog-array-index.php}
 
 %%% Anfang: Verzweigung > Arrays > Assozativ
 \paragraph{Assoziative Arrays}~\\

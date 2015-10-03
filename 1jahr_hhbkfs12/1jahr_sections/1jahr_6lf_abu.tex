@@ -2,7 +2,7 @@
 
 Im Lernfeld 6 werden neben Themen wie HTML, PHP und C\# auch Datenbanken behandelt. Im Bereich der Datenbanken werden drei Begriffe unterschieden: (1) Datenbanken (DB), (2) Datenbankensystem (DBS) und (3) Datenbankmanagmentsystem (DBMS). Die folgende Grafik veranschaulicht den Zusammenhang.
 
-\includegraphics[scale=0.4]{pictures/lf06db-pic/lf06db-begriffszusammenhang.png}
+\includegraphics[scale=0.4]{1jahr_pictures/lf06db-pic/lf06db-begriffszusammenhang.png}
 
 Als DBS wird die Verbindung aus DBMS und der dazugehörigen Datenbank bezeichnet. Das DBMS regelt den Zugriff auf die Datenbank, sodass die Daten -- im besten Fall -- immer konsistent sind. 
 
@@ -55,7 +55,7 @@ Wenn man sich mit einem MySQL-Server verbunden hat, möchte man in der Regel wis
 \lstinputlisting
 	[caption={DDL: show-Befehl}
 	\label{lst:ddl-show},captionpos=b]
-	{code/lf06db-code/lf06db-ddl-listing.txt}
+	{1jahr_code/lf06db-code/lf06db-ddl-listing.txt}
 
 In diesem Fall benutzen wir die Datenbank, welche uns durch das Skript geo.sql zur Verfügung gestellt wird. Um die Datenbank in MySQL einzuspielen nutzen wir den Befehl \texttt{source geo.sql;} und wechseln mit \texttt{use geo;} in die Datenbank.
 
@@ -84,14 +84,14 @@ Enthält nur den Befehlt \ql select\qr. Diesem sind so viele Optionen zugeordnet
 \lstinputlisting
 	[caption={DQL: select-Befehle}
 	\label{lst:dql-select},captionpos=b]
-	{code/lf06db-code/lf06db-dql-listing-1.txt}
+	{1jahr_code/lf06db-code/lf06db-dql-listing-1.txt}
 
 Darüber hinaus lassen sich mit Hilfe von Subselects Abfragen miteinander verbinden. Die folgenden Befehle zeigen Beispiele für die Verwendung von Subselects:
 
 \lstinputlisting
 	[caption={DQL: subselect-Befehle}
 	\label{lst:dql-subselect},captionpos=b]
-	{code/lf06db-code/lf06db-dql-listing-2.txt}
+	{1jahr_code/lf06db-code/lf06db-dql-listing-2.txt}
 	
 \paragraph{Aggregatfunktionen}~\\
 \begin{itemize}
@@ -117,7 +117,7 @@ Abfragen unter MySQL können auch mit Hilfe von Wildcards formuliert werden. Wil
 \lstinputlisting
 	[caption={Wildcards}
 	\label{lst:wildcards},captionpos=b]
-	{code/lf06db-code/lf06db-wildcards.txt}
+	{1jahr_code/lf06db-code/lf06db-wildcards.txt}
 
 Wildcards beziehen sich nur auf Tabelleninhalte und nicht auf ihre Struktur. Unterschied bestehen auch zwischen den Operatoren \texttt{like} und $=$. Nur der Operator \texttt{like} beherrscht Wildcards, wohingegen $=$ die Eingabe als String interpretiert, d.h. in der Tabelle bspw. nach dem Eintrag \ql M\_k\%\qr\ sucht und ihn -- in unserem Fall -- nicht findet.
 
@@ -129,14 +129,14 @@ Wichtig ist an dieser Stelle, dass statt mit Namen mit den Primary Keys gearbeit
 \lstinputlisting
 	[caption={DDL: Primary Key ermitteln}
 	\label{lst:ddl-describe},captionpos=b]
-	{code/lf06db-code/lf06db-ddl-describe.txt}
+	{1jahr_code/lf06db-code/lf06db-ddl-describe.txt}
 
 Wir sehen anhand des Outputs, dass das Feld LNR der Primary Key der Tabelle land ist. Daher werden wir für die folgenden Befehle auf das Feld LNR zurückgreifen. Es gilt: was weg ist, ist im Zweifelsfall weg. Es sollte also im Betrieb vorsichtig mit den Datenbeständen umgegangen werden. Um den Wert von LNR für bspw. Ägypten herauszufinden, lässt sich der Befehl \verb+SELECT lnr FROM land WHERE bane LIKE "%gypt%"+ nutzen.	
 
 \lstinputlisting
 	[caption={DML: Beispiele}
 	\label{lst:dml-listing-1},captionpos=b]
-	{code/lf06db-code/lf06db-dml-listing-1.txt}
+	{1jahr_code/lf06db-code/lf06db-dml-listing-1.txt}
 
 %%% Anfang: MySQL > DCL
 \subsubsection{DCL -- Data Conrol Language}
