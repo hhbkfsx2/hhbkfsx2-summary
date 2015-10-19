@@ -87,6 +87,14 @@ Besser: (Beispiel!)
 		captionpos=b,					#Zentriert
 		language=PHP]					#Programmierspr
 		{path/to/beispiel.php}				#Pfad
+
+	\lstinputlisting
+		[caption={Beispiel zu Classful Networking}
+		\label{lst:7lf_classful.example}
+		basicstyle=\small,
+		captionpos=b]
+		{2jahr_code/2jahr_7lf_classful.example.txt}
+
 Es können auch externe Dateien -- hier "beispiel.html" eingebunden werden.
 Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer Quell-Code
 einbinden möchte: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings

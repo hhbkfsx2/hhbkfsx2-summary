@@ -3,7 +3,31 @@
 
 \subsection{Was ist das Internet?}
 
-
 \subsection{DNS - Domain Name System}
 
 \subsection{IPv4 - Internet Protocol}
+
+\subsubsection{Classful Subnetting}
+
+Beim classful subnetting gibt es grundsätzlich drei Netzklassen: A, B und C. Diese zeichnen sich durch ihre Subnetzmasken aus, 255.0.0.0, 255.255.0.0 und 255.255.255.0. Beim classful subnetting wird zwischen der Host-ID und der Net-ID unterschieden. Die beiden IDs lassen sich durch die Subnetzmaske aus der IP herleiten.
+
+% Beispiel IP, Subnetzmaske, Net-ID und Host-ID
+\lstinputlisting
+	[caption={Beispiel zu Classful Networking}
+	\label{lst:7lf_classful.example},
+	basicstyle=\small,
+	captionpos=b]
+	{2jahr_code/2jahr_7lf_classful.example.txt}
+
+\subsubsection{Classless Inter-Domain Routing}
+
+Im Gegensatz zum classful subnetting zeichnet sich CIDR (Classless Inter-Domain Routing) dadurch aus, dass statt drei Netzklassen, wird die Subnetzmaske in Form eines Suffix {\it /XX} dargestellt. Das Suffix gibt dabei an, wie viele der Bits von links beginnend auf 1 gesetzt sind. Sobald die Subnetzmaske bekannt ist, lassen sich dadurch Host- und Net-ID ermitteln.
+
+% Beispiel CIDR IP und Subnetzmaske
+\lstinputlisting
+	[caption={Beispiel zu CIDR}
+	\label{lst:7lf_classless.example},
+	basicstyle=\small,
+	captionpos=b]
+	{2jahr_code/2jahr_7lf_classless.example.txt}
+	
