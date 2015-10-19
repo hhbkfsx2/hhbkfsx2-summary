@@ -1,13 +1,13 @@
-README: Hilfen und Anweisungen -------------------- K. Engelhardt --- 20.01.2015
-================================================================================
+README: Hilfen und Anweisungen ------------------ K. Engelhardt --- 20.01.2015
+==============================================================================
 In diesem README werden einige Hilfen, wie beispielsweise LaTeX-Befehle
 aufgelistet, die ihr verwenden könnt, um eure Beiträge zur Zusammenfassung zu
 strukturieren. Falls ihr noch nicht wisst, worum es sich bei LaTeX handelt,
 empfehle ich zuerst den Wikipedia-Artikel zu lesen. Des Weiteren finden sich
 hier Arbeitsanweisungen, bespw. bezüglich der Verwendung von Bildern.
-================================================================================
-Inhaltsverzeichnis
 
+==============================================================================
+Inhaltsverzeichnis
 	(1) Verwendung von Bildern
 	(2) LaTeX-Befehle
 		(2.1) Text-Formatierung
@@ -18,14 +18,16 @@ Inhaltsverzeichnis
 		(2.6) Anführungszeichen
 		(2.7) Abstände in Itemize
 	(3) Strukturierung von Sections
-================================================================================
+
+==============================================================================
 (1) Verwendung von Bildern:
 
-	Wer der Zusammenfassung Bilder hinzufügen möchte, fügt diese nach dem
-Namensschema "lf0x-bildname.jpg/png/svg..." unter pictures dem jeweiligen
+Wer der Zusammenfassung Bilder hinzufügen möchte, fügt diese nach dem
+Namensschema "xlf_bildname.jpg|.png|.svg..." unter pictures dem jeweiligen
 Lernfeld hinzu (Kleinschreibung beachten). Dabei ist zu beachten, dass die
 Quelle des Bildes unter pictures in der Datei quellen.txt dokumentiert wird!
-================================================================================
+
+==============================================================================
 (2) LaTeX-Befehle
 
 (2.1) Text-Formatierung
@@ -38,7 +40,8 @@ Quelle des Bildes unter pictures in der Datei quellen.txt dokumentiert wird!
 	Alternativ:	\emph{Dieser Text wird vom Rest abgesetzt}
 			#emphazise; TeX wählt je nach Umgebung eine Art der
 			Hervorhebung aus.
-================================================================================
+
+==============================================================================
 (2.2) Überschriften:
 
 	1. Ordnung	\section{Überschrift}
@@ -51,7 +54,8 @@ Quelle des Bildes unter pictures in der Datei quellen.txt dokumentiert wird!
 
 	Um einen Zeilenumbruch nach einem Paragraphen zu erzwingen, muss nach
 	der schließenden Klammer "~\\" geschrieben werden; \paragraph{}~\\.
-================================================================================
+
+==============================================================================
 (2.3) Tabellen:
 
 Der Code ...
@@ -69,15 +73,18 @@ Ein "\hline" zwischen den beiden "Test"-Zeilen würde eine horizontale Linie
 in der Tabelle bewirken. Werden zwischen den l-s die Pipes (|) weggelassen, 
 so gibt es zwischen den Wörtern "Test" keine Trennlinie.
 - "&" bezeichnet einen "Spalten-Sprung"
-================================================================================
+
+==============================================================================
 (2.4) Quellcode einbinden
 
 	\begin{lstlisting}
 		Alles, was in diesem Bereich steht, wird von Texmaker nicht
 		interpretiert, sondern genau so ausgegeben, wie es hier
-		steht. Mit TABs sollte vorsichtig umgegangen werden. Stattdessen
-		-- und konträr zur Praxis! -- besser Leerzeichen verwenden.
+		steht. Mit TABs sollte vorsichtig umgegangen werden.
+		Stattdessen -- und konträr zur Praxis! -- besser Leerzeichen
+		verwenden.
 	\end{lstlisting}
+
 Besser: (Beispiel!)
 	\lstinputlisting
 		[basicstyle=\small,				#Schriftgröße
@@ -96,16 +103,18 @@ Besser: (Beispiel!)
 		{2jahr_code/2jahr_7lf_classful.example.txt}
 
 Es können auch externe Dateien -- hier "beispiel.html" eingebunden werden.
-Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer Quell-Code
-einbinden möchte: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+Dadurch bleiben die Dateien getrennt und leichter zu überschauen. Wer
+Quellcode einbinden möchte:
+	http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
 
 Möglichkeit, Quellcode inline einzubinden: Manchmal möchte man kurze Befehle
 direkt in einer Zeile einbinden. Dafür gibt es eine einfache Möglichkeit.
 Bsp.:	Der \verb+\LaTeX+--Befehl erzeugt das {\LaTeX}--Logo
 Nach dem Befehl \verb wird ein Zeichen angegeben, welches den Anfang und das
 Ende des Quellcodes definiert. Statt + kann nahezu jeder beliebige Zeichen
-verwendet werden. Alles zwischen diesen Zeichen wird nicht interpretiert.	
-================================================================================
+verwendet werden. Alles zwischen diesen Zeichen wird nicht interpretiert.
+	
+==============================================================================
 (2.5) Tabs verwenden
 
 Mit der Umgbung tabular lassen sich auch Tabs verweden:
@@ -114,7 +123,7 @@ Mit der Umgbung tabular lassen sich auch Tabs verweden:
 1 & 2 & 3\\			1	2	3
 4 & 5 & 6			4	5	6
 \end{tabular}
-================================================================================
+==============================================================================
 (2.6) Anführungszeichen
 
 Anführungszeichen unten links: \ql
@@ -125,7 +134,7 @@ Bsp.: \ql Anführungszeichen\qr
 Wenn nach dem rechten Anführungszeichen ein Leezeichen folgen soll, dann muss
 dieses durch einen Backslash erzwungen werden: \ql Anführungszeichen\qr\
 
-================================================================================
+==============================================================================
 (2.7) Abstände in Itemize
 
 Durch den Befehl \setlength\itemsep{0em} lässt sich der Abstand zwischen den
@@ -138,14 +147,15 @@ einfacher Zeilenabstand genutzt.
 	\item Beispiel 2
 \end{itemize}
 
-================================================================================
+==============================================================================
 (3) Strukturierung von Sections
 	
 	In diesem Abschnitt wird beschrieben, wie die Sections strukturiert
 werden sollen, damit sich jeder in den - durchaus längeren - Sections zurecht
-findet. Vor jeden Abschnitt wird ein Kommentar gesetzt und nach jedem Abschnitt.
-Dadurch soll sichergestellt werden, dass jeder sofort weiß, wo er sich befindet.
-Um nicht unnötig viel zu beschreiben, folgt nun ein schematisches Beispiel:
+findet. Vor jeden Abschnitt wird ein Kommentar gesetzt und nach jedem
+Abschnitt. Dadurch soll sichergestellt werden, dass jeder sofort weiß, wo er
+sich befindet. Um nicht unnötig viel zu beschreiben, folgt nun ein
+schematisches Beispiel:
 
 %%% Anfang: Beispiel
 \section{Beispiel}
@@ -157,11 +167,11 @@ Um nicht unnötig viel zu beschreiben, folgt nun ein schematisches Beispiel:
 \subsection{Subsection2}	
 
 %%% Ende: Beispiel
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Vor allem durch die 80* %-Zeichen wird eine optische Trennung der Sections
+Vor allem durch die 78* %-Zeichen wird eine optische Trennung der Sections
 erreicht. Weitere Beispiele lassen sich in den Sections finden.
 ---
 * 80: "In der Vergangenheit konnten gängige Terminals nur 80 Zeichen pro Zeile
 darstellen." Siehe auch: http://de.wikipedia.org/wiki/Kammquoting
-================================================================================
+==============================================================================
