@@ -1,6 +1,12 @@
 hhbkfsx2-summary: TODO - Aufgaben, die noch zu erledigen sind ------- 22.03.2015
 ================================================================================
-﻿In dieser Datei werden die Aufgaben gelistet, welche in den jeweiligen Kapiteln
+
+DIE TODO WIRD NICHT MEHR GEPFLEGT! DA DIE ZUSAMMENFASSUNG DER INFORMATION DIENT
+SOLLTE JEDER UEBER DEN STAND BESCHEID WISSEN UND SELBSTSTAENDIG ENTSCHEIDEN,
+WAS NOCH GETAN WERDEN MUSS.
+
+================================================================================
+In dieser Datei werden die Aufgaben gelistet, welche in den jeweiligen Kapiteln
 noch zu erledigen sind. Jeder kann hier "Tickets" öffnen.
 Momentan (22.03.2015) handelt es sich dabei um Aufgaben, die jeweiligen Kapitel
 zu ergänzen/ zu erstellen.
