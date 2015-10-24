@@ -2,6 +2,38 @@
 
 \subsection{Grundlagen der technischen Kommunikation}
 \subsubsection{Gründe für die Vernetzung}
+
+Aus Gründen \dots
+
 \subsubsection{Das ISO/OSI-Referenzmodell}
 \subsubsection{Netzwerktopologie}
+
+Ring, Stern, Baum, Mesh, Bus
+
 \subsubsection{Übertragungsmedien}
+
+Zu den leitergebunden Übertragungsmedien gehören Kupferkabel, Koaxialkabel und Lichtwellenleiter. Leiterungebundene Übertragungsmedien basieren beispielsweise auf Funk- oder Lasertechnologien. Zu den bekannten Funktechnologien gehören unter anderem WLan und Richtfunk. Per Richtfunk lassen sich über mehrere Kilometer Übertragungsgeschwindigkeiten von 1+ GB/s erreicht werden.
+
+Kupferkabel werden nach einem bestimmten Schema bezeichnet, das sich auf den Aufbau des Kabels bezieht. Das Schema lautet XX/YZZ, wobei XX für {\bf U}ngeschirmt, {\bf S}hielded, {\bf Foiled} und {\bf SF} stehen kann. XX bezieht sich dabei auf das gesamte Kabel. F/YZZ heißt also, dass die vier Twisted Pairs von einer Folie umgeben sind. An der Stelle von Y kann ebenfalls U, S oder F stehen. Y bezieht sich im Gegensatz zu XX auf die einzelnen Twisted Pairs, XX/FZZ bedeutet also, dass die einzelnen Paare von einer Folie umgeben sind. Schließlich kann es sich bei ZZ um Twisted Pair (TW) oder Quad Pair (QP) handeln. Bis Cat 5e wird TP verwendet. QP wird beispielsweise bei Cat 6 Kabeln verwendet. Zusammengefasst gilt folgendes: 
+\begin{itemize}
+	\item XX: U, F, S, FS 
+	\item  Y: U, F, S
+	\item ZZ: TP, QP
+\end{itemize}
+Der ganze Aufwand wird betrieben, um den Einfluss von elektromagnetischen Wellen auf die umliegenden Kabel einzudämmen.	 Die Verdrillung der Adernpaare hilft ebenfalls, die elektromagnetische Wirkung zu schwächen.
+
+\subsection{Strukturierte Verkabelung}
+
+Strukturierte Verkabelung sollte a) zukunftssicher, b) dienstneutral und c) leichterweiterbar sein. Darin sind noch keine Redundanzen enthalten. Unter Zukunftssicherheit wird ein Zeitraum von 10 bis 15 Jahren verstanden. In der strukturierten Verkabelung werden drei Bereiche unterschieden: 1. Tertiärer Bereich, 2. Sekundär Bereich und 3. Primärer Bereich. Die Topologie der drei Bereiche entspricht einem Baum mit Stern \ql Blättern\qr. Durch Querverbindungen wird aus dem Baum ein teilvermaschtes Netz mit Redundanzen, um die Ausfallsicherheit zu erhöhen. Diese Art der Verkablung garantiert eine leichte Erweiterbarkeit des Netzes. Wenn die Umstände -- was in der Realität meist der Fall ist -- nur den tertiären und den sekundären Bereich vorsehen, also keine Gebäude miteinander verbunden werden müssen, wird von einem {\it collapsed backbone} gesprochen. Bei einem collapsed backbone ist der Router an den Gebäudeverteiler angeschlossen.
+
+\paragraph{Teritärer Bereich} ~\\
+
+Im Tertiärbereich sind Kupferverkabelungen mit einer maximalen Länge von 100m vorgesehen. Die Endgeräte werden an einen Etagenverteiler (EV) angeschlossen, wodurch eine Sterntopologie entsteht.
+
+\paragraph{Sekundärer Bereich} ~\\
+
+Im Sekundärbereich wird ein Verkabelung mit Kupfer bzw. Lichtwellenleitern empfohlen, wobei LWL bevorzugt werden sollten. Die maximale Länge beträgt hier 500m. Die Etagenverteiler des tertitären Bereichs werden an Gebäudeverteiler (GV) angeschlossen. Der Sekundärbereich wird von Cisco auch als Distribution Layer bezeichnet.
+
+\paragraph{Primärer Bereich} ~\\
+
+Im primären Bereich werden nur noch Lichtwellenleiter empfohlen. Bevor LWL verfügbar waren, wurden Koaxialkabel genutzt. Die Gebäudeverteiler werden an die Standortverteiler (SV) angeschlossen. Dadurch entsteht schließlich eine Baumtopologie.
