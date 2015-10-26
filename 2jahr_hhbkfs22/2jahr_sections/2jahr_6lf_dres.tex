@@ -4,8 +4,6 @@
 
 Ein Objekt ist eine Instanz einer Klasse. Ein Objekt hat Attribute und beherrscht Methoden. Attribute sind Konstanten oder Variablen mit einem festen Datentyp. In der Regel sind Attribute private, dass bedeutet, dass sie von außen nicht verändert werden können (Datenkapselung). Daher gibt es zum Ändern von Attributen meist public Methoden, die entsprechende Abfragen enthalten, damit Attribute nur korrekte Daten erhalten. Methoden sind entweder Funktionen oder Prozeduren. Im Gegensatz zu Funktionen liefern Prozeduren keinen Zückgabewert.
 
-\subsection{Übung: Rennwagen}
-
 \subsection{Übung: Kleines 1x1}
 
 Bei der Übung \ql Kleines 1x1\qr\ soll der unten gezeigte Output auf der Konsole ausgegeben werden. Anhand dieser Übung sollen erste Unterschiede zwischen PHP und C\# aufgezeigt werden.
@@ -50,3 +48,20 @@ Bei der Übung \ql Kleines 1x1\qr\ soll der unten gezeigte Output auf der Konsol
 	numbersep=10pt,
 	xleftmargin=15pt]
 	{2jahr_code/2jahr_6lf_dres_kleines1x1.cs}
+
+\subsection{Konstruktoren}
+
+Konstruktoren sind Methoden von Klassen, die bei der Erzeugung eines Objektes Werte übergeben. Ein Konstruktor hat keinen Rückgabetyp, auch nicht void. Eine Klasse kann mehrere Konstruktoren besitze, die jeweils eine andere Zahl an Parametern erwarten. Eine Klasse kann mehrere Konstruktoren besitzen, die sich bezüglich der übergebenen Parameter unterscheiden. Konstuktoren, d.h. die Methoden, werden ebenso wie die Klasse benannt.
+
+\lstinputlisting
+	[caption={Lösung der Übung mit C\#}
+	\label{lst:6lf_dres_example.constructor.cs},
+	basicstyle=\small,
+	captionpos=b,
+	frame=single,
+	numbers=left,
+	numberstyle=\small,
+	numberblanklines,
+	numbersep=10pt,
+	xleftmargin=15pt]
+	{2jahr_code/2jahr_6lf_dres_example.constructor.cs}
