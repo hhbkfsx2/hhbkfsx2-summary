@@ -1,27 +1,80 @@
 \section{Lernfeld 6 - Datenbanken / OENI} %Oenings
 
 %%% Anfang: Codd'sche Regeln
-\subsection{Codd'sche Regeln}
-\begin{enumerate}
-	\item 
-	\item 
-	\item 
-	\item 
-\end{enumerate}
+\subsection{Codd'sche Regeln - Grundlagen des Relationenmodells}
 
+Edgar F. Codd beschrieb in den 1980'ern dreizehn Regeln, nummeriert $0$ bis $12$, die als Grundlage des Relationenmodells dienen. Ein Datenbank Managment System (DBMS), dass von sich behauptet, relational zu arbeiten, muss sich an diese Regeln halten.
+
+\begin{enumerate}%[start=0]
+	\setcounter{enumi}{-1}
+	\item The Foundation rule: For any system that is advertised as, or claimed to be, a relational data base.
+	management system, that system must be able to manage data bases entirely through its relational capabilities.
+	\item The information rule: All information in a relational data base is represented explicitly at the logical level and in exactly one way — by values in tables.
+	\item The guaranteed access rule: Each and every datum (atomic value) in a relational data base is guaranteed to be logically accessible by resorting to a combination of table name, primary key value and column name.
+	\item Systematic treatment of null values: Null values (distinct from the empty character string or a string of blank characters and distinct from zero or any other number) are supported in fully relational DBMS for representing missing information and inapplicable information in a systematic way, independent of data type.
+	\item Dynamic online catalog based on the relational model: The data base description is represented at the logical level in the same way as ordinary data, so that authorized users can apply the same relational language to its interrogation as they apply to the regular data.
+	\item The comprehensive data sublanguage rule: A relational system may support several languages and various modes of terminal use (for example, the fill-in-the-blanks mode). However, there must be at least one language whose statements are expressible, per some well-defined syntax, as character strings and that is comprehensive in supporting all of the following items:
+	\begin{itemize}
+	\itemsep0em
+      	\item Data definition.
+		\item View definition.
+		\item Data manipulation (interactive and by program).
+		\item Integrity constraints.
+		\item Authorization.
+		\item Transaction boundaries (begin, commit and rollback).
+	\end{itemize}
+	\item The view updating rule: All views that are theoretically updatable are also updatable by the system.
+	\item High-level insert, update, and delete: The capability of handling a base relation or a derived relation as a single operand applies not only to the retrieval of data but also to the insertion, update and deletion of data.
+	\item Physical data independence: Application programs and terminal activities remain logically unimpared whenever any changes are made in either storage representations or access methods.
+	\item Logical data independence: Application programs and terminal activites remain logically unimpared when information-preserving changes of any kind that theoretically permit unimpairment are made to the base tables.
+	\item Integrity independence: Integrity constraints specific to a particular relational data base must be definable in the relational data sublanguage and storable in the catalog, not in the application programs.
+	\item Distribution independence: A relational DBMS has distribution independence.
+	\item The nonsubversion rule: If a relational system has a low-level (single-record-at-a-time) language, that low level cannot be used to subvert or bypass the integrity rules and constraints expressed in the higher level relational language (multiple-records-at-a-time).
+\end{enumerate}
 %%% Ende: Codd'sche Regeln
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
 %%% Anfang: Entwurf einer Datenbank
 \subsection{Entwurf einer Datenbank}
 
-\subsubsection{•}
+Beim Entwurf einer Datenbank werden vier Schritte unterschieden. Erstens muss anhand des Zwecks respektive des Kundenwunsches eine Zweckbestimmung durchgeführt werden. Daraus ergibt sich die Informationsstruktur. Anschließend lässt sich diese im semantischen Modell als {\it Entity Relationship Model} (ERM) darstellen. Im nächsten Schritt wird dieses Modell in ein Relationenmodell übersetzt. Abschließend wird mit der Implementierung ein physisches Modell erstellt. Erst die Implementierung ist von einem konkreten DBMS abhängig.
 
-\subsubsection{•}
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width=0.7\textwidth]{2jahr_pictures/6lf_oeni_phasen-datenbankentwurf.png}
+	\caption{Phasen der Datenbankentwicklung}
+	\label{img:6lf_oeni_phasen}
+\end{figure}
 
-\subsubsection{•}
+\subsubsection{Informationsstruktur - Zweckbestimmung}
 
-\subsubsection{•}
+\subsubsection{Semantisches Modell - ERM}
+
+%%% Anfang: Bild > ERM
+\begin{wrapfigure}{l}{0.30\textwidth}
+	\begin{center}
+		\includegraphics[width=0.30\textwidth]{2jahr_pictures/6lf_oeni_erm-basics.png}
+	\end{center}
+	\caption{Basics des ERM}
+\end{wrapfigure}
+%%% Ende: Bild
+
+Bei dem Entity Relationship Model nach Peter Chen gibt es genau definierte Elemente. Dazu gehören drei Formen, das Rechteck, die Elipse und die Raute. Im nebenstehenden Bild ist zu erkennen, welche Form für welches Element steht. 1. Das Rechteck beschreibt Entitätstypen, wobei eine einzelne Entität ähnlich einem Objekt eine Instanz eines Entitätstypes ist. 2. Die Elipse beschreibt Attribute, also Eigenschaften, die ein Entitätstyp haben kann. Beispiele dazu folgen. 3. Die Raute beschreibt die Relationen zwischen verschiedenen Entitätstypen. An den Relationen können drei verschiedene Kardinalitäten die Art der Relation näher bestimmten; a) $1$ zu $1$, b) $1$ zu $n$ und c) $n$ zu $m$. Nur bei $n$ zu $m$ Kardinalitäten können Attribute wie im Bild zu sehen mit eigenen Attributen ausgestattet werden. {\bf Beispiele} für Kardinalitäten. Die $n$ zu $m$ Kardinalität könnte durch ein Attribut wie beispielsweise \ql Dauer\qr\ ergänzt werden.
+\begin{itemize}
+	\itemsep0em
+	\item $1$ zu $1$: \ {\sc Mitarbeiter} hat {\sc Name}
+	\item $1$ zu $n$: \ {\sc Mitarbeiter} arbeitet in {\sc Abteilung}
+	\item $n$ zu $m$: {\sc Mitarbeiter} arbeitet an {\sc Projekt}
+\end{itemize}
+
+\subsubsection{Logisches Modell - Relationenmodell}
+
+Im Anschluss an die Erstellung eines ERM wird das Relationenmodell erstellt. Dabei gilt, dass jeder Entitätstyp einer Tabelle entspricht und jedes Attribut einer Spalte. Die Relationen werden durch Primär- und Fremdschlüssel dargestellt. Bei einer $1$ zu $1$ Relation 
+
+\subsubsection{Physisches Modell - Implementierung}
+
+
 
 %%% Ende: Entwurf einer Datenbank
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
