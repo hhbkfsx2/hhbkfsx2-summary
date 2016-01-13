@@ -74,7 +74,38 @@ Im Anschluss an die Erstellung eines ERM wird das Relationenmodell erstellt. Dab
 
 \subsubsection{Physisches Modell - Implementierung}
 
-
-
 %%% Ende: Entwurf einer Datenbank
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Joins - Grundtypen}
+
+Es wird zwischen zwei Grundtypen von Joins unterschieden, OUTER und INNER Joins. OUTER Joins können nochmals in drei Grundtypen unterschieden werden, sodass sich insgesamt vier Grundtypen von Joins ergeben: (1) FULL OUTER, (2) LEFT OUTER, (3) RIGHT OUTER und (4) INNER. 
+
+Beispiel - A und B
+\begin{itemize}
+	\item SELECT ... FROM A FULL OUTER JOIN B ON A.id = B.id
+	Der Befehl gibt sowohl A als auch B aus.
+\end{itemize}
+
+Beispiele - inklusive / exklusive Schnittmenge
+\begin{itemize}
+	\item SELECT ... FROM A {\it LEFT} OUTER JOIN B ON A.id = B.id
+	Der Befehl gibt A {\bf inklusive} der Schnittmenge von A und B aus.
+	\item SELECT ... FROM A LEFT OUTER JOIN B ON A.id = B.id WHERE B.id IS NULL
+	Der Befehl gibt A {\bf exklusive} der Schnittmenge von A und B aus.
+	\item SELECT ... FROM A {\it RIGHT} OUTER JOIN B ON A.id = B.id
+	Der Befehl gibt B {\bf inklusive} der Schnittmenge von A und B aus.
+	\item SELECT ... FROM A RIGHT OUTER JOIN B ON A.id = B.id WHERE A.id IS NULL
+	Der Befehl gibt B {\bf exklusive} der Schnittmenge von A und B aus.
+\end{itemize}
+
+Beispiele - Schnittmenge und Komplement
+\begin{itemize}
+	\item SELECT ... FROM A {\it INNER} JOIN B ON A.id = B.id
+	Der Befehl gibt die Schnittmenge von A und B aus.
+	\item SELECT ... FROM A FULL OUTER JOIN B ON A.id = B.id WHERE A.id IS NULL OR B.id IS NULL
+	Der Befehl gibt das Komplement der Schnittmenge aus - also alles, was sich A und B {\bf nicht} teilen.
+\end{itemize}
+
+
+

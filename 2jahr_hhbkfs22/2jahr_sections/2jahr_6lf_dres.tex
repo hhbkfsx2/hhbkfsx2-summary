@@ -82,3 +82,21 @@ Eigenschaften sind nicht mit Attributen zu verwechseln. Eigenschaften sind eher 
 	numbersep=10pt,
 	xleftmargin=15pt]
 	{2jahr_code/2jahr_6lf_dres_eigenschaften.cs}
+
+\subsection{Assoziation}
+
+\subsubsection{Aggregation und Komposition}
+
+Aggregation und Komposition sind Spezialfälle von Assoziation und sagen jeweils etwas anderes über die Art der Assoziation aus. Bei einer Aggregation handelt es sich um eine Ganzes-Teil-Beziehung, bei der das Teil auch ohne das Ganze bestehen bleibt. Ein Beispiel dafür ist die Weiterbeschäftigung von Mitarbeitern nach der Beendigung eines Projektes. Mitarbeiter sind Teil des Ganzen, des Projektes und bleiben als Mitarbeiter nach der Beendigung bestehen. Das Verhältnis wird auch als 'weak ownership' bezeichnet. Bei einer Komposition handelt es sich ebenfalls um eine Ganzes-Teil-Beziehung, wobei das Teil nicht unabhängig vom Ganzen bestehen kann. Beispielsweise sind Kapitel immer ein Teil eines Buches und mit 'Beendigung' des Buches wird auch das Teil, das Kapitel 'beendet'. Etwas martialischer heißt das, dass das Teil mit dem Ganzen stribt. Im Gegensatz zur Aggregation wird diese Verhältnis als 'strong ownership' bezeichnet.
+
+Der Unterschied zwischen 'weak' und 'strong ownership' bedeutet, dass ein Teilobjekt zu mehreren Aggregationsobjekten gehören kann, aber nur zu einem Kompositionsobjekt. Ein Teilobjekt kann sein Aggregationsobjekt überleben, aber nicht sein Kompositionsobjekt.
+
+In UML wird Aggregation durch eine nicht-gefüllte Raute am Ende der Verbindung gekenntzeichnet und eine Komposition durch eine gefüllte Raute. Die Raute zeigt dabei immer auf das 'Ganze' der Ganzes-Teil-Beziehung.
+
+Restriktion werden in UML durch eine gestrichelte Linie zwischen zwei Assoziationen dargestellt. Es wird zwischen (a) 'Oder'-, (b) 'Subset'- und (c) 'Reflexive'-Restriktionen unterschieden. (a) Eine 'Oder'-Restriktion bedeutet, dass entweder die eine oder die andere Assoziation zutreffen kann. Ein Beispiel dafür sind Überweisungen. Eine Überweisung kann von einem Kunden oder einem Angestellten getätigt werden, aber niemals von beiden. (b) Ein Beispiel für eine 'Subset'-Restriktion ist ein Kunde, der sowohl Kontoinhaber als auch Kontobevollmächtigter sein kann. Letzterer ist ein Subset von Kontoinhabern. Im Fall einer 'Subset'-Restriktion wird an die gestrichelte Linie ein Pfeil gesetzt, der auf das Subset zeigt. (c) Bei einem Beschäftigten kann es sich gleichzeitig um einen Mitarbeiter und um einen Vorgesetzten handeln. Diese Beziehung wird durch die reflexive Restriktion dargestellt. In UML wird ein Schleife von der Klasse zur Klasse gezeichnet, die dann mit beiden Rollen und der jeweiligen Kardinalität beschriftet wird.
+
+\subsubsection{Vererbung}
+
+Vererbung beschreibt eine Spezialfall-Beziehung. In UML wird diese Beziehung durch einen nicht gefüllten Pfeil vom speziellen Objekt zum allgemeinen. Um ein Attribut nicht öffentlich zu machen, um von einer abgeleiteten Klasse darauf zuzugreifen, gibt es 'protected'. 'Protected' Attribute verhalten sich nur für abegeleitete Klassen wie 'public'. 'Protected' wird in UML-Klassendiagramm durch ein '#' dargestellt.
+
+Die IHK verwendet den Begriff 'Vererbung' nicht, sondern spricht in den Prüfungen von 'Generalisierung' und 'Spezialisierung'.
