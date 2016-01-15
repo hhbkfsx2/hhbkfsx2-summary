@@ -1,34 +1,27 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Lernfeld 7 - Vernetzte IT-Systeme / PUKR}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Was ist das Internet?}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}DNS - Domain Name System}{1}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}IPv4 - Internet Protocol}{1}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}Classful Subnetting}{1}{subsubsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.2}Classless Inter-Domain Routing}{1}{subsubsection.1.3.2}
-\contentsline {subsection}{\numberline {1.4}IPv6}{1}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Transportschicht}{1}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Router und Routingprotokolle}{1}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}RIP und OSPF}{1}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Border Gateway Protocol - BGP}{2}{subsubsection.1.6.2}
-\contentsline {subsection}{\numberline {1.7}Algorithmen}{2}{subsection.1.7}
-\contentsline {subsection}{\numberline {1.8}Anwendungsschicht}{2}{subsection.1.8}
-\contentsline {subsection}{\numberline {1.9}Netzwerksicherheit und Firewalls}{2}{subsection.1.9}
-\contentsline {subsubsection}{\numberline {1.9.1}Firewalls: Zonen}{2}{subsubsection.1.9.1}
-\contentsline {paragraph}{Trusted Zone}{2}{section*.2}
-\contentsline {paragraph}{DMZ}{2}{section*.3}
-\contentsline {paragraph}{Untrusted Zone}{2}{section*.4}
-\contentsline {subsubsection}{\numberline {1.9.2}Firewalls: Generationen}{2}{subsubsection.1.9.2}
-\contentsline {subsubsection}{\numberline {1.9.3}Firewalls: Konzepte}{2}{subsubsection.1.9.3}
-\contentsline {section}{\numberline {2}Lernfeld 7 - Vernetzte IT-Systeme / SEIB}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Grundlagen der technischen Kommunikation}{3}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Gr\IeC {\"u}nde f\IeC {\"u}r die Vernetzung}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Das ISO/OSI-Referenzmodell}{3}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Netzwerktopologie}{3}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}\IeC {\"U}bertragungsmedien}{3}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Strukturierte Verkabelung}{3}{subsection.2.2}
-\contentsline {paragraph}{Terit\IeC {\"a}rer Bereich}{4}{section*.5}
-\contentsline {paragraph}{Sekund\IeC {\"a}rer Bereich}{4}{section*.6}
-\contentsline {paragraph}{Prim\IeC {\"a}rer Bereich}{4}{section*.7}
-\contentsline {subsection}{\numberline {2.3}Hochverf\IeC {\"u}gbarkeit}{4}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Spanning Tree Protocol}{4}{subsubsection.2.3.1}
-\contentsline {paragraph}{Schrittweiser Aufbau des Baumes}{5}{section*.8}
+\contentsline {section}{\numberline {1}Politik}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Sozialversicherungen}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Meilensteine der Sozialpolitik}{1}{subsubsection.1.1.1}
+\contentsline {paragraph}{1863 - Ferdinand Lassalle}{1}{section*.2}
+\contentsline {paragraph}{1878 - Bismarks Sozialistengesetz}{1}{section*.3}
+\contentsline {paragraph}{1881 - Bismark'sche Sozialgesetze}{1}{section*.4}
+\contentsline {paragraph}{1919 - soziale Grundrechte}{1}{section*.5}
+\contentsline {paragraph}{1933 - Nazionalsozialismus}{1}{section*.6}
+\contentsline {paragraph}{1949 - Unterschiede zwischen Ost und West}{1}{section*.7}
+\contentsline {paragraph}{1990 - Wiedervereinigung}{1}{section*.8}
+\contentsline {paragraph}{2003 - Agenda 2010}{1}{section*.9}
+\contentsline {paragraph}{2014 - Soziales Gef\IeC {\"a}lle und Ma\IeC {\ss }nahmen}{1}{section*.10}
+\contentsline {subsubsection}{\numberline {1.1.2}Krankeversicherung}{1}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Arbeitslosenversicherung}{1}{subsubsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.4}Unfallversicherung}{1}{subsubsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.5}Rentenversicherung}{1}{subsubsection.1.1.5}
+\contentsline {subsubsection}{\numberline {1.1.6}Pflegeversicherung}{1}{subsubsection.1.1.6}
+\contentsline {subsection}{\numberline {1.2}Tarifverhandlungen}{1}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Funktionen von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Arten von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Geltung von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Allgemeinverbindlichkeit}{3}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Ablauf von Tarifverhandlungen}{3}{subsubsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.6}Kampfparit\IeC {\"a}t}{3}{subsubsection.1.2.6}
+\contentsline {subsection}{\numberline {1.3}[3. Block]}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}[4. Block]}{3}{subsection.1.4}
