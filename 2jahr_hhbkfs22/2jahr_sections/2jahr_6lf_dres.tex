@@ -48,10 +48,12 @@ Bei der Übung \ql Kleines 1x1\qr\ soll der unten gezeigte Output auf der Konsol
 	numbersep=10pt,
 	xleftmargin=15pt]
 	{2jahr_code/2jahr_6lf_dres_kleines1x1.cs}
+	
+\subsection{Datentypen}
 
 \subsection{Konstruktoren}
 
-Konstruktoren sind Methoden von Klassen, die bei der Erzeugung eines Objektes Werte übergeben. Ein Konstruktor hat keinen Rückgabetyp, auch nicht void. Eine Klasse kann mehrere Konstruktoren besitze, die jeweils eine andere Zahl an Parametern erwarten. Eine Klasse kann mehrere Konstruktoren besitzen, die sich bezüglich der übergebenen Parameter unterscheiden. Konstuktoren, d.h. die Methoden, werden ebenso wie die Klasse benannt.
+Konstruktoren sind Methoden von Klassen, die bei der Erzeugung eines Objektes Werte übergeben. Ein Konstruktor hat keinen Rückgabetyp, auch nicht void. Eine Klasse kann mehrere Konstruktoren besitze, die jeweils eine andere Zahl an Parametern erwarten. Konstuktoren, d.h. die Methoden, werden ebenso wie die Klasse benannt.
 
 \lstinputlisting
 	[caption={Lösung der Übung mit C\#}
@@ -68,7 +70,7 @@ Konstruktoren sind Methoden von Klassen, die bei der Erzeugung eines Objektes We
 	
 \subsection{Eigenschaften}
 
-Eigenschaften sind nicht mit Attributen zu verwechseln. Eigenschaften sind eher wie Methoden. Statt je einer Set- und Get-Methode, wird eine Eigenschaft definiert, die wie im Beispiel zu sehen ist, je ein set und ein get definiert.
+Eigenschaften sind nicht mit Attributen zu verwechseln. Eigenschaften sind eher wie Methoden. Statt je einer Set- und Get-Methode, wird eine Eigenschaft definiert, die wie im Beispiel zu sehen ist, je ein set und ein get definiert. Der Vorteil besteht darin, dass innerhalb der Get- und Set-Accessoren nochmals Logik untergebracht werden kann.
 
 \lstinputlisting
 	[caption={Beispiel: Eigenschaften}
@@ -92,6 +94,8 @@ Aggregation und Komposition sind Spezialfälle von Assoziation und sagen jeweils
 Der Unterschied zwischen 'weak' und 'strong ownership' bedeutet, dass ein Teilobjekt zu mehreren Aggregationsobjekten gehören kann, aber nur zu einem Kompositionsobjekt. Ein Teilobjekt kann sein Aggregationsobjekt überleben, aber nicht sein Kompositionsobjekt.
 
 In UML wird Aggregation durch eine nicht-gefüllte Raute am Ende der Verbindung gekenntzeichnet und eine Komposition durch eine gefüllte Raute. Die Raute zeigt dabei immer auf das 'Ganze' der Ganzes-Teil-Beziehung.
+
+\subsubsection{Restriktion}
 
 Restriktion werden in UML durch eine gestrichelte Linie zwischen zwei Assoziationen dargestellt. Es wird zwischen (a) 'Oder'-, (b) 'Subset'- und (c) 'Reflexive'-Restriktionen unterschieden. (a) Eine 'Oder'-Restriktion bedeutet, dass entweder die eine oder die andere Assoziation zutreffen kann. Ein Beispiel dafür sind Überweisungen. Eine Überweisung kann von einem Kunden oder einem Angestellten getätigt werden, aber niemals von beiden. (b) Ein Beispiel für eine 'Subset'-Restriktion ist ein Kunde, der sowohl Kontoinhaber als auch Kontobevollmächtigter sein kann. Letzterer ist ein Subset von Kontoinhabern. Im Fall einer 'Subset'-Restriktion wird an die gestrichelte Linie ein Pfeil gesetzt, der auf das Subset zeigt. (c) Bei einem Beschäftigten kann es sich gleichzeitig um einen Mitarbeiter und um einen Vorgesetzten handeln. Diese Beziehung wird durch die reflexive Restriktion dargestellt. In UML wird ein Schleife von der Klasse zur Klasse gezeichnet, die dann mit beiden Rollen und der jeweiligen Kardinalität beschriftet wird.
 
