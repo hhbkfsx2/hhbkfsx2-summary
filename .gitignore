@@ -5,6 +5,10 @@
 1_zusammenfassung*
 *aux
 *log
+*dvi
+*out
+*synctex.gz
+*toc	
 # geo.sql ignorieren
 *geo.sql
 # lf06prog-data ignorieren
