@@ -27,17 +27,17 @@ Der ganze Aufwand wird betrieben, um den Einfluss von elektromagnetischen Felder
 
 Strukturierte Verkabelung sollte a) zukunftssicher, b) dienstneutral und c) leichterweiterbar sein. Darin sind noch keine Redundanzen enthalten. Unter Zukunftssicherheit wird ein Zeitraum von 10 bis 15 Jahren verstanden. In der strukturierten Verkabelung werden drei Bereiche unterschieden: 1. Tertiärer Bereich, 2. Sekundär Bereich und 3. Primärer Bereich. Die Topologie der drei Bereiche entspricht einem Baum mit Stern \ql Blättern\qr. Durch Querverbindungen wird aus dem Baum ein teilvermaschtes Netz mit Redundanzen, um die Ausfallsicherheit zu erhöhen. Diese Art der Verkablung garantiert eine leichte Erweiterbarkeit des Netzes. Wenn die Umstände -- was in der Realität meist der Fall ist -- nur den tertiären und den sekundären Bereich vorsehen, also keine Gebäude miteinander verbunden werden müssen, wird von einem {\it collapsed backbone} gesprochen. Bei einem collapsed backbone ist der Router an den Gebäudeverteiler angeschlossen.
 
-\paragraph{Teritärer Bereich} ~\\
+\paragraph{Teritärer Bereich}~\\
 
-Im Tertiärbereich sind Kupferverkabelungen mit einer maximalen Länge von 100m vorgesehen. Die Endgeräte werden an einen Etagenverteiler (EV) angeschlossen, wodurch eine Sterntopologie entsteht.
+\noindent Im Tertiärbereich sind Kupferverkabelungen mit einer maximalen Länge von 100m vorgesehen. Die Endgeräte werden an einen Etagenverteiler (EV) angeschlossen, wodurch eine Sterntopologie entsteht.
 
-\paragraph{Sekundärer Bereich} ~\\
+\paragraph{Sekundärer Bereich}~\\
 
-Im Sekundärbereich wird ein Verkabelung mit Kupfer bzw. Lichtwellenleitern empfohlen, wobei LWL bevorzugt werden sollten. Die maximale Länge beträgt hier 500m. Die Etagenverteiler des tertitären Bereichs werden an Gebäudeverteiler (GV) angeschlossen. Der Sekundärbereich wird von Cisco auch als Distribution Layer bezeichnet.
+\noindent Im Sekundärbereich wird ein Verkabelung mit Kupfer bzw. Lichtwellenleitern empfohlen, wobei LWL bevorzugt werden sollten. Die maximale Länge beträgt hier 500m. Die Etagenverteiler des tertitären Bereichs werden an Gebäudeverteiler (GV) angeschlossen. Der Sekundärbereich wird von Cisco auch als Distribution Layer bezeichnet.
 
-\paragraph{Primärer Bereich} ~\\
+\paragraph{Primärer Bereich}~\\
 
-Im primären Bereich werden nur noch Lichtwellenleiter empfohlen. Bevor LWL verfügbar waren, wurden Koaxialkabel genutzt. Die Gebäudeverteiler werden an die Standortverteiler (SV) angeschlossen. Dadurch entsteht schließlich eine Baumtopologie.
+\noindent Im primären Bereich werden nur noch Lichtwellenleiter empfohlen. Bevor LWL verfügbar waren, wurden Koaxialkabel genutzt. Die Gebäudeverteiler werden an die Standortverteiler (SV) angeschlossen. Dadurch entsteht schließlich eine Baumtopologie.
 
 \subsection{Hochverfügbarkeit}
 
@@ -45,9 +45,26 @@ Hochverfügbarkeit wird über die Verfügbarkeit eines Dienstes definiert und ni
 
 \subsubsection{Spanning Tree Protocol}
 
-Um Broadcast-Stürme zu vermeiden, wird das Spanning Tree Protocol (STP) verwendet. STP wird verwendet, um die Schleifenfreiheit von Topologien sicherzustellen. Die Wurzel des Baums ist die sogenannte Root Bridge. Welcher Switch eines redundanten Setups die aktuelle Root Bridge ist, wird durch eine Wahl festgelegt. Dies geschieht, indem alle Switches bzw. Bridges ihre Bridge-ID (kurz: BID; jede Bridge wird über eine eigene BID identifiziert) an eine bestimmte Multicast-Gruppe mitteilen. Die Bridge-ID ist 8 Byte lang (2 Byte Bridge Priority, 6 Byte MAC-Adresse). Die Bridge mit der \ql niedrigsten\qr\ Priorität wird zur Root Bridge. Sollte die Bridge Priority identisch sein, wird als ergänzendes Kriterium die MAC-Adresse der Komponenten benutzt (auch hier gewinnt wieder die Bridge mit der niedrigeren Zahl).
+Spanning Tree Protocol (STP) wird verwendet, um die Schleifenfreiheit von Topologien sicherzustellen. Die Wurzel des Baums ist die sogenannte Root Bridge. Welcher Switch eines redundanten Setups die aktuelle Root Bridge ist, wird durch eine Wahl festgelegt. Dies geschieht, indem alle Switches bzw. Bridges ihre Bridge-ID (kurz: BID; jede Bridge wird über eine eigene BID identifiziert) an eine bestimmte Multicast-Gruppe mitteilen. Die Bridge-ID ist 8 Byte lang (2 Byte Bridge Priority, 6 Byte MAC-Adresse). Die Bridge mit der \ql niedrigsten\qr\ Priorität wird zur Root Bridge. Sollte die Bridge Priority identisch sein, wird als ergänzendes Kriterium die MAC-Adresse der Komponenten benutzt (auch hier gewinnt wieder die Bridge mit der niedrigeren Zahl).
 
-Ähnlich wie bei OSPF wird bei STP über Pfadkosten ermittelt, über welchen Port er die Root Bridge erreichen kann. Der Unterschied zu OSPF besteht in erster Linie darin, dass es sich bei STP um ein Layer 2 Protokoll handelt und die Implementierung sich entsprechend unterscheidet. Alle anderen Ports, über die ein STP-Switch die Root Bridge erreichen kann, werden blockiert.
+STP wird unter anderem dazu genutzt, um Broadcast-Stürme, inkonsistente Switching Address Tables (SAT) und multiple Frames zu vermeiden. Im Gegensatz zu IP-Packeten besitzen Ethernet-Frames keine time to live, sodass
+Frames in einem Loop unendlich oft geswitcht werden.
+
+Ähnlich wie bei OSPF wird bei STP über Pfadkosten ermittelt, über welchen Port er die Root Bridge erreichen kann. Der Unterschied zu OSPF besteht in erster Linie darin, dass es sich bei STP um ein Layer 2 Protokoll handelt und die Implementierung sich entsprechend unterscheidet.
+
+STP unterscheidet zwischen Root-Ports und Designated-Ports. Dabei kann es immer nur einen Root-Port geben. Das ist der Port, der vom Switch zur Root-Bridge führt. Ein Switch kann mehrere Designated-Ports haben, bspw. sind alle Ports der Root-Bridge, die zu anderen Switchen führen, Designated-Ports.
+
+Gibt es zwei Pfade zur Root-Bridge wird anhand von Priorität und MAC der günstigste Pfad gewählt. Der Pfad über den nicht gewählten Weg wird blockiert. Der entsprechende Pfad wird als Non-Designated-Port bezeichnet und befindet sich im Blocking State, um Loops zu verhindern.
+
+{\it Alternativen zu STP:} Es wurden einige Alternativen zum STP vorgeschlagen und standardisiert. Dazu gehören unter anderem:
+\begin{itemize}
+	\item Rapid Spanning Tree Protocol (RSTP): Die Idee von RSTP besteht darin, bei einer Änderung der Topologie nicht sofort die gesamte Netzstuktur zu löschen, sondern erst einmal wie gehabt weiter zu arbeiten und Alternativpfade berechnet werden. Erst danach wird ein neuer Baum zusammengesetzt. Die Ausfallzeit lässt sich so von 30s auf <1s reduzieren. Die aktuelle Spezifikation wird durch IEEE 802.1D-2004 festgelegt.
+    \item Multiple Spanning Tree Protocol (MSTP): MSTP ist eine Erweiterung zu RSTP und ermöglicht im Zusammenhang mit VLANs verschiedene Instanzen des Spannbaums. Für VLANs können also unabhängige STP-Instanzen gebildet werden.
+    \item Per VLAN Spanning Tree Protocol (PVSTP): PVSTP ist im Prinzip dasselbe wie MSTP, jedoch Cisco
+proprietär.
+    \item Shortest Path Bridging (SPB): Um die Begrenzungen von STP zu überwinden, wurde mit IEEE 802.1aq SPB 
+standardisiert.
+\end{itemize}
 
 \paragraph{Schrittweiser Aufbau des Baumes}~\\	
 

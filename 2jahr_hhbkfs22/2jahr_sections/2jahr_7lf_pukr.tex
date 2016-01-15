@@ -3,6 +3,8 @@
 %%% Anfang: Was ist das Internet?
 \subsection{Was ist das Internet?}
 
+Das Internet ist ein Netzwerk von Netzwerken. Das Internet besteht aus der Vernetzung von sogenannten Autonomen Systemen (AS). Jedes AS hat eine mit IP vergleichbare Adresse, die AS Number (ASN).
+
 %%% Ende: Was ist das Internet?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -42,19 +44,46 @@ Im Gegensatz zum classful subnetting zeichnet sich CIDR (Classless Inter-Domain 
 %%% Ende: IPv4 - Internet Protocol
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Anfang: IPv6
 \subsection{IPv6}
+
+
+%%% Ende: IPv6
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Anfang: Transportschicht
 
 \subsection{Transportschicht}
 
+%%% Ende: Transportschicht
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Anfang: Router und Routingprotokolle
 \subsection{Router und Routingprotokolle}
+
+Routingprotokolle werden dazu verwendet, um Routing-Entscheidung zu automatisieren
+
 \subsubsection{RIP und OSPF}
+
+Route Information Protocol (RIP) und Open Shortest Path First (OSPF) ermitteln beide die kürzesten Wege innerhalb eines Netzwerkes, wobei \ql kürzeste\qr\ bei RIP bedeutet, dass die Anzahl der Hops möglichst gering ist und bei OSPF weitere Metriken angesetzt werden können, um die Routing-Entscheidungen zu steuern.
+
+\subsubsection{Border Gateway Protocol - BGP}
+
+Das Border Gateway Protocol wird im Internet dazu verwendet, die IP-Adressen, die ein AS anbietet, zu announcen und entsprechend Routing-Entscheidungen anhand der Announcments zu treffen.
+
+\subsection{Algorithmen}
+
+%%% Ende: Router und Routingprotokolle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \subsection{Anwendungsschicht}
 
 \subsection{Netzwerksicherheit und Firewalls}
-
-
 
 \subsubsection{Firewalls: Zonen}
 
@@ -62,6 +91,9 @@ Beim Firewalling werden generell drei Zonen unterschieden. Das Intranet bzw. die
 
 \paragraph{Trusted Zone}~\\
 \paragraph{DMZ}~\\
+
+Die Demilitarisierte Zone (DMZ) wird auch als \ql perimeter network\qr\ bezeichnet.
+
 \paragraph{Untrusted Zone}~\\
 
 \subsubsection{Firewalls: Generationen}
