@@ -38,3 +38,25 @@ Im Sekundärbereich wird ein Verkabelung mit Kupfer bzw. Lichtwellenleitern empf
 \paragraph{Primärer Bereich} ~\\
 
 Im primären Bereich werden nur noch Lichtwellenleiter empfohlen. Bevor LWL verfügbar waren, wurden Koaxialkabel genutzt. Die Gebäudeverteiler werden an die Standortverteiler (SV) angeschlossen. Dadurch entsteht schließlich eine Baumtopologie.
+
+\subsection{Hochverfügbarkeit}
+
+Hochverfügbarkeit wird über die Verfügbarkeit eines Dienstes definiert und nicht über Komponenten. Die Verfügbarkeit wird in Prozent angegeben und beträgt in der Regel 99\%. Ein Beitrag zur Hochverfügbarkeit eines Dienstes ist die redundante Auslegung der Netzwerkkomponenten. Dabei ist zu beachten, dass redundant angeschlossene Komponenten zu Broadcast-Stürmen neigen, weil ARP-Request an alle aktiven Anschlüsse geschickt werden. Im Prinzip wird zur Herstellung von Redundanz ein Loop gesteckt. Dadurch, dass ARP-Requests auf mehreren Interfaces reinkommen, ist der Switching Address Table (SAT) der Switche nicht konsistent und ändert sich ständig.
+
+\subsubsection{Spanning Tree Protocol}
+
+Um Broadcast-Stürme zu vermeiden, wird das Spanning Tree Protocol (STP) verwendet. STP wird verwendet, um die Schleifenfreiheit von Topologien sicherzustellen. Die Wurzel des Baums ist die sogenannte Root Bridge. Welcher Switch eines redundanten Setups die aktuelle Root Bridge ist, wird durch eine Wahl festgelegt. Dies geschieht, indem alle Switches bzw. Bridges ihre Bridge-ID (kurz: BID; jede Bridge wird über eine eigene BID identifiziert) an eine bestimmte Multicast-Gruppe mitteilen. Die Bridge-ID ist 8 Byte lang (2 Byte Bridge Priority, 6 Byte MAC-Adresse). Die Bridge mit der \ql niedrigsten\qr\ Priorität wird zur Root Bridge. Sollte die Bridge Priority identisch sein, wird als ergänzendes Kriterium die MAC-Adresse der Komponenten benutzt (auch hier gewinnt wieder die Bridge mit der niedrigeren Zahl).
+
+Ähnlich wie bei OSPF wird bei STP über Pfadkosten ermittelt, über welchen Port er die Root Bridge erreichen kann. Der Unterschied zu OSPF besteht in erster Linie darin, dass es sich bei STP um ein Layer 2 Protokoll handelt und die Implementierung sich entsprechend unterscheidet. Alle anderen Ports, über die ein STP-Switch die Root Bridge erreichen kann, werden blockiert.
+
+\paragraph{Schrittweiser Aufbau des Baumes}~\\	
+
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+	\item 
+	\item 
+	\item 
+	\item 
+\end{enumerate}
