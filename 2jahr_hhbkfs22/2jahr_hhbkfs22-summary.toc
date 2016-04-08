@@ -1,27 +1,11 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Politik}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Sozialversicherungen}{1}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Meilensteine der Sozialpolitik}{1}{subsubsection.1.1.1}
-\contentsline {paragraph}{1863 - Ferdinand Lassalle}{1}{section*.2}
-\contentsline {paragraph}{1878 - Bismarks Sozialistengesetz}{1}{section*.3}
-\contentsline {paragraph}{1881 - Bismark'sche Sozialgesetze}{1}{section*.4}
-\contentsline {paragraph}{1919 - soziale Grundrechte}{1}{section*.5}
-\contentsline {paragraph}{1933 - Nazionalsozialismus}{1}{section*.6}
-\contentsline {paragraph}{1949 - Unterschiede zwischen Ost und West}{1}{section*.7}
-\contentsline {paragraph}{1990 - Wiedervereinigung}{1}{section*.8}
-\contentsline {paragraph}{2003 - Agenda 2010}{1}{section*.9}
-\contentsline {paragraph}{2014 - Soziales Gef\IeC {\"a}lle und Ma\IeC {\ss }nahmen}{1}{section*.10}
-\contentsline {subsubsection}{\numberline {1.1.2}Krankeversicherung}{1}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Arbeitslosenversicherung}{1}{subsubsection.1.1.3}
-\contentsline {subsubsection}{\numberline {1.1.4}Unfallversicherung}{1}{subsubsection.1.1.4}
-\contentsline {subsubsection}{\numberline {1.1.5}Rentenversicherung}{1}{subsubsection.1.1.5}
-\contentsline {subsubsection}{\numberline {1.1.6}Pflegeversicherung}{1}{subsubsection.1.1.6}
-\contentsline {subsection}{\numberline {1.2}Tarifverhandlungen}{1}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Funktionen von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Arten von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.3}Geltung von Tarifvertr\IeC {\"a}gen}{2}{subsubsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.4}Allgemeinverbindlichkeit}{3}{subsubsection.1.2.4}
-\contentsline {subsubsection}{\numberline {1.2.5}Ablauf von Tarifverhandlungen}{3}{subsubsection.1.2.5}
-\contentsline {subsubsection}{\numberline {1.2.6}Kampfparit\IeC {\"a}t}{3}{subsubsection.1.2.6}
-\contentsline {subsection}{\numberline {1.3}[3. Block]}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}[4. Block]}{3}{subsection.1.4}
+\contentsline {section}{\numberline {1}Lernfeld 6 - Datenbanken / OENI}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Codd'sche Regeln - Grundlagen des Relationenmodells}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Entwurf einer Datenbank}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Informationsstruktur - Zweckbestimmung}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Semantisches Modell - ERM}{3}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Logisches Modell - Relationenmodell}{4}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Physisches Modell - Implementierung}{4}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Joins - Grundtypen}{4}{subsubsection.1.2.5}
+\contentsline {section}{\numberline {2}Eine Datenbank entwickeln}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Normalisierung}{4}{subsection.2.1}
