@@ -77,9 +77,23 @@ Im Anschluss an die Erstellung eines ERM wird das Relationenmodell erstellt. Dab
 %%% Ende: Entwurf einer Datenbank
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Joins - Grundtypen}
+\subsection{Eine Datenbank entwickeln}
+\subsubsection{Normalisierung}
 
-Es wird zwischen zwei Grundtypen von Joins unterschieden, OUTER und INNER Joins. OUTER Joins können nochmals in drei Grundtypen unterschieden werden, sodass sich insgesamt vier Grundtypen von Joins ergeben: (1) FULL OUTER, (2) LEFT OUTER, (3) RIGHT OUTER und (4) INNER. 
+Durch Normalisierung sollen Anomalien und Redundanz in einer Datenbank reduziert werden. Dabei erhöhen sich aber auch die Anforderungen an die Performance. Es werden drei Anomalien unterschieden: (1) Einfüge-Anomalien, (2) Lösch-Anomalien und (3) Änderungs-Anomalie.
+
+(1) Einfüge-Anomalie: neue Daten können nicht angelegt werden, wenn noch nicht alle Informationen bekannt sind.
+(2) Lösch-Anomalie: werden Datensätze gelöscht, gehen mehr Informationen verloren, als eigentlich beabsichtigt war.
+(3) Änderungs-Anomalie: führen häufig zu Inkonsistenzen
+
+{\bf Erste Normalform}: Die Daten in einer Tabelle müssen atomar (unteilbar) sein und es darf keine Aufzählung (Wiederholungsgruppen) geben. Nach der Übertragung in die erste Normalform (1. NF) kann es notwendig werden, einen neuen (zusammensetzten) Primary Key zu definieren.
+{\bf Zweite Normalform}: Die Tabellen muss in der 1. NF sein und jedes Nicht-Schlüsselattribut muss voll funktional vom gesamten Primärschlüssel abhängig sein. Voll funktional bedeutet in diesem Zusammenhang, dass es zum Wert des Primärschlüssels genau einen Wert aus der jeweiligen Spalte des Nicht-Schlüsselattributes gibt.
+{\bf Dritte Normalform}: Die tabelle muss sich in der 2. NF befinden und kein Nicht-Schlüsselattribut transitiv vom Primärschlüssel abhängt.
+{\bf Boyce-Codd Normalform}: Die Tabelle befindet sich in der 3. NF und keine Teile der Schlüsselkandidaten sind von Nicht-Schlüsselattributen funktional abhängig.
+
+\subsection{Joins - Grundtypen}
+
+Es wird zwischen zwei Grundtypen von Joins unterschieden, OUTER und INNER Joins. OUTER Joins können nochmals in drei Grundtypen unterschieden werden, sodass sich insgesamt vier Grundtypen von Joins ergeben: (1) FULL OUTER, (2) LEFT OUTER, (3) RIGHT OUTER und (4) INNER. Darüber hinaus gibt es noch die beiden Typen NATURAL und SELF JOIN.
 
 Beispiel - A und B
 \begin{itemize}
@@ -108,16 +122,3 @@ Beispiele - Schnittmenge und Komplement
 \end{itemize}
 
 
-\section{Eine Datenbank entwickeln}
-\subsection{Normalisierung}
-
-Durch Normalisierung sollen Anomalien und Redundanz in einer Datenbank reduziert werden. Dabei erhöhen sich aber auch die Anforderungen an die Performance. Es werden drei Anomalien unterschieden: (1) Einfüge-Anomalien, (2) Lösch-Anomalien und (3) Änderungs-Anomalie.
-
-(1) Einfüge-Anomalie: neue Daten können nicht angelegt werden, wenn noch nicht alle Informationen bekannt sind.
-(2) Lösch-Anomalie: werden Datensätze gelöscht, gehen mehr Informationen verloren, als eigentlich beabsichtigt war.
-(3) Änderungs-Anomalie: führen häufig zu Inkonsistenzen
-
-{\bf Erste Normalform}: Die Daten in einer Tabelle müssen atomar (unteilbar) sein und es darf keine Aufzählung (Wiederholungsgruppen) geben. Nach der Übertragung in die erste Normalform (1. NF) kann es notwendig werden, einen neuen (zusammensetzten) Primary Key zu definieren.
-{\bf Zweite Normalform}: Die Tabellen muss in der 1. NF sein und jedes Nicht-Schlüsselattribut muss voll funktional vom gesamten Primärschlüssel abhängig sein. Voll funktional bedeutet in diesem Zusammenhang, dass es zum Wert des Primärschlüssels genau einen Wert aus der jeweiligen Spalte des Nicht-Schlüsselattributes gibt.
-{\bf Dritte Normalform}: Die tabelle muss sich in der 2. NF befinden und kein Nicht-Schlüsselattribut transitiv vom Primärschlüssel abhängt.
-{\bf Boyce-Codd Normalform}: Die Tabelle befindet sich in der 3. NF und keine Teile der Schlüsselkandidaten sind von Nicht-Schlüsselattributen funktional abhängig.
